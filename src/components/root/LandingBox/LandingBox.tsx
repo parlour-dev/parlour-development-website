@@ -10,7 +10,7 @@ import 'animate.css';
 const LandingBox = () => {
     return (
         <div className="w-auto min-h-[70vh] bg-white rounded-2xl mx-4 my-4 drop-shadow-sm flex items-center justify-center flex-col align-middle">
-            <img className="z-0 select-none w-10/12 h-72 sm:h-[80vh] my-2 mx-auto blur-3xl scale-y-75 opacity-40" src={Blur} alt="Decoration image" />
+            <img className="z-0 select-none w-10/12 h-72 sm:h-[80vh] my-2 mx-auto blur-3xl scale-y-75 opacity-40" src={Blur} alt="" />
             <img className="opacity-30 md:opacity-100 z-10 absolute w-16 sm:w-40 left-4 top-2 rotate-90" src={Leaf2} alt="Another Leaf" />
             <img className="opacity-30 md:opacity-100 z-10 absolute w-16 sm:w-40 left-6 bottom-2" src={Leaf} alt="Leaf" />
             <img className="opacity-30 md:opacity-100 z-10 absolute w-16 sm:w-40 right-[5%] bottom-10 -rotate-12" src={Chat} alt="Chat icon" />
