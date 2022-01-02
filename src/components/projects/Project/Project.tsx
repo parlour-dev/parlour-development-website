@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import Popup from './Popup';
+import Popup from './Popup';
 
 const Project = (props: any) => {
 
@@ -11,7 +11,7 @@ const Project = (props: any) => {
 
   return (
     <div>
-    {/* {isOpen && <Popup
+    {isOpen && <Popup
       content={<>
         <b>Design your Popup</b>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -19,7 +19,7 @@ const Project = (props: any) => {
       </>}
       handleClose={togglePopup}
       // mainImageDirectory={props.mainImageDirectory}
-    />} */}
+    />}
     <div className="font-sans  w-auto min-h-[90vh] bg-white rounded-2xl mx-4 my-4 drop-shadow-sm">
       <p className="font-bold pt-10 text-4xl">{props.title}</p>
       <div className="flex flex-col sm:flex-row mx-[10%] mt-10">
