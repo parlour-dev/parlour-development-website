@@ -1,4 +1,3 @@
-import React from 'react';
 import Blur from './img/blur.png';
 import Leaf from './img/leaf.png';
 import Leaf2 from './img/leaf2.png';
