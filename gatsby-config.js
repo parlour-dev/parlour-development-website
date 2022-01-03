@@ -1,4 +1,6 @@
-export const plugins = [
-	"gatsby-plugin-postcss",
-	// ...
-];
+module.exports = {
+  plugins: [
+    'gatsby-plugin-postcss',
+    // ...
+  ],
+}
