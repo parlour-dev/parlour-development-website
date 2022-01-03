@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 const ProjectsBox = (props: any) => {
     return (
@@ -8,7 +7,7 @@ const ProjectsBox = (props: any) => {
             <div className="w-auto mx-[20%] sm:mx-48 mt-20 flex flex-row justify-center flex-wrap-reverse">
                 <div className="flex flex-wrap flex-col">
                     <div className="transition hover:scale-105 hover:drop-shadow-2xl duration-500 w-64 sm:w-[37rem] h-60 m-2 rounded-3xl relative overflow-hidden drop-shadow">
-                        <Link to="/projects"><img src={props.Image1} alt=" " className='absolute' /></Link>
+                        <img src={props.Image1} alt=" " className='absolute' />
                     </div>
                     <div className="flex flex-wrap flex-row">
                         <div className="transition hover:scale-105 hover:drop-shadow-2xl duration-500 w-64 sm:w-72 h-60 bg-green-400 m-2 rounded-3xl"></div>
