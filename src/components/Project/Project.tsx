@@ -27,7 +27,7 @@ const Project = (props: any) => {
 				<p className="font-bold pt-10 text-4xl">{props.title}</p>
 				<div className="flex flex-col lg:flex-row mx-[10%] mt-10">
 					<div className="mb-10">
-						<div className="transition hover:scale-105 hover:drop-shadow-2xl duration-500 sm:w-[37rem] h-60 m-1 sm:m-2 rounded-3xl relative overflow-hidden drop-shadow">
+						<div className="transition hover:scale-105 hover:drop-shadow-2xl duration-500 sm:w-144 sm:m-2 h-60 m-1 rounded-3xl relative overflow-hidden drop-shadow">
 							<img
 								onClick={() => {
 									setPopupPhoto("main");
@@ -35,11 +35,11 @@ const Project = (props: any) => {
 								}}
 								src={props.mainImage}
 								alt="Main"
-								className="absolute"
+								className="absolute  object-cover w-[100%] h-[100%]"
 							/>
 						</div>
 						<div className="flex flex-row">
-							<div className="transition hover:scale-105 hover:drop-shadow-2xl duration-500 w-[50%] sm:w-72 h-60 m-1 sm:m-2 rounded-3xl relative overflow-hidden drop-shadow">
+							<div className="transition hover:scale-105 hover:drop-shadow-2xl duration-500 w-[50%] sm:w-72 h-60 m-1 sm:m-2 rounded-3xl relative overflow-hidden drop-shadow  md:w-[50%] lg:w-72 " >
 								<img
 									onClick={() => {
 										setPopupPhoto("left");
@@ -47,10 +47,10 @@ const Project = (props: any) => {
 									}}
 									src={props.leftImage}
 									alt="Left"
-									className="absolute scale-125"
+									className="absolute scale-125 object-cover w-[100%] h-[100%]"
 								/>
 							</div>
-							<div className="transition hover:scale-105 hover:drop-shadow-2xl duration-500 w-[50%] sm:w-72 h-60 m-1 sm:m-2 rounded-3xl relative overflow-hidden drop-shadow">
+							<div className="transition hover:scale-105 hover:drop-shadow-2xl duration-500 w-[50%] sm:w-72 h-60 m-1 sm:m-2 rounded-3xl relative overflow-hidden drop-shadow  md:w-[50%] lg:w-72">
 								<img
 									onClick={() => {
 										setPopupPhoto("right");
@@ -58,7 +58,7 @@ const Project = (props: any) => {
 									}}
 									src={props.rightImage}
 									alt="Right"
-									className="absolute scale-125"
+									className="absolute scale-125 object-cover w-[100%] h-[100%]"
 								/>
 							</div>
 						</div>

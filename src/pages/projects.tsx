@@ -6,6 +6,9 @@ import Project from "../components/Project/Project";
 import PukPukMain from "../project-files/PukPuk/pukpukwebsite.png";
 import PukPukLeft from "../project-files/PukPuk/app.png";
 import PukPukRight from "../project-files/PukPuk/logo.png";
+import KolorMain from "../project-files/Kolor/kolorDapp.png";
+import KolorLeft from "../project-files/Kolor/kolorLanding.png";
+import KolorLogo from "../project-files/Kolor/kolorLogo.png"
 import { Helmet } from "react-helmet";
 
 const Projects = () => {
@@ -32,6 +35,19 @@ const Projects = () => {
 				mainImage={PukPukMain}
 				leftImage={PukPukLeft}
 				rightImage={PukPukRight}
+			/>
+			<Project
+				title="asdadług"
+				description="Projekt polegał na stwoasdasdlogii oraz architekturą aplikacji. Front-end aplikacji z użyciem React Native oraz Back-end wykonany z użyciem Golang i AWS."
+				techStack="React Native, TypeScript, StyledCasdadS, Golang. Oprócz tego stworzenie strony internetowej ukazującej aplikację oraz przekierowującą do jej pobrania."
+				// codeButton="{opacity: 100}"
+				codeLink="https://github.com/parlour-dev/pukpuk"
+				caseStudy="Otrzymaliśmy zlecenie na wykonanie aplikaasdasdzarówno na iOS, jak i Androidzie. Prace zaczęliśmy od wykonania kilku mockupów aplikacji, 
+                  aby wybrać kierunek wizualny którym aplikacja będzie podążać. Zdecydowaliśmy się na UI w jasnych kolorach z mocnymi, pomarańczowymi akcentami. 
+                  Tak, aby całość była spójna z logo PukPuk. Następnie równolegle rozpoczęły się prace nad implementacją front-endu i back-end."
+				mainImage={KolorMain}
+				leftImage={KolorLeft}
+				rightImage={KolorLogo}
 			/>
 		</div>
 	);
