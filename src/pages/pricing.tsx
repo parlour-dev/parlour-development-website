@@ -1,11 +1,18 @@
 import { Link } from "gatsby";
 import React from "react";
+import { Helmet } from "react-helmet";
 import Navbar from "../components/Navbar/Navbar";
 
 const pricing = () => {
 	return (
 		<>
 			<Navbar />
+			<Helmet>
+				<meta charSet="utf-8" />
+				<title>
+					Parlour Development - Wyceń swój projekt!
+				</title>
+			</Helmet>
 			<div className="w-auto min-h-[90vh] bg-white rounded-2xl mx-4 my-4 drop-shadow-sm">
 				<p className="text-3xl sm:text-5xl pt-20 px-2 font-sans font-bold">
 					Ile kosztuje nasz kod?

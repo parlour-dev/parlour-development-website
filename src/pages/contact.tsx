@@ -1,9 +1,16 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Navbar from "../components/Navbar/Navbar";
 
 const contact = () => {
 	return (
 		<>
+		<Helmet>
+				<meta charSet="utf-8" />
+				<title>
+					Parlour Development - Skontaktuj się z nami!
+				</title>
+			</Helmet>
 			<Navbar />
 			<div className="w-auto min-h-[90vh] bg-white rounded-2xl mx-4 my-4 drop-shadow-sm">
 				<p className="text-3xl sm:text-5xl pt-20 font-sans font-bold">
@@ -14,7 +21,8 @@ const contact = () => {
 					<p className="text-2xl sm:text-4xl font-bold text-white">
 						Zlecenia i oferty
 					</p>
-					<p className="text-2xl sm:text-4xl font-bold">
+					<br />
+					<p className="text-2xl sm:text-4xl text-white font-bold">
 						kontakt@parlour.dev
 						<br />
 						+48 731 563 264

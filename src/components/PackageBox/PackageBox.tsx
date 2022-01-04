@@ -12,7 +12,7 @@ const PackageBox = () => {
 					<p className="text-4xl text-justify p-4 font-semibold">
 						Design + <br /> Front-end
 					</p>
-					<p className="text-xl text-justify p-4">
+					<p className="text-xl text-left p-4">
 						Zaprojektujemy twoją aplikację, po czym zbudujemy jej front-end.{" "}
 						<br /> <br />
 						Pakiet ten obejmuje projekt aplikacji, zamianę projektu na kod oraz
@@ -23,7 +23,7 @@ const PackageBox = () => {
 					<p className="text-5xl text-justify p-4 font-bold text-white">
 						Design + Front-end + Back-end
 					</p>
-					<p className="text-2xl text-justify p-4 text-white font-semibold">
+					<p className="text-2xl text-left p-4 text-white font-semibold">
 						Kopletne rozwiązanie dla Twojego projektu. <br />
 						<br /> Od zera przedstawisz nam, czego potrzebujesz, a my zrobimy
 						resztę :)
@@ -31,7 +31,7 @@ const PackageBox = () => {
 				</div>
 				<div className="mx-auto md:mx-0 w-72 my-[2.5vh] h-[70vh] bg-gray-100 rounded-2xl md:rounded-none md:rounded-r-2xl drop-shadow">
 					<p className="text-4xl text-justify p-4 font-semibold">Back-end</p>
-					<p className="text-xl text-justify p-4">Stworzymy back-end [...]</p>
+					<p className="text-xl text-left p-4">Stworzymy back-end [...]</p>
 				</div>
 			</div>
 			<Link to="/contact">

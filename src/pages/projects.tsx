@@ -6,10 +6,17 @@ import Project from "../components/Project/Project";
 import PukPukMain from "../project-files/PukPuk/pukpukwebsite.png";
 import PukPukLeft from "../project-files/PukPuk/app.png";
 import PukPukRight from "../project-files/PukPuk/logo.png";
+import { Helmet } from "react-helmet";
 
 const Projects = () => {
 	return (
 		<div>
+			<Helmet>
+				<meta charSet="utf-8" />
+				<title>
+					Parlour Development - Nasze projekty!
+				</title>
+			</Helmet>
 			<Navbar />
 			<Project
 				title="PukPuk - aplikacja mobilna do zamawiania usług"
