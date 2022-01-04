@@ -24,9 +24,11 @@ const Navbar = () => {
 					Cennik
 				</div>
 				</Link>
+				<Link to="/contact">
 				<div className="animate__animated animate__fadeInRight animate__faster mx-1 sm:mx-4 sm:mr-6 font-sans font-bold px-4 sm:px-6 py-2 bg-gray-300 rounded-xl text-white hover:scale-105 hover:drop-shadow-lg duration-300">
 					Kontakt
 				</div>
+				</Link>
 			</div>
 		</div>
 	);
