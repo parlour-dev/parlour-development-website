@@ -62,7 +62,7 @@ const Project = (props: any) => {
 								/>
 							</div>
 						</div>
-						<a href={props.codeLink}>
+						<a href={props.codeLink} target='_blank' rel='noopener'>
 							<p className="font-bold text-2xl text-white bg-green-400 px-6 py-2 m-2 rounded-xl hover:scale-105 hover:drop-shadow-lg duration-300">
 								Zobacz kod
 							</p>
@@ -80,12 +80,16 @@ const Project = (props: any) => {
 						<p className="text-lg">{props.techStack}</p>
 						<br />
 
-						<p className="font-bold text-2xl">Case study</p>
-						<p className="text-lg">{props.caseStudy}</p>
-						<br />
-						<br />
+
 					</div>
+					
 				</div>
+				<p className="font-bold text-2xl">Case study</p>
+						<p className="text-lg mx-[10%] text-justify">{props.caseStudyP1}</p>
+						<br />
+						<p className="text-lg mx-[10%] text-justify">{props.caseStudyP2}</p>
+						<br />
+						<br />
 			</div>
 		</div>
 	);

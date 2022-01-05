@@ -31,7 +31,7 @@ const PackageBox = () => {
 				</div>
 				<div className="mx-auto md:mx-0 w-72 my-[2.5vh] h-[60vh] bg-gray-100 rounded-2xl md:rounded-none md:rounded-r-2xl drop-shadow">
 					<p className="text-4xl text-justify p-4 font-semibold">Back-end</p>
-					<p className="text-xl text-left p-4">Stworzymy back-end [...]</p>
+					<p className="text-xl text-left p-4">Stworzymy zaplecze twojego projektu. Użyjemy najlepszej technologii oraz sprawimy, aby back-end był odporny na ataki. <br /> <br />Jeszcze jedno - będzie bardzo szybki.</p>
 				</div>
 			</div>
 			<Link to="/contact">

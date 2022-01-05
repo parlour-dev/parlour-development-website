@@ -25,7 +25,7 @@ const contact = () => {
 					<p className="text-2xl sm:text-4xl text-white font-bold">
 						kontakt@parlour.dev
 						<br />
-						+48 731 563 264
+						+48 511 610 544
 					</p>
 				</div>
 				<br />
