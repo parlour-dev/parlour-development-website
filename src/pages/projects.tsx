@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Navbar from "../components/Navbar/Navbar";
 import Project from "../components/Project/Project";
 
@@ -6,10 +7,12 @@ import Project from "../components/Project/Project";
 import PukPukMain from "../project-files/PukPuk/pukpukwebsite.png";
 import PukPukLeft from "../project-files/PukPuk/app.png";
 import PukPukRight from "../project-files/PukPuk/logo.png";
+
+// Kolor imports
 import KolorMain from "../project-files/Kolor/kolorDapp.png";
 import KolorLeft from "../project-files/Kolor/kolorLanding.png";
 import KolorLogo from "../project-files/Kolor/kolorLogo.png";
-import { Helmet } from "react-helmet";
+
 
 const Projects = () => {
 	return (
@@ -33,6 +36,7 @@ const Projects = () => {
 				mainImage={PukPukMain}
 				leftImage={PukPukLeft}
 				rightImage={PukPukRight}
+				id='pukpuk'
 			/>
 			<Project
 				title="Kolor - blockchainowe social media (Dapp)"
@@ -51,6 +55,7 @@ const Projects = () => {
 				mainImage={KolorMain}
 				leftImage={KolorLeft}
 				rightImage={KolorLogo}
+				id="kolor"
 			/>
 		</div>
 	);

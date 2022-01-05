@@ -4,6 +4,7 @@ import LandingBox from "../components/LandingBox/LandingBox";
 import downArrow from "../images/downArrow.png";
 import ProjectsBox from "../components/ProjectsBox/ProjectsBox";
 import PukPukLeft from "../project-files/PukPuk/app.png";
+import KolorLeft from '../project-files/Kolor/kolorLanding.png';
 import OfferBox from "../components/OfferBox/OfferBox";
 import PackageBox from "../components/PackageBox/PackageBox";
 import { Helmet } from "react-helmet";
@@ -20,7 +21,7 @@ const IndexPage = () => {
 			<Navbar />
 			<LandingBox />
 			<img className="w-4 mx-auto" src={downArrow} alt="down arrow" />
-			<ProjectsBox Image1={PukPukLeft} />
+			<ProjectsBox Image1={PukPukLeft} Image2={KolorLeft} />
 			<PackageBox />
 			<OfferBox />
 		</>
