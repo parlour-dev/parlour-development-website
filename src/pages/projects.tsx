@@ -15,6 +15,7 @@ import KolorLogo from "../project-files/Kolor/kolorLogo.png";
 
 
 const Projects = () => {
+
 	return (
 		<div>
 			<Helmet>

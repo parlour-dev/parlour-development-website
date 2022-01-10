@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import Popup from "./Popup";
 
+// AOS import
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+import { useEffect } from "react";
+
 type PopupPhotoType = "main" | "left" | "right";
 
 const Project = (props: any) => {
@@ -11,6 +16,11 @@ const Project = (props: any) => {
 	const togglePopup = () => {
 		setIsOpen(!isOpen);
 	};
+
+	useEffect(() => {
+		AOS.init();
+		AOS.refresh();
+	}, []);
 
 	return (
 		<div>
@@ -23,6 +33,7 @@ const Project = (props: any) => {
 			{isOpen && popupPhoto === "right" && (
 				<Popup handleClose={togglePopup} image={props.rightImage} />
 			)}
+			<div data-aos="zoom-in-down" data-aos-duration="1000">
 			<div className="font-sans w-auto min-h-[90vh] bg-white rounded-2xl mx-4 my-4 drop-shadow-sm">
 				<p className="font-bold pt-10 text-4xl">{props.title}</p>
 				<div className="flex flex-col lg:flex-row mx-[10%] mt-10">
@@ -90,6 +101,7 @@ const Project = (props: any) => {
 						<p className="text-lg mx-[10%] text-justify">{props.caseStudyP2}</p>
 						<br />
 						<br />
+			</div>
 			</div>
 		</div>
 	);
