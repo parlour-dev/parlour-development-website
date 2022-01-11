@@ -25,7 +25,7 @@ const IndexPage = () => {
 			<Helmet>
 				<meta charSet="utf-8" />
 				<title>
-					Parlour Development - Zbudujemy Twoją wymarzoną aplikację!
+					Parlour Development - We'll build your dream app!
 				</title>
 			</Helmet>
 			<Navbar />

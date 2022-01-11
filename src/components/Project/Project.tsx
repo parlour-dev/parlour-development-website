@@ -75,19 +75,29 @@ const Project = (props: any) => {
 						</div>
 						<a href={props.codeLink} target='_blank' rel='noopener'>
 							<p className="font-bold text-2xl text-white bg-green-400 px-6 py-2 m-2 rounded-xl hover:scale-105 hover:drop-shadow-lg duration-300">
-								Zobacz kod
+								{/* Zobacz kod */}
+								Browse code
 							</p>
 						</a>
 					</div>
 					<div className="px-4 text-left flex flex-col items-baseline">
-						<p className="font-bold text-2xl">Opis</p>
+						<p className="font-bold text-2xl">
+							{/* Opis */}
+							Descrition
+							</p>
 						<p className="text-lg">{props.description}</p>
 						<br />
-						<p className="font-bold text-2xl">Co wykonaliśmy?</p>
+						<p className="font-bold text-2xl">
+							{/* Co wykonaliśmy? */}
+							What did we build??
+							</p>
 						<p className="text-lg">{props.whatDidWeBuild}</p>
 
 						<br />
-						<p className="font-bold text-2xl">Technologie (Tech Stack)</p>
+						<p className="font-bold text-2xl">
+							{/* Technologie (Tech Stack) */}
+							Tech stack
+							</p>
 						<p className="text-lg">{props.techStack}</p>
 						<br />
 

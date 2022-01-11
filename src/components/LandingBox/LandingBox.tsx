@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Blur from "./img/blur.png";
 import Leaf from "./img/leaf.png";
 import Leaf2 from "./img/leaf2.png";
@@ -8,6 +8,10 @@ import Cursor from "./img/cursor.png";
 import "animate.css";
 
 const LandingBox = () => {
+
+	// const [titleIndex, setTitleIndex] = useState(0);
+	// const titles = ['dream', 'lightning fast', 'smooth', 'secure']
+
 	return (
 		<div className="w-auto min-h-[70vh] bg-white rounded-2xl mx-4 my-4 drop-shadow-sm flex items-center justify-center flex-col align-middle">
 			<img
@@ -41,10 +45,10 @@ const LandingBox = () => {
 				alt="Cursor icon"
 			/>
 			<span className="z-50 absolute text-3xl sm:text-5xl md:text-7xl font-black mx-auto font-sans animate__animated animate__zoomIn">
-				Zbudujemy Twoją wymarzoną aplikację
+				We will build your dream web app
 			</span>
 			<span className="z-50 absolute text-md sm:text-xl mt-40 font-black mx-auto font-sans animate__animated animate__zoomIn animate__bounce animate__delay-1s">
-				I zrobimy to dobrze.
+				And we'll do it right.
 			</span>
 		</div>
 	);

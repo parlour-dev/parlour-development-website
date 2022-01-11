@@ -24,22 +24,6 @@ const Projects = () => {
 			</Helmet>
 			<Navbar />
 			<Project
-				title="PukPuk - aplikacja mobilna do zamawiania usług"
-				description="Projekt polegał na stworzeniu od zera kompletnej aplikacji mobilnej, która służyła do oferowania usług i korzystania z usług innych użytkowników."
-				whatDidWeBuild="Prace wstępne nad wyborem techologii oraz architekturą aplikacji. Front-end aplikacji z użyciem React Native oraz back-end wykonany z użyciem Golang i AWS."
-				techStack="React Native, TypeScript, StyledComponents, CSS, Golang. Oprócz tego stworzenie strony internetowej ukazującej aplikację oraz przekierowującą do jej pobrania."
-				// codeButton="{opacity: 100}"
-				codeLink="https://github.com/parlour-dev/pukpuk"
-				caseStudyP1="Otrzymaliśmy zlecenie na wykonanie aplikacji mobilnej od pomysłu do gotowego produktu. Mieliśmy pełną dowolność w kwestii wyboru techonologii, w której zbudujemy aplikację, 
-                  wymogiem było to, aby działała ona zarówno na iOS, jak i Androidzie. Prace zaczęliśmy od wykonania kilku mockupów aplikacji, 
-                  aby wybrać kierunek wizualny którym aplikacja będzie podążać. Zdecydowaliśmy się na UI w jasnych kolorach z mocnymi, pomarańczowymi akcentami. 
-                  Tak, aby całość była spójna z logo PukPuk. Następnie równolegle rozpoczęły się prace nad implementacją front-endu i back-end."
-				mainImage={PukPukMain}
-				leftImage={PukPukLeft}
-				rightImage={PukPukRight}
-				id='pukpuk'
-			/>
-			<Project
 				title="Kolor - blockchainowe social media (Dapp)"
 				description="Projekt polegał na zaprojektowaniu oraz napisaniu platformy społecznościowej zintegrowanej z blockchainem.
 				Integracja z portfelem kryptowalut MetaMask pozwala na umieszczenie swojego wpisu na blockchainie bądź zmintowanie go jako NFT."
@@ -58,6 +42,29 @@ const Projects = () => {
 				rightImage={KolorLogo}
 				id="kolor"
 			/>
+			<Project
+				// title="PukPuk - aplikacja mobilna do zamawiania usług"
+				title='PukPuk - mobile app for ordering services'
+				// description="Projekt polegał na stworzeniu od zera kompletnej aplikacji mobilnej, która służyła do oferowania usług i korzystania z usług innych użytkowników."
+				description='The project consisted of creating a mobile app, which lets users offer and use various services. Mukluk was created from scratch by us.'
+				// whatDidWeBuild="Prace wstępne nad wyborem techologii oraz architekturą aplikacji. Front-end aplikacji z użyciem React Native oraz back-end wykonany z użyciem Golang i AWS."
+				whatDidWeBuild='We chose the tech stack and the app architecture. Front-end was written in React Native while back-end was created using Golang and AWS.'
+				// techStack="React Native, TypeScript, StyledComponents, CSS, Golang. Oprócz tego stworzenie strony internetowej ukazującej aplikację oraz przekierowującą do jej pobrania."
+				techStack="React Native, TypeScript, StyledComponents, CSS, Golang. We also built an HTML / CSS landing page for the project."
+
+				// codeButton="{opacity: 100}"
+				codeLink="https://github.com/parlour-dev/pukpuk"
+				// caseStudyP1="Otrzymaliśmy zlecenie na wykonanie aplikacji mobilnej od pomysłu do gotowego produktu. Mieliśmy pełną dowolność w kwestii wyboru techonologii, w której zbudujemy aplikację, 
+                //   wymogiem było to, aby działała ona zarówno na iOS, jak i Androidzie. Prace zaczęliśmy od wykonania kilku mockupów aplikacji, 
+                //   aby wybrać kierunek wizualny którym aplikacja będzie podążać. Zdecydowaliśmy się na UI w jasnych kolorach z mocnymi, pomarańczowymi akcentami. 
+                //   Tak, aby całość była spójna z logo PukPuk. Następnie równolegle rozpoczęły się prace nad implementacją front-endu i back-end."
+				caseStudyP1="We've been commissioned to design both the product and the app. We had full freedom of choosing the tech stack. There was only a single condition, the app was meant to work on both iOS and Android devices. The work began from creating a few mockups of the app, in order to choose the proper visual identification. We settled on a UI which was based on bright colors, with strong orange accents. That way, the entirety was consistent with the PukPuk logo.  Simultaneously, work began on implementing the front-end and the back-end."
+				mainImage={PukPukMain}
+				leftImage={PukPukLeft}
+				rightImage={PukPukRight}
+				id='pukpuk'
+			/>
+
 		</div>
 	);
 };
