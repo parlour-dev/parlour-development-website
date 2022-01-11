@@ -33,23 +33,23 @@ const OfferBox = () => {
 					<div className='w-8/12 h-12 my-2 bg-white drop-shadow text-xl font-bold flex items-center justify-center rounded-xl'>Portfolio</div>
                     <div className='w-8/12 h-12 my-2 bg-white drop-shadow text-xl font-bold flex items-center justify-center rounded-xl'>
 						{/* Sklep internetowy */}
-						E-commerce store
+						E-commerce stores
 						</div>
                     <div className='w-8/12 h-12 my-2 bg-white drop-shadow text-xl font-bold flex items-center justify-center rounded-xl'>
 						{/* Aplikację mobilną */}
-						Mobile app
+						Mobile apps
 						</div>
                     <div className='w-8/12 h-12 my-2 bg-white drop-shadow text-xl font-bold flex items-center justify-center rounded-xl'>
 						{/* Grę komputerową */}
-						Video game
+						Video games
 						</div>
                     <div className='w-8/12 h-12 my-2 bg-white drop-shadow text-xl font-bold flex items-center justify-center rounded-xl'>
 						{/* Kryptowalutę */}
-						Cryptocurrency
+						Cryptocurrencies
 						</div>
                     <div className='w-8/12 h-12 my-2 bg-white drop-shadow text-xl font-bold flex items-center justify-center rounded-xl'>
 						{/* Bazę danych */}
-						Database
+						Databases
 						</div>
                     <div className='w-8/12 h-12 mt-2 mb-10 bg-white drop-shadow text-xl font-bold flex items-center justify-center rounded-xl'>
 						{/* I wiele więcej */}
