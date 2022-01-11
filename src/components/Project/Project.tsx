@@ -83,13 +83,13 @@ const Project = (props: any) => {
 					<div className="px-4 text-left flex flex-col items-baseline">
 						<p className="font-bold text-2xl">
 							{/* Opis */}
-							Descrition
+							Description
 							</p>
 						<p className="text-lg">{props.description}</p>
 						<br />
 						<p className="font-bold text-2xl">
 							{/* Co wykonaliśmy? */}
-							What did we build??
+							What did we build?
 							</p>
 						<p className="text-lg">{props.whatDidWeBuild}</p>
 
