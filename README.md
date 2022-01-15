@@ -1,54 +1,31 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  <a href="https://kolor.social">
+    <img src="https://user-images.githubusercontent.com/75305759/149636509-b970d3f1-9ec3-4473-8e78-c13e43ab39f4.png" alt="Kolor logo" style="width: 40%; "/>
   </a>
 </p>
 <h1 align="center">
-  Gatsby minimal starter
+  parlour.dev website <br /> <br />
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" height="30rem"/> <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" height="30rem"/> <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" height="30rem"/> <img src="https://img.shields.io/badge/Gatsby-663399?style=for-the-badge&logo=gatsby&logoColor=white" height="30rem"/> <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" height="30rem"/>
 </h1>
 
-## 🚀 Quick start
+## 💡 The idea
+As parlour.dev, we needed a website to display our portfolio and showcase the services we offer. So we built one. 
 
-1.  **Create a Gatsby site.**
+<img src="https://user-images.githubusercontent.com/75305759/149637444-c6874eeb-aa9b-46c2-8d7f-915d3304454a.png" alt="Website screenshot" width=100%/>
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+## 🔗 Visit the website
+https://parlour.dev
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+## 💻 Tech stack
+* ReactJS
+* Gatsby
+* TailwindCSS
+* TypeScript
 
-2.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+## 🔨 How to build?
+1. Clone the repository <br />
+`git clone https://github.com/parlour-dev/parlour-development-website`
+2. Install dependencies <br />
+`npm install`
+3. Run <br />
+`npm start`
