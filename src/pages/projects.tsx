@@ -57,7 +57,7 @@ const Projects = () => {
 				// techStack="React Native, TypeScript, StyledComponents, CSS, Golang. Oprócz tego stworzenie strony internetowej ukazującej aplikację oraz przekierowującą do jej pobrania."
 				techStack="React Native, TypeScript, StyledComponents, CSS, Golang. We also built an HTML / CSS landing page for the project."
 				// codeButton="{opacity: 100}"
-				codeLink="https://github.com/parlour-dev/pukpuk"
+				codeLink="https://github.com/parlour-dev/pukpuk-public"
 				// caseStudyP1="Otrzymaliśmy zlecenie na wykonanie aplikacji mobilnej od pomysłu do gotowego produktu. Mieliśmy pełną dowolność w kwestii wyboru techonologii, w której zbudujemy aplikację,
 				//   wymogiem było to, aby działała ona zarówno na iOS, jak i Androidzie. Prace zaczęliśmy od wykonania kilku mockupów aplikacji,
 				//   aby wybrać kierunek wizualny którym aplikacja będzie podążać. Zdecydowaliśmy się na UI w jasnych kolorach z mocnymi, pomarańczowymi akcentami.
