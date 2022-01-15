@@ -35,7 +35,7 @@ const Project = (props: any) => {
 			)}
 			<div data-aos="zoom-in-down" data-aos-duration="1000">
 			<div className="font-sans w-auto min-h-[90vh] bg-white rounded-2xl mx-4 my-4 drop-shadow-sm">
-				<p className="font-bold pt-10 text-4xl">{props.title}</p>
+				<p className="font-bold pt-10 px-8 text-4xl">{props.title}</p>
 				<div className="flex flex-col lg:flex-row mx-[10%] mt-10">
 					<div className="mb-10">
 						<div className="transition hover:scale-105 hover:drop-shadow-2xl duration-500 sm:w-144 sm:m-2 h-60 m-1 rounded-3xl relative overflow-hidden drop-shadow">
