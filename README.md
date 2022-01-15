@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://kolor.social">
-    <img src="https://user-images.githubusercontent.com/75305759/149636509-b970d3f1-9ec3-4473-8e78-c13e43ab39f4.png" alt="Kolor logo" style="width: 40%; "/>
+  <a href="https://parlour.dev">
+    <img src="https://user-images.githubusercontent.com/75305759/149637841-70a60e9c-ef93-4c78-80c1-a6ea45856c97.png" width="100rem"/>
   </a>
 </p>
 <h1 align="center">
