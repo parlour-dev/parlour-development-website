@@ -45,7 +45,7 @@ const Project = (props: any) => {
 									togglePopup();
 								}}
 								src={props.mainImage}
-								alt="Main"
+								alt="Main picture showing the project"
 								className="absolute  object-cover w-[100%] h-[100%]"
 							/>
 						</div>
@@ -57,7 +57,7 @@ const Project = (props: any) => {
 										togglePopup();
 									}}
 									src={props.leftImage}
-									alt="Left"
+									alt="Left picture showing the project"
 									className="absolute scale-125 object-cover w-[100%] h-[100%]"
 								/>
 							</div>
@@ -68,7 +68,7 @@ const Project = (props: any) => {
 										togglePopup();
 									}}
 									src={props.rightImage}
-									alt="Right"
+									alt="Right picture showing the project"
 									className="absolute scale-125 object-cover w-[100%] h-[100%]"
 								/>
 							</div>

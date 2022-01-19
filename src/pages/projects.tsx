@@ -4,21 +4,21 @@ import Navbar from "../components/Navbar/Navbar";
 import Project from "../components/Project/Project";
 
 // PukPuk imports
-import PukPukMain from "../project-files/PukPuk/pukpukwebsite.png";
-import PukPukLeft from "../project-files/PukPuk/app.png";
-import PukPukRight from "../project-files/PukPuk/logo.png";
+import PukPukMain from "../project-files/PukPuk/pukpukwebsite.webp";
+import PukPukLeft from "../project-files/PukPuk/app.webp";
+import PukPukRight from "../project-files/PukPuk/logo.webp";
 
 // Kolor imports
-import KolorMain from "../project-files/Kolor/kolorDapp.png";
-import KolorLeft from "../project-files/Kolor/kolorLanding.png";
-import KolorLogo from "../project-files/Kolor/kolorLogo.png";
+import KolorMain from "../project-files/Kolor/kolorDapp.webp";
+import KolorLeft from "../project-files/Kolor/kolorLanding.webp";
+import KolorLogo from "../project-files/Kolor/kolorLogo.webp";
 
 const Projects = () => {
 	return (
 		<div>
 			<Helmet>
 				<meta charSet="utf-8" />
-				<title>Parlour Development - Nasze projekty!</title>
+				<title>Parlour Development - Our projects!</title>
 			</Helmet>
 			<Navbar />
 			<Project
