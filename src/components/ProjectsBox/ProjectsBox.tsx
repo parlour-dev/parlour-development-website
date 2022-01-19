@@ -35,7 +35,7 @@ const ProjectsBox = (props: any) => {
 						<Link to="/projects">
 							<img
 								src={props.Image1}
-								alt=" "
+								alt="A picture showing PukPuk - a platform for exchaining services we built"
 								className="absolute object-cover w-[100%] h-[100%]"
 							/>
 						</Link>
@@ -44,7 +44,7 @@ const ProjectsBox = (props: any) => {
 							<Link to="/projects#kolor">
 								<img
 									src={props.Image2}
-									alt=" "
+									alt="A picture showing Kolor - blockchain social media platform we built"
 									className="absolute object-cover w-[100%] h-[100%]"
 								/>
 							</Link>

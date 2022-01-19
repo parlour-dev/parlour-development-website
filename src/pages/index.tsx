@@ -1,10 +1,10 @@
 import * as React from "react";
 import Navbar from "../components/Navbar/Navbar";
 import LandingBox from "../components/LandingBox/LandingBox";
-import downArrow from "../images/downArrow.png";
+import downArrow from "../images/downArrow.webp";
 import ProjectsBox from "../components/ProjectsBox/ProjectsBox";
-import PukPukLeft from "../project-files/PukPuk/app.png";
-import KolorLeft from "../project-files/Kolor/kolorLanding.png";
+import PukPukLeft from "../project-files/PukPuk/app.webp";
+import KolorLeft from "../project-files/Kolor/kolorLanding.webp";
 import OfferBox from "../components/OfferBox/OfferBox";
 import PackageBox from "../components/PackageBox/PackageBox";
 import { Helmet } from "react-helmet";
@@ -30,7 +30,7 @@ const IndexPage = () => {
 			</Helmet>
 			<Navbar />
 			<LandingBox />
-			<img className="w-4 mx-auto" src={downArrow} alt="down arrow" />
+			<img className="w-4 mx-auto" src={downArrow} alt="An arrow pointing down" />
 			<div data-aos="zoom-in-down" data-aos-duration="1000">
 				<ProjectsBox Image1={PukPukLeft} Image2={KolorLeft} />
 			</div>

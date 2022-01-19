@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "./parlour-dev-logo-web.png";
+import Logo from "./parlour-dev-logo-web.webp";
 import { Link } from "gatsby";
 import 'animate.css';
 

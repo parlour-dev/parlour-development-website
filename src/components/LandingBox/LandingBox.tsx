@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Blur from "./img/blur.png";
-import Leaf from "./img/leaf.png";
-import Leaf2 from "./img/leaf2.png";
-import Chat from "./img/chat.png";
-import someComponent from "./img/someComponent.png";
-import Cursor from "./img/cursor.png";
+import Blur from "./img/blur.webp";
+import Leaf from "./img/leaf.webp";
+import Leaf2 from "./img/leaf2.webp";
+import Chat from "./img/chat.webp";
+import someComponent from "./img/someComponent.webp";
+import Cursor from "./img/cursor.webp";
 import "animate.css";
 
 const LandingBox = () => {
