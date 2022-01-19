@@ -24,6 +24,7 @@ const IndexPage = () => {
 		<>
 			<Helmet>
 				<meta charSet="utf-8" />
+				<meta name="description" content="Parlour Development - We'll build your dream web app / ecommerce store / portfolio / game / cryptocurrency"/>
 				<title>
 					Parlour Development - We'll build your dream app!
 				</title>
