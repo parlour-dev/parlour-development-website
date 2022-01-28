@@ -5,11 +5,9 @@ import Navbar from "../components/Navbar/Navbar";
 const contact = () => {
 	return (
 		<>
-		<Helmet>
+			<Helmet>
 				<meta charSet="utf-8" />
-				<title>
-					Parlour Development - Contact us!
-				</title>
+				<title>Parlour Development - Contact us!</title>
 			</Helmet>
 			<Navbar />
 			<div className="w-auto min-h-[90vh] bg-white rounded-2xl mx-4 my-4 drop-shadow-sm">

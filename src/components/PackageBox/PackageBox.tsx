@@ -41,7 +41,9 @@ const PackageBox = () => {
 					<p className="text-xl text-left p-4">
 						{/* Stworzymy zaplecze twojego projektu. Użyjemy najlepszej technologii
 						oraz sprawimy, aby back-end był odporny na ataki.  */}
-						We'll build the back-end of your project. We'll use the best technology and make sure the back-end does not have any vulnerabilities.
+						We'll build the back-end of your project. We'll use the best
+						technology and make sure the back-end does not have any
+						vulnerabilities.
 						<br /> <br />
 						{/* Jeszcze jedno - będzie bardzo szybki. */}
 						One more thing - it will be lightning fast.

@@ -9,23 +9,27 @@
 </h1>
 
 ## 💡 The idea
-As parlour.dev, we needed a website to display our portfolio and showcase the services we offer. So we built one. 
+
+As parlour.dev, we needed a website to display our portfolio and showcase the services we offer. So we built one.
 
 <img src="https://user-images.githubusercontent.com/75305759/149637444-c6874eeb-aa9b-46c2-8d7f-915d3304454a.png" alt="Website screenshot" width=100%/>
 
 ## 🔗 Visit the website
+
 https://parlour.dev
 
 ## 💻 Tech stack
-* ReactJS
-* Gatsby
-* TailwindCSS
-* TypeScript
+
+- ReactJS
+- Gatsby
+- TailwindCSS
+- TypeScript
 
 ## 🔨 How to build?
+
 1. Clone the repository <br />
-`git clone https://github.com/parlour-dev/parlour-development-website`
+   `git clone https://github.com/parlour-dev/parlour-development-website`
 2. Install dependencies <br />
-`npm install`
+   `npm install`
 3. Run <br />
-`npm start`
+   `npm start`

@@ -21,21 +21,28 @@ const PrivacyPolicy = () => {
 						technologiach oraz rozmiarach. Ciężko jest jednoznacznie
 						określić cenę projektu - do każdego klienta podchodzimy w pełni
 						indywidualnie, tak, aby idealnie dobrać technologię do jego potrzeb. */}
-						
-                        <p className="text-2xl font-bold m-5">What information is collected</p>
-                        <p className="text-2xl font-bold m-5">Where information is collected from</p>
-                        <p className="text-2xl font-bold m-5">Why information is collected</p>
-                        <p className="text-2xl font-bold m-5">How information is collected (including through cookies and other tracking technologies)</p>
-                        <p className="text-2xl font-bold m-5">Who information is shared with</p>
-                        Link to FB's and Firebase's privacy policy here.
-                        <p className="text-2xl font-bold m-5">What rights users have over their data</p>
-
-                         
-                        <p className="text-2xl font-bold m-5">The site's contact details</p>
-                        
-                        
-
-                        + in 2 languages
+						<p className="text-2xl font-bold m-5">
+							What information is collected
+						</p>
+						<p className="text-2xl font-bold m-5">
+							Where information is collected from
+						</p>
+						<p className="text-2xl font-bold m-5">
+							Why information is collected
+						</p>
+						<p className="text-2xl font-bold m-5">
+							How information is collected (including through cookies and other
+							tracking technologies)
+						</p>
+						<p className="text-2xl font-bold m-5">
+							Who information is shared with
+						</p>
+						Link to FB's and Firebase's privacy policy here.
+						<p className="text-2xl font-bold m-5">
+							What rights users have over their data
+						</p>
+						<p className="text-2xl font-bold m-5">The site's contact details</p>
+						+ in 2 languages
 						<br />
 						<br />
 						{/* Cena wykonania projektu zależy od kilku czynników: */}
