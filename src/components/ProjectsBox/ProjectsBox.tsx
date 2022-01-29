@@ -30,7 +30,7 @@ const ProjectsBox = (props: any) => {
 				</div>
 			</div> */}
 			<div className="w-auto mx-[20%] sm:mx-48 mt-48 flex flex-row justify-center flex-wrap-reverse">
-				<div className="flex flex-wrap flex-col sm:flex-row">
+				<div className="flex flex-col xl:flex-row">
 					<div className="transition hover:scale-105 hover:drop-shadow-2xl duration-500 w-64 sm:w-[37rem] h-60 m-2 rounded-3xl relative overflow-hidden drop-shadow">
 						<Link to="/projects">
 							<img
