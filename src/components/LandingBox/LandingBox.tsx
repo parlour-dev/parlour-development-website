@@ -43,10 +43,10 @@ const LandingBox = () => {
 				src={Cursor}
 				alt="Cursor icon"
 			/>
-			<span className="z-50 absolute text-3xl sm:text-5xl md:text-7xl font-black mx-auto font-sans animate__animated animate__zoomIn">
+			<span className="z-50 absolute text-3xl sm:text-5xl md:text-7xl font-bold mx-auto font-sans animate__animated animate__zoomIn">
 				We will build your dream web app
 			</span>
-			<span className="z-50 absolute text-md sm:text-xl mt-40 font-black mx-auto font-sans animate__animated animate__zoomIn animate__bounce animate__delay-1s">
+			<span className="z-50 absolute text-md sm:text-xl mt-40 font-semibold mx-auto font-sans animate__animated animate__zoomIn animate__bounce animate__delay-1s">
 				And we'll do it right.
 			</span>
 		</div>
