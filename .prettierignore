@@ -3,3 +3,4 @@ layout
 yarn.lock
 build
 public
+.cache

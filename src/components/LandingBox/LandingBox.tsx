@@ -8,7 +8,6 @@ import Cursor from "./img/cursor.webp";
 import "animate.css";
 
 const LandingBox = () => {
-
 	// const [titleIndex, setTitleIndex] = useState(0);
 	// const titles = ['dream', 'lightning fast', 'smooth', 'secure']
 

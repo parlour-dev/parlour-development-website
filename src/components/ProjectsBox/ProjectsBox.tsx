@@ -41,16 +41,15 @@ const ProjectsBox = (props: any) => {
 						</Link>
 					</div>
 					<div className="transition hover:scale-105 hover:drop-shadow-2xl duration-500 w-64 sm:w-[37rem] h-60 m-2 rounded-3xl relative overflow-hidden">
-							<Link to="/projects#kolor">
-								<img
-									src={props.Image2}
-									alt="A picture showing Kolor - blockchain social media platform we built"
-									className="absolute object-cover w-[100%] h-[100%]"
-								/>
-							</Link>
-						</div>
+						<Link to="/projects#kolor">
+							<img
+								src={props.Image2}
+								alt="A picture showing Kolor - blockchain social media platform we built"
+								className="absolute object-cover w-[100%] h-[100%]"
+							/>
+						</Link>
+					</div>
 				</div>
-
 			</div>
 		</div>
 	);
