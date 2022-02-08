@@ -10,7 +10,7 @@ const FurtherDevelopment = () => {
             <br />
 			<p className="text-2xl font-bold mt-16 px-4">Here's what we can do for you</p>
             <div className="w-[80%] md:w-96 h-20 bg-white rounded-3xl mx-auto mt-8 flex items-center justify-center shadow-3xl  shadow-cyan-500/40 ">
-                <p className="font-bold text-2xl">SEO Optimalization</p>
+                <p className="font-bold text-2xl">SEO Work</p>
             </div>
             <div className="w-[80%] md:w-96 h-20 bg-white rounded-3xl mx-auto mt-8 flex items-center justify-center shadow-3xl  shadow-emerald-500/40 ">
                 <p className="font-bold text-2xl">Further Development</p>
