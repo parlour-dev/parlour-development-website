@@ -18,32 +18,8 @@ const LandingBox = () => {
 				src={Blur}
 				alt=""
 			/>
-			<img
-				className="opacity-30 md:opacity-100 z-10 absolute w-16 sm:w-40 left-4 top-2 rotate-90"
-				src={Leaf2}
-				alt="Another Leaf"
-			/>
-			<img
-				className="opacity-30 md:opacity-100 z-10 absolute w-16 sm:w-40 left-6 bottom-2"
-				src={Leaf}
-				alt="Leaf"
-			/>
-			<img
-				className="opacity-30 md:opacity-100 z-10 absolute w-16 sm:w-40 right-[5%] bottom-10 -rotate-12"
-				src={Chat}
-				alt="Chat icon"
-			/>
-			<img
-				className="opacity-30 md:opacity-100 z-10 absolute w-16 sm:w-64 right-[15%] top-10 rotate-12"
-				src={someComponent}
-				alt="Component icon"
-			/>
-			<img
-				className="opacity-30 md:opacity-100 z-10 absolute w-16 sm:w-32 right-[30%] top-[60%]"
-				src={Cursor}
-				alt="Cursor icon"
-			/>
-			<span className="z-50 absolute text-3xl sm:text-5xl md:text-7xl font-bold mx-auto font-sans animate__animated animate__zoomIn">
+			
+			<span className="z-50 absolute text-3xl sm:text-5xl md:text-7xl font-semibold mx-auto font-sans animate__animated animate__zoomIn">
 				We will build your dream web app
 			</span>
 			<span className="z-50 absolute text-md sm:text-xl mt-40 font-semibold mx-auto font-sans animate__animated animate__zoomIn animate__bounce animate__delay-1s">

@@ -4,7 +4,7 @@ import React from "react";
 const ProjectsBox = (props: any) => {
 	return (
 		<div className="w-auto min-h-[90vh] bg-white rounded-2xl mx-4 my-4 drop-shadow-sm">
-			<p className="text-3xl sm:text-5xl pt-20 font-sans font-bold">
+			<p className="text-3xl sm:text-5xl pt-20 font-sans font-semibold">
 				Our projects
 			</p>
 			{/* <div className="w-auto mx-[20%] sm:mx-48 mt-20 flex flex-row justify-center flex-wrap-reverse">

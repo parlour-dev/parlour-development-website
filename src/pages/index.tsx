@@ -52,9 +52,6 @@ const IndexPage = () => {
 			<div data-aos="zoom-in-down" data-aos-duration="1000">
 				<OfferBox />
 			</div>
-			{/* <div data-aos="zoom-in-down" data-aos-duration="1000">
-				<WarrantyBox />
-			</div> */}
 			<div data-aos="zoom-in-down" data-aos-duration="1000">
 				<FurtherDevelopment />
 			</div>

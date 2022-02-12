@@ -1,81 +1,55 @@
 import React from "react";
+import {
+	MouseParallaxContainer,
+	MouseParallaxChild,
+} from "react-parallax-mouse";
+
+import ReactJS from "./img/react.png";
+import Firebase from "./img/firebase.png";
+import Javascript from "./img/javascript.png";
+import Go from "./img/go.png";
+import Python from "./img/python.png";
 
 const OfferBox = () => {
 	return (
 		<div className="w-auto min-h-[90vh] bg-white rounded-2xl mx-4 my-4 drop-shadow-sm">
-			<p className="text-3xl sm:text-5xl pt-20 font-sans font-bold">
-				{/* Co możemy stworzyć?  */}
-				What can we build?
+			<p className="text-3xl sm:text-5xl pt-20 font-sans font-semibold">
+				{/* Co możemy stworzyć?  */}A true fullstack
 			</p>
 			<br />
-			<div className="flex flex-col md:flex-row justify-center mx-auto md:mx-[20%]">
-				<div className="flex flex-col justify-center items-center w-[80%] xl:w-6/12 min-h-[70vh] mx-auto my-10 md:ml-0 md:m-8 bg-gray-100 rounded-3xl drop-shadow-sm">
-					<p className="text-xl sm:text-3xl pt-4 px-2 font-sans font-bold">
-						{/* Używamy */}
-						We're using
-					</p>
-					<div className="w-8/12 h-12 my-2 bg-white drop-shadow text-xl font-bold flex items-center justify-center p-2 rounded-xl">
-						ReactJS
+			<MouseParallaxContainer className="min-h-[80vh]">
+				<MouseParallaxChild factorX={0.05} factorY={0.05}>
+					<div className="w-[80%] md:w-80 h-20 rounded-3xl mx-auto lg:ml-[30%] mt-8 lg:mt-[4rem] flex items-center justify-center shadow-3xl  shadow-green-500/50 hover:shadow-indigo-100/70 transition ease-in-out duration-300 hover:scale-110">
+						<p className="font-semibold text-2xl">Golang</p>
 					</div>
-					<div className="w-8/12 h-12 my-2 bg-white drop-shadow text-xl font-bold flex items-center justify-center p-2 rounded-xl">
-						React Native
+				</MouseParallaxChild>
+				<MouseParallaxChild factorX={0.07} factorY={0.08}>
+					<div className="w-[80%] md:w-80 h-20 rounded-3xl mx-auto lg:ml-[65%] mt-8 lg:mt-[-1rem] flex items-center justify-center shadow-3xl  shadow-indigo-500/50 hover:shadow-indigo-100/70 transition ease-in-out duration-300 hover:scale-110">
+						<p className="font-semibold text-2xl">ReactJS</p>
 					</div>
-					<div className="w-8/12 h-12 my-2 bg-white drop-shadow text-lg font-bold flex items-center justify-center p-2 rounded-xl">
-						JavaScript & TypeScript
+				</MouseParallaxChild>
+				<MouseParallaxChild factorX={0.07} factorY={0.08}>
+					<div className="w-[80%] md:w-80 h-20 rounded-3xl mx-auto lg:ml-[5%] lg:mb-10 mt-8 lg:mt-[-1rem] flex items-center justify-center shadow-3xl  shadow-teal-500/50 hover:shadow-indigo-100/70 transition ease-in-out duration-300 hover:scale-110">
+						<p className="font-semibold text-2xl">Google Firebase</p>
 					</div>
-					<div className="w-8/12 h-12 my-2 bg-white drop-shadow text-xl font-bold flex items-center justify-center p-2 rounded-xl">
-						HTML & CSS
+				</MouseParallaxChild>
+				<MouseParallaxChild factorX={0.07} factorY={0.08}>
+					<div className="w-[80%] md:w-80 h-20 rounded-3xl mx-auto lg:ml-[40%] mt-8 lg:mt-[-1rem] flex items-center justify-center shadow-3xl  shadow-emerald-500/50 hover:shadow-indigo-100/70 transition ease-in-out duration-300 hover:scale-110">
+						<p className="font-semibold text-2xl">JavaScript</p>
 					</div>
-					<div className="w-8/12 h-12 my-2 bg-white drop-shadow text-xl font-bold flex items-center justify-center p-2 rounded-xl">
-						NodeJS
+				</MouseParallaxChild>
+
+				<MouseParallaxChild factorX={0.1} factorY={0.08}>
+					<div className="w-[80%] md:w-80 h-20 rounded-3xl mx-auto lg:ml-[15%] mb-10 mt-8 lg:mt-[-1rem] flex items-center justify-center shadow-3xl  shadow-sky-500/50 hover:shadow-indigo-100/70 transition ease-in-out duration-300 hover:scale-110">
+						<p className="font-semibold text-2xl">TypeScript</p>
 					</div>
-					<div className="w-8/12 h-12 my-2 bg-white drop-shadow text-xl font-bold flex items-center justify-center p-2 rounded-xl">
-						Python
+				</MouseParallaxChild>
+				<MouseParallaxChild factorX={0.1} factorY={0.08}>
+					<div className="w-[80%] md:w-80 h-20 rounded-3xl mx-auto lg:ml-[62%] mb-10 mt-8 lg:mt-[-1rem] flex items-center justify-center shadow-3xl  shadow-green-400/50 hover:shadow-indigo-100/70 transition ease-in-out duration-300 hover:scale-110">
+						<p className="font-semibold text-2xl">Solidity</p>
 					</div>
-					<div className="w-8/12 h-12 my-2 bg-white drop-shadow text-xl font-bold flex items-center justify-center p-2 rounded-xl">
-						Golang
-					</div>
-					<div className="w-8/12 h-12 mt-2 mb-10 bg-white drop-shadow text-xl font-bold flex items-center justify-center rounded-xl">
-						C++
-					</div>
-				</div>
-				<div className="flex flex-col justify-center items-center w-[80%] xl:w-6/12 min-h-[70vh] my-10 md:mr-0 md:m-8 mx-auto bg-green-400 rounded-3xl drop-shadow-sm">
-					<p className="text-xl sm:text-3xl text-white pt-4 px-2 font-sans font-bold">
-						{/* Stworzymy */}
-						We'll build
-					</p>
-					<div className="w-8/12 h-12 my-2 bg-white drop-shadow text-xl font-bold flex items-center justify-center rounded-xl">
-						Landing pages
-					</div>
-					<div className="w-8/12 h-12 my-2 bg-white drop-shadow text-xl font-bold flex items-center justify-center rounded-xl">
-						Portfolios
-					</div>
-					<div className="w-8/12 h-12 my-2 bg-white drop-shadow text-lg font-bold flex items-center justify-center rounded-xl">
-						{/* Sklep internetowy */}
-						E-commerce stores
-					</div>
-					<div className="w-8/12 h-12 my-2 bg-white drop-shadow text-xl font-bold flex items-center justify-center rounded-xl">
-						{/* Aplikację mobilną */}
-						Mobile apps
-					</div>
-					<div className="w-8/12 h-12 my-2 bg-white drop-shadow text-xl font-bold flex items-center justify-center rounded-xl">
-						{/* Grę komputerową */}
-						Video games
-					</div>
-					<div className="w-8/12 h-12 my-2 bg-white drop-shadow text-lg font-bold flex items-center justify-center rounded-xl">
-						{/* Kryptowalutę */}
-						Cryptocurrencies
-					</div>
-					<div className="w-8/12 h-12 my-2 bg-white drop-shadow text-xl font-bold flex items-center justify-center rounded-xl">
-						{/* Bazę danych */}
-						Databases
-					</div>
-					<div className="w-8/12 h-12 mt-2 mb-10 bg-white drop-shadow text-xl font-bold flex items-center justify-center rounded-xl">
-						{/* I wiele więcej */}
-						And even more!
-					</div>
-				</div>
-			</div>
+				</MouseParallaxChild>
+			</MouseParallaxContainer>
 		</div>
 	);
 };

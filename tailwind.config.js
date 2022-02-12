@@ -7,7 +7,7 @@ module.exports = {
 			},
 		},
 		fontFamily: {
-			sans: ["Raleway", "Roboto", "Lato"],
+			sans: ["Sora", "Roboto", "Lato"],
 		},
 	},
 	plugins: [],
