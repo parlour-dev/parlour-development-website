@@ -40,6 +40,7 @@ const IndexPage = () => {
 				src={downArrow}
 				alt="An arrow pointing down"
 			/>
+
 			<div data-aos="zoom-in-down" data-aos-duration="1000">
 				<ProjectsBox Image1={PukPukLeft} Image2={KolorLeft} />
 			</div>
