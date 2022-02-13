@@ -8,7 +8,7 @@ const LandingBox = () => {
 
 	return (
 		<div className="w-auto min-h-[84vh] bg-white rounded-2xl mx-4 my-4 drop-shadow-sm flex items-center justify-between flex-col align-middle">
-			<p className="text-3xl sm:text-5xl md:text-8xl mt-32 mb-32 px-8 font-bold font-sans text-transparent bg-clip-text bg-gradient-to-r bg-radial-at-tl from-sky-400 via-green-400 to-teal-400">
+			<p className="text-5xl md:text-8xl mt-32 mb-32 px-8 font-bold font-sans text-transparent bg-clip-text bg-gradient-to-r bg-radial-at-tl from-sky-400 via-green-400 to-teal-400">
 				We will build your dream web app
 			</p>
 			<div
@@ -18,7 +18,7 @@ const LandingBox = () => {
 				<div className="bg-white h-[100%] rounded-t-2xl">
 					{codeExample === "parlour" && (
 						<div>
-							<div className="flex flex-row justify-around w-[100%] text-stone-500 font-monospace text-[0px] sm:text-lg">
+							<div className="flex flex-row justify-around w-[100%] text-stone-500 font-monospace text-[0.8rem] sm:text-lg">
 								<div className="w-4/12 h-10 flex justify-center items-center bg-white rounded-tl-2xl" onClick={() => {setCodeExample("parlour")}}>
 									Parlour.tsx
 								</div>
@@ -181,7 +181,7 @@ const LandingBox = () => {
 					)}
 					{codeExample === "script" && (
 						<div>
-							<div className="flex flex-row justify-around w-[100%] text-stone-500 font-monospace text-[0px] sm:text-lg">
+							<div className="flex flex-row justify-around w-[100%] text-stone-500 font-monospace text-[0.8rem] sm:text-lg">
 								<div className="w-4/12 h-10 flex justify-center items-center bg-[#f5f5f5] rounded-tl-2xl cursor-pointer" onClick={() => {setCodeExample("parlour")}}>
 									Parlour.tsx
 								</div>
@@ -199,7 +199,7 @@ const LandingBox = () => {
 					)}
 					{codeExample === "less" && (
 						<div>
-							<div className="flex flex-row justify-around w-[100%] text-stone-500 font-monospace text-[0px] sm:text-lg">
+							<div className="flex flex-row justify-around w-[100%] text-stone-500 font-monospace text-[0.8rem] sm:text-lg">
 								<div className="w-4/12 h-10 flex justify-center items-center bg-[#f5f5f5] rounded-tl-2xl cursor-pointer" onClick={() => {setCodeExample("parlour")}}>
 									Parlour.tsx
 								</div>
