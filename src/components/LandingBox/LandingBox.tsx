@@ -203,10 +203,10 @@ const LandingBox = () => {
 								<div className="w-4/12 h-10 flex justify-center items-center bg-[#f5f5f5] rounded-tl-2xl cursor-pointer" onClick={() => {setCodeExample("parlour")}}>
 									Parlour.tsx
 								</div>
-								<div className="w-4/12 h-10 flex justify-center items-center bg-[#f5f5f5] border-x-[1px] border-stone-200" onClick={() => {setCodeExample("script")}}>
+								<div className="w-4/12 h-10 flex justify-center items-center bg-[#f5f5f5] border-x-[1px] border-stone-200 cursor-pointer" onClick={() => {setCodeExample("script")}}>
 									Script.py
 								</div>
-								<div className="w-4/12 h-10 flex justify-center items-center bg-white rounded-tr-2xl cursor-pointer" onClick={() => {setCodeExample("less")}}>
+								<div className="w-4/12 h-10 flex justify-center items-center bg-white rounded-tr-2xl" onClick={() => {setCodeExample("less")}}>
 									Less.go
 								</div>
 							</div>
