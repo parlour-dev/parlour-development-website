@@ -527,7 +527,321 @@ const LandingBox = () => {
 									Less.go
 								</div>
 							</div>
-							<div className="text-left ml-2 mt-2 font-monospace truncate"></div>
+							<div className="text-left ml-2 mt-2 font-monospace truncate">
+								<div className="flex flex-row">
+									<TypeAnimation
+										cursor={false}
+										sequence={["package"]}
+										wrapper="h2"
+										className="text-red-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[400, "main"]}
+										wrapper="h2"
+										className="ml-2 text-stone-500"
+									/>
+								</div>
+								<div className="flex flex-row">
+									<TypeAnimation
+										cursor={false}
+										sequence={[600, "import"]}
+										wrapper="h2"
+										className="text-red-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[800, "("]}
+										wrapper="h2"
+										className="ml-2 text-stone-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[1000, "'context' 'fmt' 'os' "]}
+										wrapper="h2"
+										className="ml-2 text-blue-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[2000, ")"]}
+										wrapper="h2"
+										className="ml-2 text-stone-500"
+									/>
+								</div>
+								<div className="flex flex-row">
+									<TypeAnimation
+										cursor={false}
+										sequence={[2200, "func"]}
+										wrapper="h2"
+										className="text-red-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[2500, "main"]}
+										wrapper="h2"
+										className="ml-2 text-purple-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[2700, "() {"]}
+										wrapper="h2"
+										className="ml-2 text-stone-500"
+									/>
+								</div>
+								<div className="flex flex-row">
+									<TypeAnimation
+										cursor={false}
+										sequence={[3000, "c"]}
+										wrapper="h2"
+										className="ml-8 text-stone-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[3200, ":="]}
+										wrapper="h2"
+										className="ml-2 text-blue-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[3400, "NewGithubClientWithToken"]}
+										wrapper="h2"
+										className="ml-2 text-purple-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[4600, "(os."]}
+										wrapper="h2"
+										className="ml-2 text-stone-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[5000, "Getenv"]}
+										wrapper="h2"
+										className="ml-2 text-purple-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[5400, "("]}
+										wrapper="h2"
+										className="ml-2 text-stone-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[5600, "'GITHUB_NOTIFICATIONS_TOKEN'"]}
+										wrapper="h2"
+										className="text-blue-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[7000, "))"]}
+										wrapper="h2"
+										className="text-stone-500"
+									/>
+								</div>
+								<div className="flex flex-row">
+									<TypeAnimation
+										cursor={false}
+										sequence={[7400, "notifs, err"]}
+										wrapper="h2"
+										className="ml-8 text-stone-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[8000, ":="]}
+										wrapper="h2"
+										className="ml-2 text-blue-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[8400, "c."]}
+										wrapper="h2"
+										className="ml-2 text-stone-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[8600, "getNotifications"]}
+										wrapper="h2"
+										className="text-purple-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[9400, "(context."]}
+										wrapper="h2"
+										className="text-stone-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[10000, "Background"]}
+										wrapper="h2"
+										className="text-purple-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[10500, "())"]}
+										wrapper="h2"
+										className="text-stone-500"
+									/>
+								</div>
+								<div className="flex flex-row">
+									<TypeAnimation
+										cursor={false}
+										sequence={[11000, "if"]}
+										wrapper="h2"
+										className="ml-8 text-red-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[11200, "err"]}
+										wrapper="h2"
+										className="ml-2 text-stone-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[11500, "!= nil"]}
+										wrapper="h2"
+										className="ml-2 text-blue-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[12000, "{"]}
+										wrapper="h2"
+										className="ml-2 text-stone-500"
+									/>
+								</div>
+								<div className="flex flex-row">
+									<TypeAnimation
+										cursor={false}
+										sequence={[12200, "fmt."]}
+										wrapper="h2"
+										className="ml-16 text-stone-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[12700, "Print"]}
+										wrapper="h2"
+										className="text-purple-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[13200, "("]}
+										wrapper="h2"
+										className="text-stone-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[13200, "'%{B#FC4D44} ☠ %{B#-}'"]}
+										wrapper="h2"
+										className="text-blue-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[14500, ")"]}
+										wrapper="h2"
+										className="text-stone-500"
+									/>
+								</div>
+								<div className="flex flex-row">
+									<TypeAnimation
+										cursor={false}
+										sequence={[14800, "}"]}
+										wrapper="h2"
+										className="ml-8 text-stone-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[15000, "else if"]}
+										wrapper="h2"
+										className="ml-2 text-red-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[16000, "len"]}
+										wrapper="h2"
+										className="ml-2 text-purple-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[16500, "(notifs)"]}
+										wrapper="h2"
+										className="text-stone-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[17000, "> 0"]}
+										wrapper="h2"
+										className="ml-2 text-blue-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[17000, "{"]}
+										wrapper="h2"
+										className="ml-2 text-stone-500"
+									/>
+								</div>
+								<div className="flex flex-row">
+									<TypeAnimation
+										cursor={false}
+										sequence={[17200, "fmt."]}
+										wrapper="h2"
+										className="ml-16 text-stone-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[17500, "Printf"]}
+										wrapper="h2"
+										className="text-purple-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[18000, "("]}
+										wrapper="h2"
+										className="text-stone-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[
+											18200,
+											"'%%{B#FC4D44}%%{F#2E3436}  %d %%{F-}%%{B-}'",
+										]}
+										wrapper="h2"
+										className="text-blue-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[20000, ","]}
+										wrapper="h2"
+										className="text-stone-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[20200, "len"]}
+										wrapper="h2"
+										className="ml-2 text-purple-500"
+									/>
+									<TypeAnimation
+										cursor={false}
+										sequence={[20600, "(notifs))"]}
+										wrapper="h2"
+										className="ml-2 text-stone-500"
+									/>
+								</div>
+								<div className="flex flex-row">
+									<TypeAnimation
+										cursor={false}
+										sequence={[21500, "}"]}
+										wrapper="h2"
+										className="ml-8 text-stone-500"
+									/>
+								</div>
+								<div className="flex flex-row">
+									<TypeAnimation
+										cursor={false}
+										sequence={[21700, "}"]}
+										wrapper="h2"
+										className="text-stone-500"
+									/>
+								</div>
+							</div>
 						</div>
 					)}
 				</div>
