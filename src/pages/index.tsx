@@ -16,6 +16,7 @@ import { useEffect } from "react";
 import FurtherDevelopment from "../components/FurtherDevelopment/FurtherDevelopment";
 import WarrantyBox from "../components/WarrantyBox/WarrantyBox";
 import Blockchain from "../components/Blockchain/Blockchain";
+import Carousel from "../components/Carousel/Carousel";
 
 const IndexPage = () => {
 	useEffect(() => {
@@ -43,6 +44,9 @@ const IndexPage = () => {
 
 			<div data-aos="zoom-in-down" data-aos-duration="1000">
 				<ProjectsBox Image1={PukPukLeft} Image2={KolorLeft} />
+			</div>
+			<div data-aos="zoom-in-down" data-aos-duration="1000">
+				<Carousel />
 			</div>
 			<div data-aos="zoom-in-down" data-aos-duration="1000">
 				<Blockchain />
