@@ -51,7 +51,7 @@ const Projects = () => {
 				// title="PukPuk - aplikacja mobilna do zamawiania usług"
 				title="PukPuk - mobile app for ordering services"
 				// description="Projekt polegał na stworzeniu od zera kompletnej aplikacji mobilnej, która służyła do oferowania usług i korzystania z usług innych użytkowników."
-				description="The project consisted of creating a mobile app, which lets users offer and use various services. Mukluk was created from scratch by us."
+				description="The project consisted of creating a mobile app, which lets users offer and use various services. PukPuk was created from scratch by us."
 				// whatDidWeBuild="Prace wstępne nad wyborem techologii oraz architekturą aplikacji. Front-end aplikacji z użyciem React Native oraz back-end wykonany z użyciem Golang i AWS."
 				whatDidWeBuild="We chose the tech stack and the app architecture. Front-end was written in React Native while back-end was created using Golang and AWS."
 				// techStack="React Native, TypeScript, StyledComponents, CSS, Golang. Oprócz tego stworzenie strony internetowej ukazującej aplikację oraz przekierowującą do jej pobrania."
