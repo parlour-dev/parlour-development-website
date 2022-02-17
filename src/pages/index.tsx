@@ -49,9 +49,9 @@ const IndexPage = () => {
 			<div data-aos="zoom-in-down" data-aos-duration="1000">
 				<Rocket />
 			</div>
-			<div data-aos="zoom-in-down" data-aos-duration="1000">
+			{/* <div data-aos="zoom-in-down" data-aos-duration="1000">
 				<Carousel />
-			</div>
+			</div> */}
 			<div data-aos="zoom-in-down" data-aos-duration="1000">
 				<PackageBox />
 			</div>
