@@ -13,10 +13,11 @@ import { Helmet } from "react-helmet";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import { useEffect } from "react";
+
 import FurtherDevelopment from "../components/FurtherDevelopment/FurtherDevelopment";
 import WarrantyBox from "../components/WarrantyBox/WarrantyBox";
-import Blockchain from "../components/Blockchain/Blockchain";
 import Carousel from "../components/Carousel/Carousel";
+import Rocket from "../components/Rocket/Rocket";
 
 const IndexPage = () => {
 	useEffect(() => {
@@ -46,19 +47,16 @@ const IndexPage = () => {
 				<ProjectsBox Image1={PukPukLeft} Image2={KolorLeft} />
 			</div>
 			<div data-aos="zoom-in-down" data-aos-duration="1000">
-				<Carousel />
+				<Rocket />
 			</div>
 			<div data-aos="zoom-in-down" data-aos-duration="1000">
-				<Blockchain />
+				<Carousel />
 			</div>
 			<div data-aos="zoom-in-down" data-aos-duration="1000">
 				<PackageBox />
 			</div>
 			<div data-aos="zoom-in-down" data-aos-duration="1000">
 				<OfferBox />
-			</div>
-			<div data-aos="zoom-in-down" data-aos-duration="1000">
-				<FurtherDevelopment />
 			</div>
 		</>
 	);

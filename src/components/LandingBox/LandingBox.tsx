@@ -8,9 +8,12 @@ const LandingBox = () => {
 
 	return (
 		<div className="w-auto min-h-[84vh] bg-white rounded-2xl mx-4 my-4 drop-shadow-sm flex items-center justify-between flex-col align-middle">
-			<p className="text-5xl md:text-8xl mt-32 mb-32 px-8 font-bold font-sans text-transparent bg-clip-text bg-gradient-to-r bg-radial-at-tl from-sky-400 via-green-400 to-teal-400">
-				We will build your dream web app
-			</p>
+			<div className="flex flex-col items-center justify-between">
+				<p className="text-4xl md:text-7xl mt-32 px-8 font-bold font-sans text-transparent bg-clip-text bg-gradient-to-r bg-radial-at-tl from-sky-400 via-green-400 to-teal-400">
+					We will deliver your dream web app
+				</p>
+				<p className="font-semibold text-2xl mt-10">In time and fully working.</p>
+			</div>
 			<div
 				id="shadow"
 				className="bottom-0 w-[90%] lg:w-[55%] bg-red-500 h-[30rem] mx-auto rounded-t-2xl"
