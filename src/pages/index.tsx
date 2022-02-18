@@ -57,9 +57,6 @@ const IndexPage = () => {
 				<SplitSection />
 			</div>
 			<div data-aos="zoom-in-down" data-aos-duration="1000">
-				<PackageBox />
-			</div>
-			<div data-aos="zoom-in-down" data-aos-duration="1000">
 				<OfferBox />
 			</div>
 		</>
