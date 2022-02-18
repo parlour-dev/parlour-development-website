@@ -18,6 +18,7 @@ import FurtherDevelopment from "../components/FurtherDevelopment/FurtherDevelopm
 import WarrantyBox from "../components/WarrantyBox/WarrantyBox";
 import Carousel from "../components/Carousel/Carousel";
 import Rocket from "../components/Rocket/Rocket";
+import SplitSection from "../components/SplitSection/SplitSection";
 
 const IndexPage = () => {
 	useEffect(() => {
@@ -52,6 +53,9 @@ const IndexPage = () => {
 			{/* <div data-aos="zoom-in-down" data-aos-duration="1000">
 				<Carousel />
 			</div> */}
+			<div data-aos="zoom-in-down" data-aos-duration="1000">
+				<SplitSection />
+			</div>
 			<div data-aos="zoom-in-down" data-aos-duration="1000">
 				<PackageBox />
 			</div>
