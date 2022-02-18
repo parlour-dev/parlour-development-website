@@ -12,11 +12,11 @@ const LandingBox = () => {
 				<p className="text-4xl md:text-7xl mt-32 px-8 font-bold font-sans text-transparent bg-clip-text bg-gradient-to-r bg-radial-at-tl from-sky-400 via-green-400 to-teal-400">
 					We will deliver your dream web app
 				</p>
-				<p className="font-semibold text-2xl mt-10">In time and fully working.</p>
+				<p className="font-semibold text-2xl mt-10 mb-10">In time and fully working.</p>
 			</div>
 			<div
 				id="shadow"
-				className="bottom-0 w-[90%] lg:w-[55%] bg-red-500 h-[30rem] mx-auto rounded-t-2xl"
+				className="bottom-0 w-[90%] lg:w-[55%] h-[30rem] mx-auto rounded-t-2xl"
 			>
 				<div className="bg-white h-[100%] rounded-t-2xl">
 					{codeExample === "parlour" && (

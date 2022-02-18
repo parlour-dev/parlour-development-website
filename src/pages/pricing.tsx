@@ -54,11 +54,12 @@ const pricing = () => {
 						<p className="text-2xl text-left px-6 font-semibold ">
 						✔ Working on mobile and desktop
 						</p>
-						<p className="text-2xl text-left px-6 pt-6 font-semibold ">
+						<br />
+						<p className="text-2xl text-left px-6 font-semibold ">
 						✔ Lightning-fast
 						</p>
 						<br />
-						<p className="text-2xl text-left px-6 pt-6 font-semibold ">
+						<p className="text-2xl text-left px-6 font-semibold ">
 						✔ User friendly
 						</p>
 						<p className="text-2xl text-left px-6 pt-48 pb-6 font-semibold">From $5999</p>
