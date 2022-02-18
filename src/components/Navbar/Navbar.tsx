@@ -5,7 +5,7 @@ import "animate.css";
 
 const Navbar = () => {
 	return (
-		<div className="w-auto h-32 sm:h-20 bg-white rounded-2xl mx-4 my-4 drop-shadow-sm flex items-center sm:justify-between justify-center flex-col sm:flex-row">
+		<div className="w-auto h-36 sm:h-20 bg-white rounded-2xl mx-4 my-4 drop-shadow-sm flex items-center md:justify-between justify-center flex-col md:flex-row">
 			<Link to="/">
 				<img
 					className="h-10 sm:ml-6"
