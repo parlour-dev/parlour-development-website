@@ -14,7 +14,7 @@ const OfferBox = () => {
 	return (
 		<div className="w-auto min-h-[90vh] bg-white rounded-2xl mx-4 my-4 drop-shadow-sm">
 			<p className="text-3xl sm:text-5xl pt-20 font-sans font-semibold">
-				{/* Co możemy stworzyć?  */}A true fullstack
+				{/* Co możemy stworzyć?  */}💡 A true fullstack
 			</p>
 			<br />
 			<MouseParallaxContainer className="min-h-[80vh]">

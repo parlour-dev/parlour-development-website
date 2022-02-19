@@ -12,7 +12,7 @@ const LandingBox = () => {
 				<p className="text-4xl md:text-7xl mt-32 px-8 font-bold font-sans text-transparent bg-clip-text bg-gradient-to-r bg-radial-at-tl from-sky-400 via-green-400 to-teal-400">
 					We will deliver your dream web app
 				</p>
-				<p className="font-semibold text-2xl mt-10 mb-10">In time and fully working.</p>
+				<p className="font-semibold text-2xl mt-10 mb-10">💻 In time and fully working.</p>
 			</div>
 			<div
 				id="shadow"
@@ -142,7 +142,7 @@ const LandingBox = () => {
 									/>
 									<TypeAnimation
 										cursor={false}
-										sequence={[3300, "We'll build your software"]}
+										sequence={[3300, "We'll build your software 🔨"]}
 										wrapper="h2"
 										className="text-stone-500"
 									/>
