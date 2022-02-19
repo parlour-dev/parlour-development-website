@@ -56,7 +56,7 @@ const pricing = () => {
 						</p>
 						<br />
 						<p className="text-2xl text-left px-6 font-semibold ">
-						✔ Lightning-fast
+						✔ Engaging
 						</p>
 						<br />
 						<p className="text-2xl text-left px-6 font-semibold ">

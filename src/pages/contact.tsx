@@ -1,30 +1,59 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Helmet } from "react-helmet";
 import Navbar from "../components/Navbar/Navbar";
 
 const contact = () => {
-	const form = useRef();
+	const form = useRef<string>("");
 
-	// const sendEmail = (e: any) => {
-	// 	e.preventDefault();
+	const [showLabel, setShowLabel] = useState<boolean>(false);
+	const [labelText, setLabelText] = useState<string>("Email sent!");
 
-	// 	emailjs
-	// 		.sendForm(
-	// 			"YOUR_SERVICE_ID",
-	// 			"YOUR_TEMPLATE_ID",
-	// 			form.current,
-	// 			"YOUR_USER_ID"
-	// 		)
-	// 		.then(
-	// 			(result) => {
-	// 				console.log(result.text);
-	// 			},
-	// 			(error) => {
-	// 				console.log(error.text);
-	// 			}
-	// 		);
-	// };
+	// Checking whether inputs are empty
+	const [email, setEmail] = useState<string>("");
+	const [name, setName] = useState<string>("");
+	const [message, setMessage] = useState<string>("");
+
+	const sendEmail = (e: any) => {
+		e.preventDefault();
+		console.log("asdasd");
+
+		emailjs.sendForm(
+				"contact_service",
+				"contact_form",
+				form.current,
+				"user_fBblKCcaSH1ou9ThY55o3"
+			)
+			.then(
+				(result) => {
+					console.log(result.text);
+				},
+				(error) => {
+					console.log(error.text);
+				}
+			);
+
+		if (name === "") {
+			setShowLabel(true);
+			setLabelText("Please type in your name")
+		}
+
+		if (email === "") {
+			setShowLabel(true);
+			setLabelText("Please type in your email")
+		}
+
+		if (message === "") {
+			setShowLabel(true);
+			setLabelText("Please type in your message")
+		}
+
+		if (name && email && message !== "") {
+			setShowLabel(true);
+			setLabelText("Email sent!")
+			window.location.reload();
+		}
+	};
 
 	return (
 		<>
@@ -47,7 +76,11 @@ const contact = () => {
 					</p>
 				</div>
 				{/* <form ref={form} onSubmit={sendEmail}> */}
-				<form className="flex flex-col w-[90%] md:w-[40%] mx-auto bg-white mt-10 rounded-3xl p-6 shadow-3xl shadow-sky-500/50  ">
+				<form
+					ref={form}
+					onSubmit={sendEmail}
+					className="flex flex-col w-[90%] md:w-[40%] mx-auto bg-white mt-10 rounded-3xl p-6 shadow-3xl shadow-sky-500/50  "
+				>
 					<div className="flex flex-col md:flex-row justify-between mt-2">
 						<div className="flex flex-col w-[100%] md:w-6/12 md:mr-6">
 							<label className="text-left font-semibold ml-6">Name</label>
@@ -56,15 +89,19 @@ const contact = () => {
 								type="text"
 								name="user_name"
 								placeholder="Your Name"
+								onChange={(e) => setName(e.target.value)}
 							/>
 						</div>
 						<div className="flex flex-col w-[100%] md:w-6/12">
-							<label className="text-left mt-4 md:mt-[0px] font-semibold ml-6">Email</label>
+							<label className="text-left mt-4 md:mt-[0px] font-semibold ml-6">
+								Email
+							</label>
 							<input
 								className="bg-[#f5f5f5] rounded-full h-10 border-2 px-6 border-sky-400"
 								type="email"
 								name="user_email"
 								placeholder="Your Email"
+								onChange={(e) => setEmail(e.target.value)}
 							/>
 						</div>
 					</div>
@@ -72,7 +109,8 @@ const contact = () => {
 					<textarea
 						className="bg-[#f5f5f5] rounded-3xl h-64 p-6 border-2 border-sky-400"
 						name="message"
-						placeholder="Hi, I need a web app for my startup and I think you'd do a great work..."
+						placeholder="Hi, I need a web app for my startup and I think you'd do a great job..."
+						onChange={(e) => setMessage(e.target.value)}
 					/>
 					<input
 						className="text-white w-48 text-2xl font-bold mx-auto h-12 mt-8 rounded-3xl bg-gradient-to-r bg-radial-at-tl from-sky-400 to-purple-400"
@@ -80,6 +118,11 @@ const contact = () => {
 						value="Send"
 					/>
 				</form>
+				{showLabel === true && (
+					<div className="ml-8 mb-8 text-white font-bold w-[80%] md:w-64 mt-10 md:mt-0 h-12 bg-sky-500 rounded-lg flex items-center justify-center">
+						{labelText}
+					</div>
+				)}
 				<br />
 				<br />
 			</div>
