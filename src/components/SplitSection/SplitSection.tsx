@@ -12,7 +12,7 @@ const SplitSection = () => {
 				<div className="flex flex-col items-center justify-center w-auto md:w-[50%] min-h-[90vh] bg-white rounded-2xl ml-4 mr-4 md:mr-2 my-4 drop-shadow-sm">
 					<p className="text-5xl font-bold">Never lose a client</p>
 					<img src={Client} alt="An image of two people conducting business" width="auto" height="auto"/>
-					<p className="text-3xl md:text-4xl">Your website might have poor conversion</p>
+					<p className="text-2xl md:text-4xl">Your website might have poor conversion</p>
 				</div>
 				<div className="flex flex-col items-center justify-center w-auto md:w-[50%] min-h-[90vh] bg-white rounded-2xl ml-4 md:ml-2 mr-4 my-4 drop-shadow-sm">
 					<p className="text-5xl font-bold">Let's test it</p>

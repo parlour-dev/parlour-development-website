@@ -75,34 +75,34 @@ const OfferBox = () => {
 			</BrowserView>
 			<MobileView>
 				<div className="flex flex-col">
-					<div className="w-[80%] md:w-80 h-20 rounded-3xl mx-auto mt-8 flex items-center justify-center shadow-3xl  shadow-indigo-500/50">
+					<div className="w-[80%] h-20 rounded-3xl mx-auto mt-8 flex items-center bg-white justify-center shadow-3xl  shadow-indigo-500/50">
 						<p className="font-semibold text-2xl">Golang</p>
 					</div>
-					<div className="w-[80%] md:w-80 h-20 rounded-3xl mx-auto mt-8 flex items-center justify-center shadow-3xl  shadow-green-500/50 ">
+					<div className="w-[80%] h-20 rounded-3xl mx-auto mt-8 flex items-center bg-white justify-center shadow-3xl  shadow-green-500/50 ">
 						<p className="font-semibold text-2xl">ReactJS</p>
 					</div>
-					<div className="w-[80%] md:w-80 h-20 rounded-3xl mx-auto mt-8 flex items-center justify-center shadow-3xl  shadow-indigo-500/50 ">
+					<div className="w-[80%] h-20 rounded-3xl mx-auto mt-8 flex items-center bg-white justify-center shadow-3xl  shadow-indigo-500/50 ">
 						<p className="font-semibold text-2xl">Google Firebase</p>
 					</div>
-					<div className="w-[80%] md:w-80 h-20 rounded-3xl mx-auto mt-8 flex items-center justify-center shadow-3xl  shadow-blue-500/50 ">
+					<div className="w-[80%] h-20 rounded-3xl mx-auto mt-8 flex items-center bg-white justify-center shadow-3xl  shadow-blue-500/50 ">
 						<p className="font-semibold text-2xl">Python</p>
 					</div>
-					<div className="w-[80%] md:w-80 h-20 rounded-3xl mx-auto mt-8 flex items-center justify-center shadow-3xl   shadow-green-500/50 ">
+					<div className="w-[80%] h-20 rounded-3xl mx-auto mt-8 flex items-center bg-white justify-center shadow-3xl   shadow-green-500/50 ">
 						<p className="font-semibold text-2xl">JavaScript</p>
 					</div>
-					<div className="w-[80%] md:w-80 h-20 rounded-3xl mx-auto mt-8 flex items-center justify-center shadow-3xl  shadow-green-500/50 ">
+					<div className="w-[80%] h-20 rounded-3xl mx-auto mt-8 flex items-center bg-white justify-center shadow-3xl  shadow-green-500/50 ">
 						<p className="font-semibold text-2xl">TypeScript</p>
 					</div>
-					<div className="w-[80%] md:w-80 h-20 rounded-3xl mx-auto mt-8  flex items-center justify-center shadow-3xl  shadow-sky-400/50">
+					<div className="w-[80%] h-20 rounded-3xl mx-auto mt-8  flex items-center bg-white justify-center shadow-3xl  shadow-sky-400/50">
 						<p className="font-semibold text-2xl">Solidity</p>
 					</div>
-					<div className="w-[80%] md:w-80 h-20 rounded-3xl mx-auto mt-8  flex items-center justify-center shadow-3xl shadow-green-400/50 ">
+					<div className="w-[80%] h-20 rounded-3xl mx-auto mt-8  flex items-center bg-white justify-center shadow-3xl shadow-green-400/50 ">
 						<p className="font-semibold text-2xl">HTML & CSS</p>
 					</div>
-					<div className="w-[80%] md:w-80 h-20 rounded-3xl mx-auto mt-8 flex items-center justify-center shadow-3xl shadow-green-400/50 ">
+					<div className="w-[80%] h-20 rounded-3xl mx-auto mt-8 flex items-center bg-white justify-center shadow-3xl shadow-green-400/50 ">
 						<p className="font-semibold text-2xl">Flutter</p>
 					</div>
-					<div className="w-[80%] md:w-80 h-20 rounded-3xl mx-auto mb-10 mt-8 flex items-center justify-center shadow-3xl shadow-blue-400/50">
+					<div className="w-[80%] h-20 rounded-3xl mx-auto mb-10 mt-8 flex items-center bg-white justify-center shadow-3xl shadow-blue-400/50">
 						<p className="font-semibold text-2xl">C & C++</p>
 					</div>
 				</div>
