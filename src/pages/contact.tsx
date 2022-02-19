@@ -113,7 +113,7 @@ const contact = () => {
 						onChange={(e) => setMessage(e.target.value)}
 					/>
 					<input
-						className="text-white w-48 text-2xl font-bold mx-auto h-12 mt-8 rounded-3xl bg-gradient-to-r bg-radial-at-tl from-sky-400 to-purple-400"
+						className="text-white w-48 text-2xl font-bold mx-auto h-12 mt-8 rounded-3xl bg-gradient-to-r bg-radial-at-tl from-sky-400 to-purple-400 hover:scale-105 hover:drop-shadow-lg duration-300"
 						type="submit"
 						value="Send"
 					/>
