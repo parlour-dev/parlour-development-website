@@ -79,10 +79,11 @@ const contact = () => {
 				<form
 					ref={form}
 					onSubmit={sendEmail}
-					className="flex flex-col w-[90%] md:w-[40%] mx-auto bg-white mt-10 rounded-3xl p-6 shadow-3xl shadow-sky-500/50  "
+					className="flex flex-col w-[90%] md:w-[40%] mx-auto bg-white mt-10 rounded-3xl shadow-3xl shadow-sky-500/50  "
 				>
+					<div className="flex flex-col m-6">
 					<div className="flex flex-col md:flex-row justify-between mt-2">
-						<div className="flex flex-col w-[100%] md:w-6/12 md:mr-6">
+						<div className="flex flex-col w-[100%] md:w-6/12 md:mr-[2%]">
 							<label className="text-left font-semibold ml-6">Name</label>
 							<input
 								className="bg-[#f5f5f5] rounded-full h-10 border-2 px-6 border-sky-400"
@@ -117,6 +118,7 @@ const contact = () => {
 						type="submit"
 						value="Send"
 					/>
+					</div>
 				</form>
 				{showLabel === true && (
 					<div className="ml-8 mb-8 text-white font-bold w-[80%] md:w-64 mt-10 md:mt-0 h-12 bg-sky-500 rounded-lg flex items-center justify-center">
