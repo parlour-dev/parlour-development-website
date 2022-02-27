@@ -52,7 +52,7 @@ const OfferBox = () => {
 						</div>
 					</MouseParallaxChild>
 					<MouseParallaxChild factorX={0.1} factorY={0.15}>
-						<div className="w-[80%] md:w-80 h-20 rounded-3xl mx-auto lg:ml-[62%] mt-8 lg:mt-[-1rem] flex items-center justify-center shadow-3xl  shadow-sky-400/50 hover:shadow-indigo-100/70 transition ease-in-out duration-300 hover:scale-110">
+						<div className="w-[80%] md:w-80 h-20 rounded-3xl mx-auto lg:ml-[68%] mt-8 lg:mt-[-1rem] flex items-center justify-center shadow-3xl  shadow-sky-400/50 hover:shadow-indigo-100/70 transition ease-in-out duration-300 hover:scale-110">
 							<p className="font-semibold text-2xl">Solidity</p>
 						</div>
 					</MouseParallaxChild>
