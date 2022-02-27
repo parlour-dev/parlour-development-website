@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 import Client from "./img/client.jpg";
 import Testing from "./img/testing.jpg"
@@ -22,7 +23,9 @@ const SplitSection = () => {
 						width="auto"
 						height="auto"
 					/>
+					<Link to="/contact">
 					<button className="w-[80%] mt-16 md:w-96 h-16 hover:scale-105 hover:drop-shadow-lg duration-300 text-2xl font-semibold text-white rounded-full px-6 py-4 bg-gradient-to-r bg-radial-at-tl from-sky-400 via-green-400 to-teal-400">Book a free test</button>
+					</Link>
 				</div>
 			</div>
 		</div>
