@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
 	MouseParallaxContainer,
 	MouseParallaxChild,
@@ -12,10 +12,24 @@ import {
 } from "react-device-detect";
 
 const OfferBox = () => {
+	const [width, setWidth] = useState<number>(window.innerWidth);
+
+	function handleWindowSizeChange() {
+		setWidth(window.innerWidth);
+	}
+	useEffect(() => {
+		window.addEventListener("resize", handleWindowSizeChange);
+		return () => {
+			window.removeEventListener("resize", handleWindowSizeChange);
+		};
+	}, []);
+
+	const isMobile = width <= 768;
+
 	return (
 		<div className="w-auto min-h-[90vh] bg-white rounded-2xl mx-4 my-4 drop-shadow-sm">
 			<p className="text-3xl sm:text-5xl pt-20 font-sans font-semibold">
-				{/* Co możemy stworzyć?  */}💡 A true fullstack
+				💡 A true fullstack
 			</p>
 			<br />
 			<BrowserView>
@@ -75,7 +89,7 @@ const OfferBox = () => {
 			</BrowserView>
 			<MobileView>
 				<div className="flex flex-col">
-					<div className="w-[80%] h-20 rounded-3xl mx-auto mt-8 flex items-center bg-white justify-center shadow-3xl  shadow-indigo-500/50">
+					<div className="w-[80%] md:w-80 h-20 rounded-3xl mx-auto lg:ml-[8%] mt-8 lg:mt-[-1rem] flex items-center justify-center shadow-3xl shadow-green-400/50">
 						<p className="font-semibold text-2xl">Golang</p>
 					</div>
 					<div className="w-[80%] h-20 rounded-3xl mx-auto mt-8 flex items-center bg-white justify-center shadow-3xl  shadow-green-500/50 ">
