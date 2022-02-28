@@ -6,7 +6,6 @@ import ProjectsBox from "../components/ProjectsBox/ProjectsBox";
 import PukPukLeft from "../project-files/PukPuk/app.webp";
 import KolorLeft from "../project-files/Kolor/kolorLanding.webp";
 import OfferBox from "../components/OfferBox/OfferBox";
-import PackageBox from "../components/PackageBox/PackageBox";
 import { Helmet } from "react-helmet";
 
 // AOS import
@@ -14,9 +13,6 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import { useEffect } from "react";
 
-import FurtherDevelopment from "../components/FurtherDevelopment/FurtherDevelopment";
-import WarrantyBox from "../components/WarrantyBox/WarrantyBox";
-import Carousel from "../components/Carousel/Carousel";
 import Rocket from "../components/Rocket/Rocket";
 import SplitSection from "../components/SplitSection/SplitSection";
 

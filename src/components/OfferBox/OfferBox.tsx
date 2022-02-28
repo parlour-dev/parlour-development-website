@@ -12,20 +12,7 @@ import {
 } from "react-device-detect";
 
 const OfferBox = () => {
-	const [width, setWidth] = useState<number>(window.innerWidth);
-
-	function handleWindowSizeChange() {
-		setWidth(window.innerWidth);
-	}
-	useEffect(() => {
-		window.addEventListener("resize", handleWindowSizeChange);
-		return () => {
-			window.removeEventListener("resize", handleWindowSizeChange);
-		};
-	}, []);
-
-	const isMobile = width <= 768;
-
+	
 	return (
 		<div className="w-auto min-h-[90vh] bg-white rounded-2xl mx-4 my-4 drop-shadow-sm">
 			<p className="text-3xl sm:text-5xl pt-20 font-sans font-semibold">
