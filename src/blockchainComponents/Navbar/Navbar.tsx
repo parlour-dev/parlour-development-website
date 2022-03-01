@@ -1,17 +1,18 @@
 import React from "react";
-// import Logo from "./parlour-dev-logo-web.webp";
+import Logo from "./web-white-compressed.png";
 import { Link } from "gatsby";
 import "animate.css";
 
+
 const Navbar = () => {
 	return (
-		<div className="w-auto h-36 md:h-20 bg-black rounded-2xl mx-4 my-4 drop-shadow-sm flex items-center md:justify-between justify-center flex-col md:flex-row">
-			<Link to="/">
-				{/* <img
+		<div className="w-auto h-36 md:h-20 bg-[#1d1d1d] rounded-2xl mx-4 my-4 drop-shadow-sm flex items-center md:justify-between justify-center flex-col md:flex-row">
+			<Link to="/blockchain">
+				<img
 					className="w-48 sm:ml-6 sm:mr-6"
 					src={Logo}
 					alt="Parlour Development Logo"
-				/> */}
+				/>
 			</Link>
 			<div className="text-sm sm:text-lg sm:mr-6 mt-6 sm:mt-0 font-sans flex justify-between">
 				<Link to="/projects">

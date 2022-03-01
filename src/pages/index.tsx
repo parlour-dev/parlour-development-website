@@ -23,7 +23,7 @@ const IndexPage = () => {
 	}, []);
 
 	return (
-		<>
+		<div>
 			<Helmet>
 				<meta charSet="utf-8" />
 				<meta
@@ -55,7 +55,7 @@ const IndexPage = () => {
 			<div data-aos="zoom-in-down" data-aos-duration="1000">
 				<OfferBox />
 			</div>
-		</>
+		</div>
 	);
 };
 

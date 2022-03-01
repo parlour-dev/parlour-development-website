@@ -1,11 +1,12 @@
 import * as React from "react";
-import Navbar from "../blockchainComponents/Navbar";
+import Navbar from "../blockchainComponents/Navbar/Navbar";
 
 // AOS import
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import Landing from "../blockchainComponents/Landing/Landing";
 
 const IndexPage = () => {
 	useEffect(() => {
@@ -14,7 +15,7 @@ const IndexPage = () => {
 	}, []);
 
 	return (
-		<>
+		<div className="bg-[#0e0e0e] w-full h-full overflow-hidden">
 			<Helmet>
 				<meta charSet="utf-8" />
 				<meta
@@ -25,9 +26,11 @@ const IndexPage = () => {
 			</Helmet>
 			<Navbar />
 
+			<Landing />
+
 			{/* <div data-aos="zoom-in-down" data-aos-duration="1000">
 			</div> */}
-		</>
+		</div>
 	);
 };
 
