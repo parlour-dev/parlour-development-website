@@ -18,7 +18,8 @@ const contact = () => {
 		e.preventDefault();
 		console.log("asdasd");
 
-		emailjs.sendForm(
+		emailjs
+			.sendForm(
 				"contact_service",
 				"contact_form",
 				form.current,
@@ -35,22 +36,22 @@ const contact = () => {
 
 		if (name === "") {
 			setShowLabel(true);
-			setLabelText("Please type in your name")
+			setLabelText("Please type in your name");
 		}
 
 		if (email === "") {
 			setShowLabel(true);
-			setLabelText("Please type in your email")
+			setLabelText("Please type in your email");
 		}
 
 		if (message === "") {
 			setShowLabel(true);
-			setLabelText("Please type in your message")
+			setLabelText("Please type in your message");
 		}
 
 		if (name && email && message !== "") {
 			setShowLabel(true);
-			setLabelText("Email sent!")
+			setLabelText("Email sent!");
 			window.location.reload();
 		}
 	};
@@ -67,9 +68,9 @@ const contact = () => {
 					Contact us
 				</p>
 				<div className="p-6 sm:p-[0px] text-left mt-10 mx-auto md:w-[40%]">
-					<p className="text-2xl md:text-4xl sm:text-6xl leading-tight font-semibold ">
+					<p className="sm:p-6 md:p-0 text-2xl md:text-4xl sm:text-5xl leading-tight font-semibold ">
 						To work with us email us at{" "}
-						<span className="w-[80%] text-transparent bg-clip-text bg-gradient-to-r bg-radial-at-tl from-sky-400 to-purple-400">
+						<span className="w-[80%] text-transparent bg-clip-text break-words bg-gradient-to-r bg-radial-at-tl from-sky-400 to-purple-400">
 							contact@parlour.dev
 						</span>{" "}
 						or use the form below
@@ -82,42 +83,42 @@ const contact = () => {
 					className="flex flex-col w-[90%] md:w-[40%] mx-auto bg-white mt-10 rounded-3xl shadow-3xl shadow-sky-500/50  "
 				>
 					<div className="flex flex-col m-6">
-					<div className="flex flex-col md:flex-row justify-between mt-2">
-						<div className="flex flex-col w-[100%] md:w-6/12 md:mr-[2%]">
-							<label className="text-left font-semibold ml-6">Name</label>
-							<input
-								className="bg-[#f5f5f5] rounded-full h-10 border-2 px-6 border-sky-400"
-								type="text"
-								name="user_name"
-								placeholder="Your Name"
-								onChange={(e) => setName(e.target.value)}
-							/>
+						<div className="flex flex-col md:flex-row justify-between mt-2">
+							<div className="flex flex-col w-[100%] md:w-6/12 md:mr-[2%]">
+								<label className="text-left font-semibold ml-6">Name</label>
+								<input
+									className="bg-[#f5f5f5] rounded-full h-10 border-2 px-6 border-sky-400"
+									type="text"
+									name="user_name"
+									placeholder="Your Name"
+									onChange={(e) => setName(e.target.value)}
+								/>
+							</div>
+							<div className="flex flex-col w-[100%] md:w-6/12">
+								<label className="text-left mt-4 md:mt-[0px] font-semibold ml-6">
+									Email
+								</label>
+								<input
+									className="bg-[#f5f5f5] rounded-full h-10 border-2 px-6 border-sky-400"
+									type="email"
+									name="user_email"
+									placeholder="Your Email"
+									onChange={(e) => setEmail(e.target.value)}
+								/>
+							</div>
 						</div>
-						<div className="flex flex-col w-[100%] md:w-6/12">
-							<label className="text-left mt-4 md:mt-[0px] font-semibold ml-6">
-								Email
-							</label>
-							<input
-								className="bg-[#f5f5f5] rounded-full h-10 border-2 px-6 border-sky-400"
-								type="email"
-								name="user_email"
-								placeholder="Your Email"
-								onChange={(e) => setEmail(e.target.value)}
-							/>
-						</div>
-					</div>
-					<label className="text-left font-semibold mt-6 ml-6">Message</label>
-					<textarea
-						className="bg-[#f5f5f5] rounded-3xl h-64 p-6 border-2 border-sky-400"
-						name="message"
-						placeholder="Hi, I need a web app for my startup and I think you'd do a great job..."
-						onChange={(e) => setMessage(e.target.value)}
-					/>
-					<input
-						className="text-white w-48 text-2xl font-bold mx-auto h-12 mt-8 rounded-3xl bg-gradient-to-r bg-radial-at-tl from-sky-400 to-purple-400 hover:scale-105 hover:drop-shadow-lg duration-300"
-						type="submit"
-						value="Send"
-					/>
+						<label className="text-left font-semibold mt-6 ml-6">Message</label>
+						<textarea
+							className="bg-[#f5f5f5] rounded-3xl h-64 p-6 border-2 border-sky-400"
+							name="message"
+							placeholder="Hi, I need a web app for my startup and I think you'd do a great job..."
+							onChange={(e) => setMessage(e.target.value)}
+						/>
+						<input
+							className="text-white w-48 text-2xl font-bold mx-auto h-12 mt-8 rounded-3xl bg-gradient-to-r bg-radial-at-tl from-sky-400 to-purple-400 hover:scale-105 hover:drop-shadow-lg duration-300"
+							type="submit"
+							value="Send"
+						/>
 					</div>
 				</form>
 				{showLabel === true && (
