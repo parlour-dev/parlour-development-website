@@ -7,6 +7,10 @@ import PukPukLeft from "../project-files/PukPuk/app.webp";
 import KolorLeft from "../project-files/Kolor/kolorLanding.webp";
 import OfferBox from "../components/OfferBox/OfferBox";
 import { Helmet } from "react-helmet";
+import SEO from "../components/SEO/seo";
+import Logo from "../components/Navbar/parlour-dev-logo-web.webp";
+
+
 
 // AOS import
 import AOS from "aos";
@@ -16,6 +20,9 @@ import { useEffect } from "react";
 import Rocket from "../components/Rocket/Rocket";
 import SplitSection from "../components/SplitSection/SplitSection";
 
+
+
+
 const IndexPage = () => {
 	useEffect(() => {
 		AOS.init();
@@ -24,6 +31,9 @@ const IndexPage = () => {
 
 	return (
 		<div>
+
+		<SEO    
+				image={Logo} title="Parlour Development"        />
 			<Helmet>
 				<meta charSet="utf-8" />
 				<meta
