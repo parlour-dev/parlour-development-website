@@ -41,7 +41,7 @@ const pricing = () => {
 						<p className="text-xl text-left px-6">✔ Designed for great UX</p>
 						<br />
 						<p className="text-xl text-left px-6">✔ Intuitive</p>
-						<p className="text-2xl text-left px-6 font-semibold absolute bottom-6">From $3999</p>
+						<p className="text-2xl text-left px-6 pt-72 pb-6 font-semibold">From $3999</p>
 					</div>
 					<div className="mx-auto md:mx-0 w-80 sm:w-96 min-h-[65vh] bg-white rounded-3xl shadow-3xl  shadow-blue-500/30 z-50">
 						<p className="text-5xl text-left p-6 font-semibold text-transparent bg-clip-text bg-gradient-to-br from-blue-500 to-sky-500">
@@ -75,7 +75,7 @@ const pricing = () => {
 						<p className="text-xl text-left px-6">✔ Fully responsive</p>
 						<br />
 						<p className="text-xl text-left px-6">✔ Great looking</p>
-						<p className="text-2xl text-left px-6 font-semibold absolute bottom-6">From $1999</p>
+						<p className="text-2xl text-left px-6 pt-56 pb-6 font-semibold">From $1999</p>
 					</div>
 				</div>
 				<Link to="/contact">
