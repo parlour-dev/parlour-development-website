@@ -10,8 +10,6 @@ import { Helmet } from "react-helmet";
 import SEO from "../components/SEO/seo";
 import Logo from "../components/Navbar/parlour-dev-logo-web.webp";
 
-
-
 // AOS import
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
@@ -19,9 +17,6 @@ import { useEffect } from "react";
 
 import Rocket from "../components/Rocket/Rocket";
 import SplitSection from "../components/SplitSection/SplitSection";
-
-
-
 
 const IndexPage = () => {
 	useEffect(() => {
@@ -31,10 +26,8 @@ const IndexPage = () => {
 
 	return (
 		<div>
-
-		<SEO    
-				image={Logo} title="Parlour Development"        />
 			<Helmet>
+				<SEO image={Logo} title="Parlour Development" />
 				<meta charSet="utf-8" />
 				<meta
 					name="description"

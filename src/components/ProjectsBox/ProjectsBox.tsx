@@ -5,7 +5,7 @@ const ProjectsBox = (props: any) => {
 	return (
 		<div className="w-auto min-h-[90vh] bg-white rounded-2xl mx-4 my-4 drop-shadow-sm">
 			<p className="text-3xl sm:text-5xl pt-20 font-sans font-semibold">
-			📔 Our projects
+				📔 Our projects
 			</p>
 			{/* <div className="w-auto mx-[20%] sm:mx-48 mt-20 flex flex-row justify-center flex-wrap-reverse">
 				<div className="flex flex-wrap flex-col">
@@ -38,7 +38,9 @@ const ProjectsBox = (props: any) => {
 								alt="A picture showing PukPuk - a platform for exchaining services we built"
 								className="absolute object-cover blur-md sm:blur-none w-[100%] h-[100%]"
 							/>
-						<div className="absolute text-5xl sm:text-[0px] top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] font-bold font-sans text-transparent bg-clip-text bg-gradient-to-r bg-radial-at-tl from-sky-400 via-green-400 to-teal-400" >PukPuk</div>
+							<div className="absolute text-5xl sm:text-[0px] top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] font-bold font-sans text-transparent bg-clip-text bg-gradient-to-r bg-radial-at-tl from-sky-400 via-green-400 to-teal-400">
+								PukPuk
+							</div>
 						</Link>
 					</div>
 					<div className="transition hover:scale-105 mb-10 hover:drop-shadow-2xl duration-500 w-64 sm:w-[37rem] h-60 m-2 rounded-3xl relative overflow-hidden ">
@@ -48,7 +50,9 @@ const ProjectsBox = (props: any) => {
 								alt="A picture showing Kolor - blockchain social media platform we built"
 								className="absolute object-cover blur-md sm:blur-none w-[100%] h-[100%]"
 							/>
-							<div className="absolute text-5xl sm:text-[0px] top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] font-bold font-sans text-transparent bg-clip-text bg-gradient-to-r bg-radial-at-tl from-sky-400 via-green-400 to-teal-400" >Kolor</div>
+							<div className="absolute text-5xl sm:text-[0px] top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] font-bold font-sans text-transparent bg-clip-text bg-gradient-to-r bg-radial-at-tl from-sky-400 via-green-400 to-teal-400">
+								Kolor
+							</div>
 						</Link>
 					</div>
 				</div>

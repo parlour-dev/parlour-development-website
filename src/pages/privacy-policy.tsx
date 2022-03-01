@@ -42,7 +42,7 @@ const PrivacyPolicy = () => {
 							What rights users have over their data
 						</p>
 						<p className="text-2xl font-bold m-5">The site's contact details</p>
-                        <p className="text-2xl font-bold m-5">
+						<p className="text-2xl font-bold m-5">
 							HOW TO DELETE YOUR DATA (important)
 						</p>
 						+ in 2 languages

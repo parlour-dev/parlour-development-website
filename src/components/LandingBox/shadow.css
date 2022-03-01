@@ -15,18 +15,17 @@
 	height: 100%;
 	z-index: -100;
 	animation: animate 20s linear infinite;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
 }
 
 #shadow:after {
 	filter: blur(20px);
 }
 
-
 @media (max-width: 768px) {
 	#shadow:before,
-    #shadow:after {
+	#shadow:after {
 		margin-left: 4%;
 		width: 92%;
 

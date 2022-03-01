@@ -17,9 +17,9 @@ const pricing = () => {
 				</p>
 				<div className="p-6 sm:p-[0px] text-left mt-10 mx-auto md:w-[64rem]">
 					<p className="text-4xl sm:text-6xl leading-tight font-semibold ">
-						Your project is {" "}
+						Your project is{" "}
 						<span className="text-transparent bg-clip-text bg-gradient-to-r bg-radial-at-tl from-sky-400 to-purple-400">
-							 unique
+							unique
 						</span>
 						. <br /> It's hard to estimate the price.
 					</p>
@@ -41,41 +41,47 @@ const pricing = () => {
 						<p className="text-xl text-left px-6">✔ Designed for great UX</p>
 						<br />
 						<p className="text-xl text-left px-6">✔ Intuitive</p>
-						<p className="text-2xl text-left px-6 pt-72 pb-6 font-semibold">From $3999</p>
+						<p className="text-2xl text-left px-6 pt-72 pb-6 font-semibold">
+							From $3999
+						</p>
 					</div>
 					<div className="mx-auto md:mx-0 w-80 sm:w-96 min-h-[65vh] bg-white rounded-3xl shadow-3xl  shadow-blue-500/30 z-50">
 						<p className="text-5xl text-left p-6 font-semibold text-transparent bg-clip-text bg-gradient-to-br from-blue-500 to-sky-500">
 							Fullstack web app
 						</p>
 						<p className="text-2xl text-left px-6 pt-6 font-semibold ">
-						✔ Lightning-fast
+							✔ Lightning-fast
 						</p>
 						<br />
 						<p className="text-2xl text-left px-6 font-semibold ">
-						✔ Working on mobile and desktop
+							✔ Working on mobile and desktop
 						</p>
 						<br />
-						<p className="text-2xl text-left px-6 font-semibold ">
-						✔ Engaging
-						</p>
+						<p className="text-2xl text-left px-6 font-semibold ">✔ Engaging</p>
 						<br />
 						<p className="text-2xl text-left px-6 font-semibold ">
-						✔ User friendly
+							✔ User friendly
 						</p>
-						<p className="text-2xl text-left px-6 pt-48 pb-6 font-semibold">From $5999</p>
+						<p className="text-2xl text-left px-6 pt-48 pb-6 font-semibold">
+							From $5999
+						</p>
 					</div>
 					<div className="mx-auto md:mx-0 w-80 my-[2.5vh] min-h-[60vh] bg-gray-100 rounded-2xl md:rounded-none md:rounded-r-2xl drop-shadow ">
 						<p className="text-4xl text-justify p-6 font-semibold text-transparent bg-clip-text bg-gradient-to-br from-purple-500 to-teal-500">
 							Portfolio website
 						</p>
-						<p className="text-xl text-left px-6">✔ Tailor-made for your needs</p>
+						<p className="text-xl text-left px-6">
+							✔ Tailor-made for your needs
+						</p>
 						<br />
 						<p className="text-xl text-left px-6">✔ Designed to suit you</p>
 						<br />
 						<p className="text-xl text-left px-6">✔ Fully responsive</p>
 						<br />
 						<p className="text-xl text-left px-6">✔ Great looking</p>
-						<p className="text-2xl text-left px-6 pt-56 pb-6 font-semibold">From $1999</p>
+						<p className="text-2xl text-left px-6 pt-56 pb-6 font-semibold">
+							From $1999
+						</p>
 					</div>
 				</div>
 				<Link to="/contact">

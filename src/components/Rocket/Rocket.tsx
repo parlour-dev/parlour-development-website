@@ -18,10 +18,16 @@ const Rocket = () => {
 				<p className="font-bold text-4xl md:text-6xl px-6">
 					The 🌎 is waiting for you
 				</p>
-				<p className="w-[100%] text-xl md:text-3xl mt-4 px-6 ">Let's launch your project together</p>
+				<p className="w-[100%] text-xl md:text-3xl mt-4 px-6 ">
+					Let's launch your project together
+				</p>
 			</div>
 			<div className="w-6/12 mb-32 sm:mb-[0px] md:mr-10">
-				<div data-aos="fade-up-right" data-aos-duration="2500" data-aos-delay="250">
+				<div
+					data-aos="fade-up-right"
+					data-aos-duration="2500"
+					data-aos-delay="250"
+				>
 					<img
 						className="mx-auto"
 						src={RocketImg}

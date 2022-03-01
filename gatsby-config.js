@@ -1,11 +1,10 @@
 module.exports = {
-
 	siteMetadata: {
 		title: `Parlour Development`,
 		author: `Parlour Development`,
 		siteUrl: `https://parlour.dev/`,
-		keywords:  `asdasd`,
-	  },
+		keywords: `asdasd`,
+	},
 
 	plugins: [
 		"gatsby-plugin-postcss",
@@ -17,6 +16,5 @@ module.exports = {
 		},
 		"gatsby-plugin-react-helmet",
 		// ...
-		
 	],
 };
