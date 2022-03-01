@@ -22,7 +22,7 @@ const IndexPage = () => {
 					name="description"
 					content="Parlour Development - We'll build your dream web app / ecommerce store / portfolio / game / cryptocurrency"
 				/>
-				<title>Parlour Development - We'll build your dream app!</title>
+				<title>Parlour Development - Launch your blockchain project now</title>
 			</Helmet>
 			<Navbar />
 
