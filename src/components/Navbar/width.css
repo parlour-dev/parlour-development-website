@@ -1,0 +1,3 @@
+.extraWeirdWidth {
+    width: calc(100% - 2rem);
+}

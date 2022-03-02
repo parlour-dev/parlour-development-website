@@ -3,9 +3,35 @@ import Logo from "./parlour-dev-logo-web.webp";
 import { Link } from "gatsby";
 import "animate.css";
 
+import { useState, useEffect } from "react";
+import { debounce } from "../../utilities/helpers";
+
+import "./width.css"
+
 const Navbar = () => {
+	const [prevScrollPos, setPrevScrollPos] = useState(0);
+	const [visible, setVisible] = useState(true);
+
+	const handleScroll = debounce(() => {
+		const currentScrollPos = window.pageYOffset;
+
+		setVisible(
+			(prevScrollPos > currentScrollPos &&
+				prevScrollPos - currentScrollPos > 70) ||
+				currentScrollPos < 10
+		);
+
+		setPrevScrollPos(currentScrollPos);
+	}, 100);
+
+	useEffect(() => {
+		window.addEventListener("scroll", handleScroll);
+
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, [prevScrollPos, visible, handleScroll]);
+
 	return (
-		<div className="w-auto h-36 md:h-20 bg-white rounded-2xl mx-4 my-4 drop-shadow-sm flex items-center md:justify-between justify-center flex-col md:flex-row">
+		<div style={{top: visible ? '0' : '-10rem', opacity: visible ? "100%" : "0%", }} className="extraWeirdWidth w-auto h-36 md:h-20 bg-white rounded-2xl mx-4 my-4 drop-shadow-sm flex items-center md:justify-between justify-center flex-col md:flex-row fixed z-50 transition-all duration-500">
 			<Link to="/">
 				<img
 					className="w-48 sm:ml-6 sm:mr-6"
