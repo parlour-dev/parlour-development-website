@@ -7,7 +7,7 @@ const LandingBox = () => {
 	const [codeExample, setCodeExample] = useState("parlour");
 
 	return (
-		<div className="mt-[11rem] md:mt-28 w-auto min-h-[84vh] bg-white rounded-2xl mx-4 my-4 drop-shadow-sm flex items-center justify-between flex-col align-middle">
+		<div className="w-auto min-h-[84vh] bg-white rounded-2xl mx-4 my-4 drop-shadow-sm flex items-center justify-between flex-col align-middle">
 			<div className="flex flex-col items-center justify-between">
 				<p className="text-4xl md:text-7xl mt-32 px-8 font-bold font-sans text-transparent bg-clip-text bg-gradient-to-r bg-radial-at-tl from-sky-400 via-green-400 to-teal-400">
 					We will deliver your dream web app
