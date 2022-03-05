@@ -8,7 +8,7 @@ import KolorLeft from "../project-files/Kolor/kolorLanding.webp";
 import OfferBox from "../components/OfferBox/OfferBox";
 import { Helmet } from "react-helmet";
 import SEO from "../components/SEO/seo";
-import Logo from "../components/Navbar/parlour-dev-logo-web.webp";
+import Logo from "../components/SEO/parlour-seo.png";
 
 // AOS import
 import AOS from "aos";
@@ -63,3 +63,4 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
+
