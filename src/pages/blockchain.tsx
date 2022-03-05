@@ -7,6 +7,7 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import Landing from "../blockchainComponents/Landing/Landing";
+import Offer from "../blockchainComponents/Offer/Offer"
 
 const IndexPage = () => {
 	useEffect(() => {
@@ -25,9 +26,8 @@ const IndexPage = () => {
 				<title>Parlour Development - Launch your blockchain project now</title>
 			</Helmet>
 			<Navbar />
-
 			<Landing />
-
+			<Offer/>
 			{/* <div data-aos="zoom-in-down" data-aos-duration="1000">
 			</div> */}
 		</div>
