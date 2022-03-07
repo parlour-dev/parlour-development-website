@@ -3,7 +3,7 @@ import React from "react";
 
 const ProjectsBox = (props: any) => {
 	return (
-		<div className="w-auto min-h-[90vh] bg-white rounded-2xl mx-4 my-4 drop-shadow-sm">
+		<div className="w-auto 3xl:mx-auto max-w-screen-3xl min-h-[90vh] bg-white rounded-2xl mx-4 my-4 drop-shadow-sm">
 			<p className="text-3xl sm:text-5xl pt-20 font-sans font-semibold">
 				📔 Our projects
 			</p>

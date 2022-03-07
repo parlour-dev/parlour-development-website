@@ -23,7 +23,7 @@ const Project = (props: any) => {
 	}, []);
 
 	return (
-		<div>
+		<div className="3xl:mx-auto max-w-screen-3xl">
 			{isOpen && popupPhoto === "main" && (
 				<Popup handleClose={togglePopup} image={props.mainImage} />
 			)}

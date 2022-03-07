@@ -5,7 +5,7 @@ import Testing from "./img/testing.jpg";
 
 const SplitSection = () => {
 	return (
-		<div>
+		<div className="3xl:mx-auto max-w-screen-3xl">
 			<p className="text-left mx-4 mt-10 text-4xl md:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r bg-radial-at-tl from-sky-400 via-green-400 to-teal-400">
 				Already have a website?
 			</p>

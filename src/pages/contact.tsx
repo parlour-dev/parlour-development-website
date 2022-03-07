@@ -63,7 +63,7 @@ const contact = () => {
 				<title>Parlour Development - Contact us!</title>
 			</Helmet>
 			<Navbar />
-			<div className="w-auto min-h-[90vh] bg-white rounded-2xl mx-4 my-4 drop-shadow-sm">
+			<div className="w-auto 3xl:mx-auto max-w-screen-3xl min-h-[90vh] bg-white rounded-2xl mx-4 my-4 drop-shadow-sm">
 				<p className="text-3xl sm:text-5xl pt-20 px-2 font-sans font-bold">
 					Contact us
 				</p>

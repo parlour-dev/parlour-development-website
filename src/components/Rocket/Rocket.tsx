@@ -13,7 +13,7 @@ const Rocket = () => {
 	}, []);
 
 	return (
-		<div className="flex flex-col sm:flex-row items-center justify-between w-auto min-h-[90vh] bg-white rounded-2xl mx-4 my-4 drop-shadow-sm">
+		<div className="3xl:mx-auto max-w-screen-3xl flex flex-col sm:flex-row items-center justify-between w-auto min-h-[90vh] bg-white rounded-2xl mx-4 my-4 drop-shadow-sm">
 			<div className="w-[100%]  mt-16 sm:mt-[0px]">
 				<p className="font-bold text-4xl md:text-6xl px-6">
 					The 🌎 is waiting for you

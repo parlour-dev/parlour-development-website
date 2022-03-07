@@ -10,7 +10,7 @@ const OfferBox = () => {
 	const isDesktop = useMediaQuery("(min-width: 1400px)");
 
 	return (
-		<div className="w-auto min-h-[90vh] bg-white rounded-2xl mx-4 my-4 drop-shadow-sm">
+		<div className="w-auto 3xl:mx-auto max-w-screen-3xl min-h-[90vh] bg-white rounded-2xl mx-4 my-4 drop-shadow-sm">
 			<p className="text-3xl sm:text-5xl pt-20 font-sans font-semibold">
 				💡 A true fullstack
 			</p>
