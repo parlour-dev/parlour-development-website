@@ -6,7 +6,7 @@ import React from "react";
 
 const Offer = () => {
 	return (
-		<div className="w-auto min-h-[84vh] mx-4 my-8 ">
+		<div className="w-auto 3xl:mx-auto max-w-screen-3xl min-h-[84vh] mx-4 my-8 ">
 		<p className="text-white text-6xl px-4 font-bold mt-32">Services</p>
 	
 			
