@@ -9,14 +9,14 @@ import { Helmet } from "react-helmet";
 import Landing from "../blockchainComponents/Landing/Landing";
 import Offer from "../blockchainComponents/Offer/Offer";
 
-const IndexPage = () => {
+const Blockchain = () => {
 	useEffect(() => {
 		AOS.init();
 		AOS.refresh();
 	}, []);
 
 	return (
-		<div className="bg-[#0e0e0e] w-full h-full overflow-hidden">
+		<div className="bg-[#0e0e0e] w-full min-h-[100%] overflow-auto">
 			<Helmet>
 				<meta charSet="utf-8" />
 				<meta
@@ -34,4 +34,4 @@ const IndexPage = () => {
 	);
 };
 
-export default IndexPage;
+export default Blockchain;
