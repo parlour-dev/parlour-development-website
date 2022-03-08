@@ -16,7 +16,7 @@ const Navbar = () => {
 			</Link>
 			<div className="text-sm sm:text-lg sm:mr-6 mt-6 sm:mt-0 font-sans flex justify-between">
 				<Link to="/projects">
-					<div className="mx-1 sm:mx-4 sm:mr-6 font-sans font-semibold px-4 sm:px-8 border-2 border-indigo-300/50 py-2 bg-gradient-to-r bg-radial-at-tl from-green-400 to-teal-400 rounded-full text-white hover:scale-105 hover:drop-shadow-lg duration-300">
+					<div className="mx-1 sm:mx-4 sm:mr-6 font-sans font-semibold px-4 sm:px-8 border-2 py-2 border-y-sky-400 border-x-blue-400 rounded-full text-white hover:scale-105 hover:drop-shadow-lg duration-300">
 						Portfolio
 					</div>
 				</Link>
