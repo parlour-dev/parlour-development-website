@@ -16,7 +16,12 @@ const Navbar = () => {
 				/>
 			</Link>
 			<div className="text-sm sm:text-lg sm:mr-6 mt-6 sm:mt-0 font-sans flex justify-between">
-				<Link onClick={() => {setPage("portfolio")}} to="/projects">
+				<Link
+					onClick={() => {
+						setPage("portfolio");
+					}}
+					to="/projects"
+				>
 					{page === "index" && (
 						<div className="mx-1 sm:mx-4 sm:mr-6 font-sans font-semibold px-4 sm:px-8 border-2 border-y-sky-400 border-x-blue-400 py-2 rounded-full text-white hover:scale-105 hover:drop-shadow-lg duration-300">
 							<p className="text-transparent bg-clip-text bg-gradient-to-r bg-radial-at-tl from-sky-400 to-blue-400">

@@ -1,10 +1,9 @@
 import React from "react";
 import Image from "./landing.webp";
 import PNG from "./landingImg.png";
-import Glow from "./glow.webp"
+import Glow from "./glow.webp";
 
 import GlitchClip from "react-glitch-effect/core/GlitchClip";
-
 
 const Landing = () => {
 	return (
@@ -20,7 +19,9 @@ const Landing = () => {
 				</GlitchClip>
 			</div>
 			<img className="absolute w-full z-10" src={Glow} alt="Background glow" />
-			<p className="text-white text-6xl px-4 font-bold mt-32">We have worked on</p>
+			<p className="text-white text-6xl px-4 font-bold mt-32">
+				We have worked on
+			</p>
 		</div>
 	);
 };
