@@ -20,7 +20,6 @@ const Landing = () => {
 				</GlitchClip>
 			</div>
 			<img className="absolute w-full z-10" src={Glow} alt="Background glow" />
-			<p className="text-white text-6xl px-4 font-bold mt-32">We have worked on</p>
 		</div>
 	);
 };
