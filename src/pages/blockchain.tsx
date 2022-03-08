@@ -7,7 +7,7 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import Landing from "../blockchainComponents/Landing/Landing";
-import Offer from "../blockchainComponents/Offer/Offer"
+import Offer from "../blockchainComponents/Offer/Offer";
 
 const Blockchain = () => {
 	useEffect(() => {
@@ -27,7 +27,7 @@ const Blockchain = () => {
 			</Helmet>
 			<Navbar />
 			<Landing />
-			<Offer/>
+			<Offer />
 			{/* <div data-aos="zoom-in-down" data-aos-duration="1000">
 			</div> */}
 		</div>

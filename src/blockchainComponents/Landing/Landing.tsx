@@ -1,10 +1,9 @@
 import React from "react";
 import Image from "./landing.webp";
 import PNG from "./landingImg.png";
-import Glow from "./glow.webp"
+import Glow from "./glow.webp";
 
 import GlitchClip from "react-glitch-effect/core/GlitchClip";
-
 
 const Landing = () => {
 	return (

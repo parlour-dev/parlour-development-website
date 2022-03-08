@@ -4,7 +4,6 @@ import { Link } from "gatsby";
 import "animate.css";
 
 const Navbar = () => {
-
 	return (
 		<div className="w-auto 3xl:mx-auto max-w-screen-3xl h-36 md:h-20 bg-[#1d1d1d] rounded-2xl mx-4 my-4 drop-shadow-sm flex items-center md:justify-between justify-center flex-col md:flex-row">
 			<Link to="/blockchain">

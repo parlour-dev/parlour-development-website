@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import Navbar from "../components/Navbar/Navbar";
 
 const contact = () => {
-	const form = useRef<string>("");
+	const form = useRef<HTMLFormElement>(null);
 
 	const [showLabel, setShowLabel] = useState<boolean>(false);
 	const [labelText, setLabelText] = useState<string>("Email sent!");
@@ -22,7 +22,7 @@ const contact = () => {
 			.sendForm(
 				"contact_service",
 				"contact_form",
-				form.current,
+				form.current || "",
 				"user_fBblKCcaSH1ou9ThY55o3"
 			)
 			.then(
