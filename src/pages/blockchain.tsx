@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import Landing from "../blockchainComponents/Landing/Landing";
 import Offer from "../blockchainComponents/Offer/Offer";
+import Mockup from "../blockchainComponents/Mockup/Mockup";
 
 const Blockchain = () => {
 	useEffect(() => {
@@ -16,7 +17,7 @@ const Blockchain = () => {
 	}, []);
 
 	return (
-		<div className="bg-[#0e0e0e] w-full min-h-[100%] overflow-auto">
+		<div className="bg-[#0e0e0e] w-full absolute z-10 min-h-[100%]   overflow-hidden">
 			<Helmet>
 				<meta charSet="utf-8" />
 				<meta
@@ -28,6 +29,7 @@ const Blockchain = () => {
 			<Navbar />
 			<Landing />
 			<Offer />
+			<Mockup />
 			{/* <div data-aos="zoom-in-down" data-aos-duration="1000">
 			</div> */}
 		</div>
