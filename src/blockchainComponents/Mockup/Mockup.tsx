@@ -15,24 +15,24 @@ const Mockup = () => {
 		AOS.refresh();
 	}, []);
 
-	const isDesktop = useMediaQuery("(min-width: 1400px)");
+	const isDesktop = useMediaQuery("(min-width: 1200px)");
 
 	return (
 		<div className="w-full h-[130vh] bg-[#0e0e0e] mt-48">
 			<div className="flex justify-center">
 				<img
-					className="w-[120%] lg:w-[70%] absolute z-40"
+					className="w-[120%] scale-[1.75] mt-20 sm:mt-0 mx-auto sm:scale-100 lg:w-[70%] absolute z-40"
 					src={PhoneMockup}
 					alt="A mockup of a phone showing our project"
 					draggable="false"
 				/>
 				<img
-					className="w-[120vw] lg:w-[70%] bg-[#0e0e0e] absolute z-30"
+					className="w-[120%] lg:w-[70%] bg-[#0e0e0e] absolute z-30"
 					src={Glow}
 					alt="Glow in the background"
 					draggable="false"
 					data-aos="zoom-in-up"
-					data-aos-duration="1000"
+					data-aos-duration="2000"
 				/>
 			</div>
 
@@ -51,7 +51,7 @@ const Mockup = () => {
 				</div>
 			) : (
 				<div className="w-[70%] mx-[15%] flex flex-col lg:flex-row justify-between items-center text-white z-30 absolute">
-					<div className="mx-auto font-bold text-8xl md:text-9xl text-left">
+					<div className=" mr-1 font-bold text-8xl sm:text-9xl text-left">
 						<p>Every</p>
             <p>user.</p>
 						<p>Every</p>

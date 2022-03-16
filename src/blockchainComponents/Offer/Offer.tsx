@@ -23,7 +23,7 @@ const Offer = () => {
 
 	return (
 		<div className="w-auto 3xl:mx-auto max-w-screen-3xl min-h-[84vh] mx-4 my-8 ">
-			<p className="text-white text-6xl px-4 font-bold mt-32">
+			<p className="text-white text-6xl px-4 z-50 font-bold mt-32">
 				Launch anything.
 			</p>
 			{/* 
