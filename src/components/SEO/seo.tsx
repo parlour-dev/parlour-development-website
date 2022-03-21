@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
+import seoImage from "./parlour-seo.png";
 
 type SEO = {
 	description: any;
@@ -40,7 +41,7 @@ function SEO({
 	const image =
 		metaImage && metaImage.src
 			? `${site.siteMetadata.siteUrl}${metaImage.src}`
-			: null;
+			: seoImage;
 	const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null;
 
 	return (

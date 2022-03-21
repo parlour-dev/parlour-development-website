@@ -9,6 +9,7 @@ import OfferBox from "../components/OfferBox/OfferBox";
 import { Helmet } from "react-helmet";
 import SEO from "../components/SEO/seo";
 import Logo from "../components/SEO/parlour-seo.png"
+import Newsletter from "../components/Newsletter/Newsletter";
 
 // AOS import
 import AOS from "aos";
@@ -50,6 +51,9 @@ const IndexPage = () => {
 				<Rocket />
 			</div>
 			{/* <div data-aos="zoom-in-down" data-aos-duration="1000">
+				<Newsletter />
+			</div> */}
+			{/* <div data-aos="zoom-in-down" data-aos-duration="1000">
 				<Carousel />
 			</div> */}
 			<div data-aos="zoom-in-down" data-aos-duration="1000">
@@ -58,6 +62,7 @@ const IndexPage = () => {
 			<div data-aos="zoom-in-down" data-aos-duration="1000">
 				<OfferBox />
 			</div>
+		
 		</div>
 	);
 };
