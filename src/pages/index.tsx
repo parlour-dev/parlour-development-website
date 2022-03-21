@@ -8,7 +8,7 @@ import KolorLeft from "../project-files/Kolor/kolorLanding.webp";
 import OfferBox from "../components/OfferBox/OfferBox";
 import { Helmet } from "react-helmet";
 import SEO from "../components/SEO/seo";
-import Logo from "../components/SEO/parlour-seo.png";
+import Logo from "../components/SEO/parlour-seo.png"
 
 // AOS import
 import AOS from "aos";
@@ -27,11 +27,11 @@ const IndexPage = () => {
 	return (
 		<div>
 			<Helmet>
-				<SEO image={Logo} title="Parlour Development" />
+				<SEO image={Logo} title="Parlour Development" description="Your go to software house" />
 				<meta charSet="utf-8" />
 				<meta
 					name="description"
-					content="Parlour Development - We'll build your dream web app / ecommerce store / portfolio / game / cryptocurrency"
+					content="Parlour Development - We'll build your dream web app / ecommerce store / portfolio / cryptocurrency"
 				/>
 				<title>Parlour Development - We'll build your dream app!</title>
 			</Helmet>
