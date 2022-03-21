@@ -27,15 +27,11 @@ const IndexPage = () => {
 
 	return (
 		<div>
-			<Helmet>
+		
 				<SEO image={Logo} title="Parlour Development" description="Your go to software house" />
-				<meta charSet="utf-8" />
-				<meta
-					name="description"
-					content="Parlour Development - We'll build your dream web app / ecommerce store / portfolio / cryptocurrency"
-				/>
-				<title>Parlour Development - We'll build your dream app!</title>
-			</Helmet>
+			
+			
+
 			<Navbar />
 			<LandingBox />
 			<img
