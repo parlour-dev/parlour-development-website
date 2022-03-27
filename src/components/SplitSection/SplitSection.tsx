@@ -23,7 +23,7 @@ const SplitSection = () => {
 					</p>
 				</div>
 				<div className="flex flex-col items-center justify-center w-auto md:w-[50%] min-h-[90vh] bg-white rounded-2xl ml-4 md:ml-2 mr-4 my-4 drop-shadow-sm">
-					<p className="text-5xl font-bold">Let's test it</p>
+					<p className="text-5xl font-bold mt-10">Let's test it</p>
 					<img
 						src={Testing}
 						alt="An image of two people conducting business"
@@ -31,7 +31,7 @@ const SplitSection = () => {
 						height="auto"
 					/>
 					<Link to="/contact">
-						<button className="w-[100%] mt-16 md:w-96 h-16 hover:scale-105 hover:drop-shadow-lg duration-300 text-2xl font-semibold text-white rounded-full px-6 py-4 bg-gradient-to-r bg-radial-at-tl from-sky-400 via-green-400 to-teal-400">
+						<button className="w-[100%] mb-10 mt-16 md:w-96 h-16 hover:scale-105 hover:drop-shadow-lg duration-300 text-2xl font-semibold text-white rounded-full px-6 py-4 bg-gradient-to-r bg-radial-at-tl from-sky-400 via-green-400 to-teal-400">
 							Book a free test
 						</button>
 					</Link>
