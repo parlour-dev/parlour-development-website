@@ -8,7 +8,7 @@ import KolorLeft from "../project-files/Kolor/kolorLanding.webp";
 import OfferBox from "../components/OfferBox/OfferBox";
 import { Helmet } from "react-helmet";
 import SEO from "../components/SEO/seo";
-import Logo from "../components/SEO/parlour-seo.png"
+import Logo from "../components/SEO/parlour-seo.png";
 import Newsletter from "../components/Newsletter/Newsletter";
 
 // AOS import
@@ -27,10 +27,11 @@ const IndexPage = () => {
 
 	return (
 		<div>
-		
-				<SEO image={Logo} title="Parlour Development" description="Your go to software house" />
-			
-			
+			<SEO
+				image={Logo}
+				title="Parlour Development"
+				description="Your go-to software house"
+			/>
 
 			<Navbar />
 			<LandingBox />
@@ -47,9 +48,6 @@ const IndexPage = () => {
 				<Rocket />
 			</div>
 			{/* <div data-aos="zoom-in-down" data-aos-duration="1000">
-				<Newsletter />
-			</div> */}
-			{/* <div data-aos="zoom-in-down" data-aos-duration="1000">
 				<Carousel />
 			</div> */}
 			<div data-aos="zoom-in-down" data-aos-duration="1000">
@@ -58,7 +56,9 @@ const IndexPage = () => {
 			<div data-aos="zoom-in-down" data-aos-duration="1000">
 				<OfferBox />
 			</div>
-		
+			<div data-aos="zoom-in-down" data-aos-duration="1000">
+				<Newsletter />
+			</div>
 		</div>
 	);
 };

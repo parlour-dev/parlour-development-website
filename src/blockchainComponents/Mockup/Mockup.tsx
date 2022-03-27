@@ -53,13 +53,12 @@ const Mockup = () => {
 				<div className="w-[70%] mx-[15%] flex flex-col lg:flex-row justify-between items-center text-white z-30 absolute">
 					<div className=" mr-1 font-bold text-8xl sm:text-9xl text-left">
 						<p>Every</p>
-            <p>user.</p>
+						<p>user.</p>
 						<p>Every</p>
-            <p>wallet.</p>
+						<p>wallet.</p>
 						<p>Every</p>
-            <p>dapp.</p>
+						<p>dapp.</p>
 					</div>
-					
 				</div>
 			)}
 		</div>

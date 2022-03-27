@@ -33,12 +33,14 @@ const Landing = () => {
 				</div>
 			) : (
 				<div className="w-[100vw] ">
-					<p className="text-6xl mx-auto leading-tight font-bold text-transparent bg-clip-text bg-gradient-to-br bg-radial-at-tl from-teal-400 to-green-400">Let's launch your blockchain project </p>
+					<p className="text-6xl mx-auto leading-tight font-bold text-transparent bg-clip-text bg-gradient-to-br bg-radial-at-tl from-teal-400 to-green-400">
+						Let's launch your blockchain project{" "}
+					</p>
 					<img
-								className="w-[100vw]"
-								src={Mobile}
-								alt="Let's launch your blockchain project"
-							/>
+						className="w-[100vw]"
+						src={Mobile}
+						alt="Let's launch your blockchain project"
+					/>
 					<img
 						className="absolute w-full mt-[40vh] scale-y-[1.5] z-10"
 						src={Glow}
