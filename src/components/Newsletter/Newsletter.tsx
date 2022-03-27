@@ -67,7 +67,7 @@ const Newsletter = () => {
 			</div>
 
 			{showLabel === true && (
-				<div className="ml-8 mb-8 text-white font-bold w-[80%] md:w-64 mt-10 md:mt-0 h-12 bg-sky-500 rounded-lg flex items-center justify-center">
+				<div className="absolute ml-8 mb-8 bottom-0 text-white font-bold w-[80%] md:w-64 mt-10 md:mt-0 h-12 bg-sky-500 rounded-lg flex items-center justify-center">
 					{labelText}
 				</div>
 			)}
