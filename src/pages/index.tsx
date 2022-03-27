@@ -18,6 +18,7 @@ import { useEffect } from "react";
 
 import Rocket from "../components/Rocket/Rocket";
 import SplitSection from "../components/SplitSection/SplitSection";
+import Footer from "../components/Footer/Footer";
 
 const IndexPage = () => {
 	useEffect(() => {
@@ -54,11 +55,13 @@ const IndexPage = () => {
 				<SplitSection />
 			</div>
 			<div data-aos="zoom-in-down" data-aos-duration="1000">
-				<OfferBox />
-			</div>
-			<div data-aos="zoom-in-down" data-aos-duration="1000">
 				<Newsletter />
 			</div>
+			<div data-aos="zoom-in-down" data-aos-duration="1000">
+				<OfferBox />
+			</div>
+
+			<Footer />
 		</div>
 	);
 };
