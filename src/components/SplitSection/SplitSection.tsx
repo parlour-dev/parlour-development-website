@@ -6,11 +6,11 @@ import Testing from "./img/testing.jpg";
 const SplitSection = () => {
 	return (
 		<div className="3xl:mx-auto max-w-screen-3xl">
-			<p className="text-left mx-4 mt-10 text-4xl md:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r bg-radial-at-tl from-sky-400 via-green-400 to-teal-400">
+			<p className="text-left mx-4 3xl:mx-auto mt-10 text-4xl md:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r bg-radial-at-tl from-sky-400 via-green-400 to-teal-400">
 				Already have a website?
 			</p>
 			<div className="flex flex-col md:flex-row">
-				<div className="flex flex-col items-center justify-center w-auto md:w-[50%] min-h-[90vh] bg-white rounded-2xl ml-4 mr-4 md:mr-2 my-4 drop-shadow-sm">
+				<div className="flex flex-col items-center justify-center w-auto md:w-[50%] min-h-[90vh] bg-white rounded-2xl ml-4 3xl:ml-auto mr-4 md:mr-2 my-4 drop-shadow-sm">
 					<p className="text-5xl font-bold">Never lose a client</p>
 					<img
 						src={Client}
@@ -22,7 +22,7 @@ const SplitSection = () => {
 						Your website might have poor conversion
 					</p>
 				</div>
-				<div className="flex flex-col items-center justify-center w-auto md:w-[50%] min-h-[90vh] bg-white rounded-2xl ml-4 md:ml-2 mr-4 my-4 drop-shadow-sm">
+				<div className="flex flex-col items-center justify-center w-auto md:w-[50%] min-h-[90vh] bg-white rounded-2xl ml-4 md:ml-2 mr-4 3xl:mr-auto my-4 drop-shadow-sm">
 					<p className="text-5xl font-bold mt-10">Let's test it</p>
 					<img
 						src={Testing}

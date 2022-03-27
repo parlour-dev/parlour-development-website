@@ -40,7 +40,7 @@ const Newsletter = () => {
 	};
 
 	return (
-		<div className="3xl:mx-auto max-w-screen-3xl">
+		<div className="3xl:mx-auto max-w-screen-3xl mb-16">
 			<p className="font-bold text-left mt-10 text-4xl md:text-6xl px-6">
 				Sign up and get a free website audit!
 			</p>
