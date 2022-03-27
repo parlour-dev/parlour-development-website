@@ -44,7 +44,7 @@ const Newsletter = () => {
 			<p className="font-bold text-left mt-10 text-4xl md:text-6xl px-6">
 				Sign up and get a free website audit!
 			</p>
-			<div className="3xl:mx-auto max-w-screen-3xl flex flex-col sm:flex-row items-center justify-center w-auto rounded-2xl mx-4 my-4">
+			<div className="flex flex-col sm:flex-row items-center justify-center w-auto rounded-2xl mx-4 my-4">
 				<div className="w-[100%] flex flex-col md:flex-row">
 					<div className="min-h-[20%] bg-white rounded-2xl md:w-[40%] drop-shadow-sm">
 						<p className="w-full text-xl text-left md:text-xl p-10 ">
