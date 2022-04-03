@@ -34,13 +34,13 @@ const Navbar = () => {
 			<div className="3xl:mx-auto max-w-screen-3xl h-full w-full flex flex-row justify-between items-center">
 			<Link to="/">
 				<img
-					className="w-48 lg:w-48 sm:ml-20 3xl:ml-0 sm:mr-6"
+					className="w-48 lg:w-48 sm:ml-20 sm:mr-6"
 					src={Logo}
 					alt="Parlour Development Logo"
 				/>
 			</Link>
 			{isDesktop ? (
-				<div className="text-sm sm:text-lg sm:mr-20 3xl:mr-0 mt-6 sm:mt-0 font-sans flex justify-between">
+				<div className="text-sm sm:text-lg sm:mr-20  mt-6 sm:mt-0 font-sans flex justify-between">
 					<Link className="w-0 lg:w-auto" to="/buy">
 						<img
 							className="h-0 lg:h-14 mx-4 hover:scale-105 transition duration-300"
