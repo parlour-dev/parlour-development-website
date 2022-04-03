@@ -1,6 +1,5 @@
 import * as React from "react";
 import Navbar from "../components/Navbar/Navbar";
-import LandingBox from "../components/LandingBox/LandingBox";
 import downArrow from "../images/downArrow.webp";
 import ProjectsBox from "../components/ProjectsBox/ProjectsBox";
 import PukPukLeft from "../project-files/PukPuk/app.webp";
@@ -10,6 +9,7 @@ import { Helmet } from "react-helmet";
 import SEO from "../components/SEO/seo";
 import Logo from "../components/SEO/parlour-seo.png";
 import Newsletter from "../components/Newsletter/Newsletter";
+import Landing from "../components/Landing/Landing";
 
 // AOS import
 import AOS from "aos";
@@ -35,7 +35,7 @@ const IndexPage = () => {
 			/>
 
 			<Navbar />
-			<LandingBox />
+			<Landing />
 			<img
 				className="w-4 mx-auto"
 				src={downArrow}

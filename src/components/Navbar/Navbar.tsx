@@ -31,15 +31,16 @@ const Navbar = () => {
 		<div
 			className={`fixed z-50 rounded-b-2xl top-0 w-full h-24 bg-white flex items-center md:justify-between justify-left pl-4 md:pl-0 flex-row ${scrollLevel} hover:opacity-100 hover:shadow-xl hover:shadow-neutral-100 transition duration-300`}
 		>
+			<div className="3xl:mx-auto max-w-screen-3xl h-full w-full flex flex-row justify-between items-center">
 			<Link to="/">
 				<img
-					className="w-48 lg:w-48 sm:ml-20 sm:mr-6"
+					className="w-48 lg:w-48 sm:ml-20 3xl:ml-0 sm:mr-6"
 					src={Logo}
 					alt="Parlour Development Logo"
 				/>
 			</Link>
 			{isDesktop ? (
-				<div className="text-sm sm:text-lg sm:mr-20 mt-6 sm:mt-0 font-sans flex justify-between">
+				<div className="text-sm sm:text-lg sm:mr-20 3xl:mr-0 mt-6 sm:mt-0 font-sans flex justify-between">
 					<Link className="w-0 lg:w-auto" to="/buy">
 						<img
 							className="h-0 lg:h-14 mx-4 hover:scale-105 transition duration-300"
@@ -110,6 +111,7 @@ const Navbar = () => {
 					</Menu>
 				</div>
 			)}
+			</div>
 		</div>
 	);
 };
