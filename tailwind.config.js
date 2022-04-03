@@ -8,7 +8,12 @@ module.exports = {
 			screens: {
 				"3xl": "1900px",
 			},
+			colors: {
+				parlourGreen: "#1eff8d",
+				parlourBlue: "#38f0e1",
+			}
 		},
+
 		fontFamily: {
 			sans: ["Sora", "Roboto", "Lato"],
 			monospace: ["Roboto Mono"],

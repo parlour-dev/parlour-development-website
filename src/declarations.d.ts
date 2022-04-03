@@ -13,3 +13,5 @@ declare module "*.jpg";
 declare module "*.jpeg";
 declare module "react-glitch-effect/core/GlitchClip";
 declare module "react-type-animation";
+
+declare module 'react-burger-menu'

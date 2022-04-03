@@ -2,54 +2,114 @@ import React, { useEffect, useState } from "react";
 import Logo from "./parlour-dev-logo-web.webp";
 import { Link } from "gatsby";
 import "animate.css";
+import useMediaQuery from "../../hooks/useMediaQuery";
+import { stack as Menu } from "react-burger-menu";
+
+// icon import
+import { HiOutlineMenu, HiX } from "react-icons/hi";
+
+import BuyButton from "./buy.webp";
 
 const Navbar = () => {
-	const [page, setPage] = useState<string>("index");
+	const [scrollLevel, setScrollLevel] = useState<string>("index");
+
+	// Add a listener to the Navbar component to change its opacity on scroll down
+	useEffect(() => {
+		window.addEventListener("scroll", () => {
+			if (window.scrollY > 200) {
+				setScrollLevel("opacity-80 ");
+			} else {
+				setScrollLevel("");
+			}
+		});
+	}, []);
+
+	// useMediaQuery to determine whether someone is browing on mobile or desktop
+	const isDesktop = useMediaQuery("(min-width: 1400px)");
 
 	return (
-		<div className="w-auto 3xl:mx-auto max-w-screen-3xl h-36 md:h-20 bg-white rounded-2xl mx-4 my-4 drop-shadow-sm flex items-center md:justify-between justify-center flex-col md:flex-row">
+		<div
+			className={`fixed z-50 rounded-b-2xl top-0 w-full h-24 bg-white flex items-center md:justify-between justify-left pl-4 md:pl-0 flex-row ${scrollLevel} hover:opacity-100 hover:shadow-xl hover:shadow-neutral-100 transition duration-300`}
+		>
 			<Link to="/">
 				<img
-					className="w-48 sm:ml-6 sm:mr-6"
+					className="w-48 lg:w-48 sm:ml-20 sm:mr-6"
 					src={Logo}
 					alt="Parlour Development Logo"
 				/>
 			</Link>
-			<div className="text-sm sm:text-lg sm:mr-6 mt-6 sm:mt-0 font-sans flex justify-between">
-				<Link
-					onClick={() => {
-						setPage("portfolio");
-					}}
-					to="/projects"
-				>
-					{page === "index" && (
-						<div className="mx-1 sm:mx-4 sm:mr-6 font-sans font-semibold px-4 sm:px-8 border-2 border-y-sky-400 border-x-blue-400 py-2 rounded-full text-white hover:scale-105 hover:drop-shadow-lg duration-300">
-							<p className="text-transparent bg-clip-text bg-gradient-to-r bg-radial-at-tl from-sky-400 to-blue-400">
-								Portfolio
+			{isDesktop ? (
+				<div className="text-sm sm:text-lg sm:mr-20 mt-6 sm:mt-0 font-sans flex justify-between">
+					<Link className="w-0 lg:w-auto" to="/buy">
+						<img
+							className="h-0 lg:h-14 mx-4 hover:scale-105 transition duration-300"
+							src={BuyButton}
+							alt="Buy Now"
+						/>
+					</Link>
+					<Link to="/projects">
+						<div className="bg-transparent mx-1 sm:mx-4 sm:mr-6 font-sans font-semibold px-4 sm:px-8 py-2">
+							<p className="text-2xl hover:scale-110 transition duration-300">
+								Projects
 							</p>
 						</div>
-					)}
-					{page === "portfolio" && (
-						<div className="mx-1 sm:mx-4 sm:mr-6 font-sans font-semibold px-4 sm:px-8 border-2 bg-gradient-to-r from-cyan-500 to-blue-500 border-y-sky-400 border-x-blue-400 py-2 rounded-full text-white hover:scale-105 hover:drop-shadow-lg duration-300">
-							<p className="text-white">Portfolio</p>
+					</Link>
+					<Link to="/contact">
+						<div className="bg-transparent mx-1 sm:mx-4 sm:mr-6 font-sans font-semibold px-4 sm:px-8 py-2 ">
+							<p className="text-2xl hover:scale-110 transition duration-300">
+								Contact
+							</p>
 						</div>
-					)}
-				</Link>
-				<Link to="/pricing">
-					<div className="mx-1 sm:mx-4 sm:mr-6 font-sans font-semibold px-4 sm:px-8 py-2 border-2 border-y-sky-400 border-x-blue-400 rounded-full text-white hover:scale-105 hover:drop-shadow-lg duration-300">
-						<p className="text-transparent bg-clip-text bg-gradient-to-r bg-radial-at-tl from-sky-400 to-blue-400">
-							Pricing
-						</p>
-					</div>
-				</Link>
-				<Link to="/contact">
-					<div className="sm:mx-4 sm:mr-6 font-sans font-semibold px-4 sm:px-8 py-2 border-2 border-y-sky-400 border-x-blue-400 rounded-full text-white hover:scale-105 hover:drop-shadow-lg duration-300">
-						<p className="text-transparent bg-clip-text bg-gradient-to-r bg-radial-at-tl from-sky-400 to-blue-400">
-							Contact
-						</p>
-					</div>
-				</Link>
-			</div>
+					</Link>
+					<Link to="/blog">
+						<div className="bg-transparent mx-1 sm:mx-4 sm:mr-6 font-sans font-semibold px-4 sm:px-8 py-2">
+							<p className="text-2xl hover:scale-110 transition duration-300">
+								Blog
+							</p>
+						</div>
+					</Link>
+				</div>
+			) : (
+				<div className="absolute ml-10 right-0 mr-4 w-10 h-10">
+					<Menu
+						noOverlay
+						right
+						customCrossIcon={<HiX />}
+						className="w-full h-screen bg-white border-t-4 mt-6"
+						customBurgerIcon={<HiOutlineMenu />}
+						width={"100%"}
+					>
+						<Link to="/buy">
+							<img
+								className="w-48 pt-20 pb-4 mx-auto hover:scale-105 transition duration-300"
+								src={BuyButton}
+								alt="Buy Now"
+							/>
+						</Link>
+						<Link to="/projects">
+							<div className="bg-transparent mx-1 sm:mx-4 sm:mr-6 font-sans font-semibold px-4 sm:px-8 py-2">
+								<p className="text-4xl py-4 hover:scale-110 transition duration-300">
+									Projects
+								</p>
+							</div>
+						</Link>
+						<Link to="/contact">
+							<div className="bg-transparent mx-1 sm:mx-4 sm:mr-6 font-sans font-semibold px-4 sm:px-8 py-2 ">
+								<p className="text-4xl py-4 hover:scale-110 transition duration-300">
+									Contact
+								</p>
+							</div>
+						</Link>
+						<Link to="/blog">
+							<div className="bg-transparent mx-1 sm:mx-4 sm:mr-6 font-sans font-semibold px-4 sm:px-8 py-2">
+								<p className="text-4xl py-4 hover:scale-110 transition duration-300">
+									Blog
+								</p>
+							</div>
+						</Link>
+					</Menu>
+				</div>
+			)}
 		</div>
 	);
 };
