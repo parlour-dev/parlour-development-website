@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar/Navbar";
 
 const PrivacyPolicy = () => {
 	return (
-		<>
+		<div className="mt-28">
 			<Navbar />
 			<Helmet>
 				<meta charSet="utf-8" />
@@ -69,7 +69,7 @@ const PrivacyPolicy = () => {
 					</Link>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 

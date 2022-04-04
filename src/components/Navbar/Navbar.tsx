@@ -41,7 +41,7 @@ const Navbar = () => {
 			</Link>
 			{isDesktop ? (
 				<div className="text-sm sm:text-lg sm:mr-20  mt-6 sm:mt-0 font-sans flex justify-between">
-					<Link className="w-0 lg:w-auto" to="/buy">
+					<Link className="w-0 lg:w-auto" to="/contact">
 						<img
 							className="h-0 lg:h-14 mx-4 hover:scale-105 transition duration-300"
 							src={BuyButton}

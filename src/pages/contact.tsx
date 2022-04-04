@@ -57,7 +57,7 @@ const contact = () => {
 	};
 
 	return (
-		<>
+		<div className="mt-28">
 			<Helmet>
 				<meta charSet="utf-8" />
 				<title>Parlour Development - Contact us!</title>
@@ -129,7 +129,7 @@ const contact = () => {
 				<br />
 				<br />
 			</div>
-		</>
+		</div>
 	);
 };
 

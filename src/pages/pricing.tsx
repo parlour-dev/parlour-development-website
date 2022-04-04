@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar/Navbar";
 
 const pricing = () => {
 	return (
-		<>
+		<div className="mt-28">
 			<Navbar />
 			<Helmet>
 				<meta charSet="utf-8" />
@@ -92,7 +92,7 @@ const pricing = () => {
 				</Link>
 				<br />
 			</div>
-		</>
+		</div>
 	);
 };
 

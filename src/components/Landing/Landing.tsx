@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 import Mockup from "./iphoneMockup.webp";
 
@@ -19,9 +20,11 @@ const Landing = () => {
 						ASAP
 					</span>
 				</p>
+				<Link to="/contact">
 				<button className="lg:ml-20 w-10/12 lg:w-auto mt-20 bg-gradient-to-r from-parlourBlue to-parlourGreen text-white py-6 px-10 font-bold text-3xl rounded-tl-[2rem] rounded-br-[2rem]">
 					Order your project now
 				</button>
+				</Link>
 			</div>
 			<div className="lg:w-6/12 flex justify-end overflow-hidden">
 				<img
