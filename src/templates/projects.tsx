@@ -3,10 +3,6 @@ import { Helmet } from "react-helmet";
 import Navbar from "../components/Navbar/Navbar";
 import Project from "../components/Project/Project";
 
-// PukPuk imports
-import PukPukMain from "../project-files/PukPuk/pukpukwebsite.webp";
-import PukPukLeft from "../project-files/PukPuk/app.webp";
-import PukPukRight from "../project-files/PukPuk/logo.webp";
 import { PageProps } from "gatsby";
 import { marked } from "marked";
 
@@ -23,16 +19,6 @@ export interface Portfolio {
 interface PageContext {
     portfolios: { node: Portfolio }[];
 }
-
-// caseStudy
-// codeUrl
-// description
-// longProjectName
-// shortProjectName
-// strapiId
-// pictures {
-//   url
-// }
 
 const Projects = ({ pageContext }: PageProps) => {
     const { portfolios } = pageContext as PageContext;
