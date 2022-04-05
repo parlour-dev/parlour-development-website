@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
-import Mockup from "./iphoneMockup.webp";
+import Mockup from "./iphoneMockupTemp.webp";
 
 const Landing = () => {
 	return (
