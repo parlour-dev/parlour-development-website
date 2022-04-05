@@ -1,12 +1,28 @@
 exports.createPages = async function ({ actions, graphql }) {
 	const { data } = await graphql(`
-		query GetArticle {
+		query {
 			allStrapiArticles {
 				edges {
 					node {
 						id
 						Title
 						Text
+					}
+				}
+			}
+
+			allStrapiPortfolios {
+				edges {
+					node {
+						caseStudy
+						codeUrl
+						description
+						longProjectName
+						shortProjectName
+						strapiId
+						pictures {
+							url
+						}
 					}
 				}
 			}
@@ -29,4 +45,12 @@ exports.createPages = async function ({ actions, graphql }) {
 			articles: data.allStrapiArticles.edges,
 		},
 	});
+
+	actions.createPage({
+		path: "/projects",
+		component: require.resolve(`./src/templates/projects.tsx`),
+		context: {
+			portfolios: data.allStrapiPortfolios.edges,
+		}
+	})
 };

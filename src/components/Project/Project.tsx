@@ -8,7 +8,19 @@ import { useEffect } from "react";
 
 type PopupPhotoType = "main" | "left" | "right";
 
-const Project = (props: any) => {
+interface ProjectProps {
+	mainImage: string;
+	leftImage: string;
+	rightImage: string;
+
+	title: string;
+	codeLink: string
+
+	description: string;
+	caseStudy: string;
+}
+
+const Project = (props: ProjectProps) => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	const [popupPhoto, setPopupPhoto] = useState<PopupPhotoType>("main");
@@ -81,31 +93,11 @@ const Project = (props: any) => {
 							</a>
 						</div>
 						<div className="px-4 text-left flex flex-col items-baseline">
-							<p className="font-bold text-2xl">
-								{/* Opis */}
-								Description
-							</p>
-							<p className="text-lg">{props.description}</p>
-							<br />
-							<p className="font-bold text-2xl">
-								{/* Co wykonaliśmy? */}
-								What did we build?
-							</p>
-							<p className="text-lg">{props.whatDidWeBuild}</p>
-
-							<br />
-							<p className="font-bold text-2xl">
-								{/* Technologie (Tech Stack) */}
-								Tech stack
-							</p>
-							<p className="text-lg">{props.techStack}</p>
-							<br />
+							<p className="text-lg" dangerouslySetInnerHTML={{ __html: props.description }}></p>
 						</div>
 					</div>
 					<p className="font-bold text-2xl">Case study</p>
-					<p className="text-lg mx-[10%] text-justify">{props.caseStudyP1}</p>
-					<br />
-					<p className="text-lg mx-[10%] text-justify">{props.caseStudyP2}</p>
+					<p className="text-lg mx-[10%] text-justify" dangerouslySetInnerHTML={{ __html: props.caseStudy }}></p>
 					<br />
 					<br />
 				</div>
