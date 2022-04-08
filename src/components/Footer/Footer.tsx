@@ -34,7 +34,7 @@ const Footer = () => {
 					<p>Coming soon... :)</p>
 				</div>
 			</div>
-      {/* create a paragraph at the bottom of the page that's centered */}    
+			{/* create a paragraph at the bottom of the page that's centered */}
 
 			<p className="mt-32 text-center">
 				Made with 💚 by Parlour <br /> ⓒ 2022

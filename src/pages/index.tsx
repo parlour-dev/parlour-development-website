@@ -10,6 +10,9 @@ import SEO from "../components/SEO/seo";
 import Logo from "../components/SEO/parlour-seo.png";
 import Newsletter from "../components/Newsletter/Newsletter";
 import Landing from "../components/Landing/Landing";
+import Refs from "../components/Refs/Refs";
+import KolorShowcase from "../components/KolorShowcase/KolorShowcase";
+import KolorStudy from "../components/KolorStudy/KolorStudy";
 
 // AOS import
 import AOS from "aos";
@@ -36,20 +39,18 @@ const IndexPage = () => {
 
 			<Navbar />
 			<Landing />
-			<img
-				className="w-4 mx-auto"
-				src={downArrow}
-				alt="An arrow pointing down"
-			/>
 
-			<ProjectsBox Image1={PukPukLeft} Image2={KolorLeft} />
-			<Rocket />
+			<Refs />
+			<KolorShowcase />
+			<KolorStudy />
+			{/* <ProjectsBox Image1={PukPukLeft} Image2={KolorLeft} /> */}
+			{/* <Rocket /> */}
 			{/* <div data-aos="zoom-in-down" data-aos-duration="1000">
 				<Carousel />
 			</div> */}
-			<SplitSection />
+			{/* <SplitSection />
 			<Newsletter />
-			<OfferBox />
+			<OfferBox /> */}
 
 			<Footer />
 		</div>

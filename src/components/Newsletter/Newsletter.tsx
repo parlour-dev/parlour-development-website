@@ -36,7 +36,8 @@ const Newsletter = () => {
 		}
 
 		if (email !== "") {
-			window.location.reload();}
+			window.location.reload();
+		}
 	};
 
 	return (
