@@ -42,7 +42,6 @@ const IndexPage = () => {
 
 			<Refs />
 			<KolorShowcase />
-			<KolorStudy />
 			{/* <ProjectsBox Image1={PukPukLeft} Image2={KolorLeft} /> */}
 			{/* <Rocket /> */}
 			{/* <div data-aos="zoom-in-down" data-aos-duration="1000">
