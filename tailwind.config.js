@@ -11,7 +11,7 @@ module.exports = {
 			colors: {
 				parlourGreen: "#1eff8d",
 				parlourBlue: "#38f0e1",
-			}
+			},
 		},
 
 		fontFamily: {

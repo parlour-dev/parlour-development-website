@@ -10,6 +10,9 @@ import SEO from "../components/SEO/seo";
 import Logo from "../components/SEO/parlour-seo.png";
 import Newsletter from "../components/Newsletter/Newsletter";
 import Landing from "../components/Landing/Landing";
+import Refs from "../components/Refs/Refs";
+import KolorShowcase from "../components/KolorShowcase/KolorShowcase";
+import KolorStudy from "../components/KolorStudy/KolorStudy";
 
 // AOS import
 import AOS from "aos";
@@ -19,6 +22,7 @@ import { useEffect } from "react";
 import Rocket from "../components/Rocket/Rocket";
 import SplitSection from "../components/SplitSection/SplitSection";
 import Footer from "../components/Footer/Footer";
+import Vision from "../components/Vision/Vision";
 
 const IndexPage = () => {
 	useEffect(() => {
@@ -30,26 +34,25 @@ const IndexPage = () => {
 		<div>
 			<SEO
 				image={Logo}
-				title="Parlour Development"
-				description="Your go-to software house"
+				title="Blockchain development, crypto, NFTs | Parlour Development"
+				description="Launch your blockchain project! Cryptocurrency, NFTs, ICOs, DApps, and more. We are a team of blockchain developers and designers. We are here to help you build your next project."
 			/>
 
 			<Navbar />
 			<Landing />
-			<img
-				className="w-4 mx-auto"
-				src={downArrow}
-				alt="An arrow pointing down"
-			/>
 
-			<ProjectsBox Image1={PukPukLeft} Image2={KolorLeft} />
-			<Rocket />
+			<Vision />
+
+			<Refs />
+			<KolorShowcase />
+			{/* <ProjectsBox Image1={PukPukLeft} Image2={KolorLeft} /> */}
+			{/* <Rocket /> */}
 			{/* <div data-aos="zoom-in-down" data-aos-duration="1000">
 				<Carousel />
 			</div> */}
-			<SplitSection />
+			{/* <SplitSection />
 			<Newsletter />
-			<OfferBox />
+			<OfferBox /> */}
 
 			<Footer />
 		</div>

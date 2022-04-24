@@ -5,9 +5,8 @@ declare module "*.scss" {
 declare module "*.sass" {
 	const css: { [key: string]: string };
 	export default css;
-
 }
-declare module '*.css';
+declare module "*.css";
 declare module "react-markup";
 declare module "*.webp";
 declare module "*.png";
@@ -16,4 +15,4 @@ declare module "*.jpeg";
 declare module "react-glitch-effect/core/GlitchClip";
 declare module "react-type-animation";
 
-declare module 'react-burger-menu'
+declare module "react-burger-menu";
