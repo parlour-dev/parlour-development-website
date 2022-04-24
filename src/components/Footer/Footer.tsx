@@ -5,7 +5,7 @@ import { HiMail, HiOfficeBuilding } from "react-icons/hi";
 const Footer = () => {
 	return (
 		<div className="w-full rounded-t-3xl bg-white drop-shadow-xl min-h-96">
-			<div className="pt-10 flex flex-col md:flex-row justify-center gap-y-10 gap-x-[10rem]">
+			<div className="pt-10 flex flex-col md:flex-row justify-center gap-t-10 gap-x-[10rem]">
 				<div className="mx-auto md:mx-0">
 					<img className="w-64" src={Logo} alt="Parlour Development Logo" />
 					<div className="mt-2 flex flex-row">
@@ -30,13 +30,14 @@ const Footer = () => {
 					<p>Software development</p>
 				</div>
 				<div>
-					<p className="font-bold">REFERENCE</p>
+					<p className="font-bold">HAPPY CLIENT STORIES</p>
 					<p>Coming soon... :)</p>
 				</div>
 			</div>
 			{/* create a paragraph at the bottom of the page that's centered */}
-
+			
 			<p className="mt-32 text-center">
+			<hr className="w-[95%] mx-auto mb-4"/>
 				Made with 💚 by Parlour <br /> ⓒ 2022
 			</p>
 		</div>

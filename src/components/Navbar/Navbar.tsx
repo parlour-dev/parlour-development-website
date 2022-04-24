@@ -29,7 +29,7 @@ const Navbar = () => {
 
 	return (
 		<div
-			className={`fixed z-50 rounded-b-2xl top-0 w-full h-24 bg-white flex items-center md:justify-between justify-left pl-4 md:pl-0 flex-row ${scrollLevel} hover:opacity-100 hover:shadow-xl hover:shadow-neutral-100 transition duration-300`}
+			className={`fixed z-50 rounded-b-2xl top-0 w-full h-24 bg-white flex items-center md:justify-between justify-left pl-4 md:pl-0 flex-row ${scrollLevel} hover:opacity-100 hover:shadow-xl hover:shadow-black/5 transition duration-300`}
 		>
 			<div className="3xl:mx-auto max-w-screen-3xl h-full w-full flex flex-row justify-between items-center">
 				<Link to="/">
@@ -62,7 +62,7 @@ const Navbar = () => {
 								</p>
 							</div>
 						</Link>
-						<Link to="/blog">
+						<Link to="/articles">
 							<div className="bg-transparent mx-1 sm:mx-4 sm:mr-6 font-sans font-semibold px-4 sm:px-8 py-2">
 								<p className="text-2xl hover:scale-110 transition duration-300">
 									Blog
@@ -101,7 +101,7 @@ const Navbar = () => {
 									</p>
 								</div>
 							</Link>
-							<Link to="/blog">
+							<Link to="/articles">
 								<div className="bg-transparent mx-1 sm:mx-4 sm:mr-6 font-sans font-semibold px-4 sm:px-8 py-2">
 									<p className="text-4xl py-4 hover:scale-110 transition duration-300">
 										Blog

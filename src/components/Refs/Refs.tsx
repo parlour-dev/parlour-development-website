@@ -7,10 +7,10 @@ import GC from "./gc.webp";
 const Refs = () => {
 	return (
 		<div className="w-full h-auto bg-transparent rounded-b-3xl shadow-neutral-600">
-			<div className="3xl:mx-auto max-w-screen-3xl flex flex-col overflow-hidden lg:flex-row  w-full mt-36 justify-between items-center ">
+			{/* <div className="3xl:mx-auto max-w-screen-3xl flex flex-col overflow-hidden lg:flex-row  w-full mt-36 justify-between items-center ">
 				<div className="lg:w-6/12  flex flex-col">
 					<p className="lg:ml-20 mt-0 lg:mt-0 leading-tight text-4xl lg:text-5xl xl:text-5xl font-semibold mx-10 lg:mx-auto text-left">
-						Working with Parlour Development has been a great pleasure
+						Working with Parlour Development has been a great pleasure.
 					</p>
 					<p className="lg:ml-20 mt-6 leading-tight text-xl lg:text-xl xl:text-2xl mx-10 lg:mx-auto text-left">
 						I love how transparent they were about how they work. From day one,
@@ -44,7 +44,7 @@ const Refs = () => {
 						</p>
 					</div>
 				</div>
-			</div>
+			</div> */}
 
 			<div className="3xl:mx-auto max-w-screen-3xl flex flex-col-reverse overflow-hidden lg:flex-row  w-full mt-36 justify-between items-center ">
 				<div className="mt-12 w-10/12 md:w-auto lg:mt-0 flex justify-center align-center overflow-hidden  relative lg:ml-20 ">

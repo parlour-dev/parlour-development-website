@@ -33,7 +33,7 @@ const KolorShowcase = () => {
 		<div className="w-full h-auto bg-white shadow-3xl shadow-neutral-200 my-10 rounded-3xl">
 			<div className="3xl:mx-auto max-w-screen-3xl">
 				<div className="h-32"></div>
-				<div className="text-5xl md:text-8xl font-bold h-auto flex justify-center items-center">
+				<div id="software" className="text-5xl md:text-8xl font-bold h-auto flex justify-center items-center">
 					Software we built
 				</div>
 
@@ -47,12 +47,20 @@ const KolorShowcase = () => {
 						/>
 					</div>
 					<div>
-						<img
-							draggable="false"
-							className="w-10/12 mx-auto mt-24 lg:mt-0"
-							src={Mockup}
-							alt="Phone image with code writted on its screen"
-						/>
+						<div
+							data-aos="zoom-in-left"
+							data-aos-duration="1000"
+							data-aos-anchor="#software"
+							data-aos-anchor-placement="center-center"
+							>
+								
+							<img
+								draggable="false"
+								className="w-10/12 mx-auto mt-24 lg:mt-0"
+								src={Mockup}
+								alt="Phone image with code writted on its screen"
+							/>
+						</div>
 					</div>
 				</div>
 				{isOpen && popupPhoto === "main" && (
@@ -65,7 +73,7 @@ const KolorShowcase = () => {
 					<Popup handleClose={togglePopup} image={ImgRight} />
 				)}
 				<div className="3xl:mx-auto max-w-screen-3xl flex flex-col overflow-hidden lg:flex-row  w-full mt-36 justify-between items-top ">
-					<div className="lg:w-[40%]  flex flex-col">
+					<div className="lg:w-[40%] lg:mt-64 flex flex-col">
 						<div className="lg:ml-20 mt-0 lg:mt-0 leading-tight text-4xl lg:text-4xl xl:text-5xl font-bold text-center lg:text-left">
 							A social media dapp
 						</div>
@@ -75,7 +83,7 @@ const KolorShowcase = () => {
 							regular feeds, while enabling them to mint posts, on chain of
 							their preference. We've created Kolor Token, meant to be used as a
 							tool for tipping favourite posts, with "Appreciate" button
-							replacing the ever-present 'Like' button. .{" "}
+							replacing the ever-present 'Like' button.
 						</p>
 					</div>
 					<div className="mt-12 lg:mt-0 flex justify-center align-center overflow-hidden  relative lg:mr-20 ">
@@ -100,7 +108,7 @@ const KolorShowcase = () => {
 									<img
 										src={ImgLeft}
 										alt="Left picture showing the project"
-										className="object-cover w-[100%] h-[100%] rounded-[3rem] shadow-3xl shadow-neutral-300"
+										className="object-cover w-[100%] h-[100%] hover:scale-105 transition duration-300 rounded-[3rem] shadow-3xl shadow-neutral-300"
 									/>
 								</div>
 								<div
@@ -115,7 +123,7 @@ const KolorShowcase = () => {
 									<img
 										src={ImgRight}
 										alt="Right picture showing the project"
-										className="object-cover w-[100%] h-[100%] rounded-[3rem] shadow-3xl shadow-neutral-300"
+										className="object-cover w-[100%] h-[100%] hover:scale-105 transition duration-300 rounded-[3rem] shadow-3xl shadow-neutral-300"
 									/>
 								</div>
 							</div>
@@ -133,7 +141,7 @@ const KolorShowcase = () => {
 									<img
 										src={ImgBottom}
 										alt="Bottom picture showing the project"
-										className="object-cover w-[100%] h-[100%] rounded-[3rem] shadow-3xl shadow-neutral-300"
+										className="object-cover w-[100%] h-[100%] hover:scale-105 transition duration-300 rounded-[3rem] shadow-3xl shadow-neutral-300"
 									/>
 								</div>
 							</div>

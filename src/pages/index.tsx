@@ -22,6 +22,7 @@ import { useEffect } from "react";
 import Rocket from "../components/Rocket/Rocket";
 import SplitSection from "../components/SplitSection/SplitSection";
 import Footer from "../components/Footer/Footer";
+import Vision from "../components/Vision/Vision";
 
 const IndexPage = () => {
 	useEffect(() => {
@@ -33,12 +34,14 @@ const IndexPage = () => {
 		<div>
 			<SEO
 				image={Logo}
-				title="Parlour Development"
-				description="Your go-to software house"
+				title="Blockchain development, crypto, NFTs | Parlour Development"
+				description="Launch your blockchain project! Cryptocurrency, NFTs, ICOs, DApps, and more. We are a team of blockchain developers and designers. We are here to help you build your next project."
 			/>
 
 			<Navbar />
 			<Landing />
+
+			<Vision />
 
 			<Refs />
 			<KolorShowcase />
