@@ -173,7 +173,7 @@ const Vision = () => {
 					</div>
 				</div>
 			) : (
-				<div className="flex flex-col lg:flex-row gap-8 mt-16 justify-center items-center relative z-50">
+				<div className="flex flex-col lg:flex-row gap-8 mt-16 justify-center items-center relative z-20">
 					<div className="flex flex-col gap-8 w-[95%] max-w-[25rem] md:max-w-[100%] md:w-96">
 						<div
 							data-aos="zoom-in-right"
