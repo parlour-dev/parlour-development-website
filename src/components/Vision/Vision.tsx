@@ -173,8 +173,8 @@ const Vision = () => {
 					</div>
 				</div>
 			) : (
-				<div className="flex flex-col lg:flex-row gap-8 mt-16 justify-center items-center relative z-20">
-					<div className="flex flex-col gap-8 w-[95%] max-w-[25rem] md:max-w-[100%] md:w-96">
+				<div className="flex flex-col mt-16 mx-auto w-[85%] xs:w-[95%] gap-8 justify-center items-center">
+					<div className="flex flex-col gap-8 w-[95%] max-w-[25rem] md:max-w-[100%] md:w-96 ">
 						<div
 							data-aos="zoom-in-right"
 							data-aos-duration="800"
@@ -205,7 +205,7 @@ const Vision = () => {
 								alt="Gas"
 							/>
 							<div className="w-full px-8 rounded-b-3xl">
-								<div className=" text-4xl font-bold text-center justify-center ">
+								<div className=" text-2xl xs:text-4xl font-bold text-center justify-center ">
 									Gas optimalization
 								</div>
 							</div>
@@ -214,7 +214,7 @@ const Vision = () => {
 							</button>
 						</div>
 					</div>
-					<div className="flex flex-col gap-8 w-[95%] max-w-[25rem] md:w-96">
+					<div className="flex flex-col gap-8 w-[95%] max-w-[25rem] md:max-w-[100%] md:w-96 ">
 					<div
 							data-aos="zoom-in-right"
 							data-aos-duration="800"
@@ -277,7 +277,7 @@ const Vision = () => {
 						<div
 							data-aos="zoom-in-left"
 							data-aos-duration="800"
-							className="flex flex-col items-center justify-between row-start-2 text-neutral-400 bg-white text-center  h-[25rem] rounded-3xl relative border-[1px] border-stone-600"
+							className="flex flex-col items-center justify-between row-start-2 text-neutral-400 bg-white text-center  min-h-[25rem] rounded-3xl relative border-[1px] border-stone-600"
 						>
 							<p className="text-6xl leading-tight py-10">Not your project?</p>
 							<Link to="/contact">
