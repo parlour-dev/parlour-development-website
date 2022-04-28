@@ -174,7 +174,7 @@ const Vision = () => {
 					</div>
 				</div>
 			) : (
-				<div className="flex flex-col mt-16 mx-auto w-[85%] xs:w-[95%] gap-8 justify-center items-center">
+				<div className="overflow-x-hidden flex flex-col mt-16 mx-auto w-[85%] xs:w-[95%] gap-8 justify-center items-center">
 					<div className="flex flex-col gap-8 w-[95%] max-w-[25rem] md:max-w-[100%] md:w-96 ">
 						<ScrollAnimation animateOnce offset={200} animateIn="animate__fadeInLeft">
 							<div className="flex flex-col items-center justify-between bg-white text-center h-[28rem] rounded-3xl border-2 border-x-blue-500 border-y-sky-500 shadow-lg shadow-blue-500/20">
