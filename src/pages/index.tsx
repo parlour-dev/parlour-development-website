@@ -26,7 +26,7 @@ import Vision from "../components/Vision/Vision";
 
 const IndexPage = () => {
 	useEffect(() => {
-		AOS.init({once: true});
+		AOS.init();
 		AOS.refresh();
 	}, []);
 
@@ -44,7 +44,7 @@ const IndexPage = () => {
 			<Vision />
 
 			<Refs />
-			{/* <KolorShowcase /> */}
+			<KolorShowcase />
 
 
 			{/* <ProjectsBox Image1={PukPukLeft} Image2={KolorLeft} /> */}
