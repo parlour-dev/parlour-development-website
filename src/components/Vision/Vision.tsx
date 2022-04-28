@@ -268,7 +268,7 @@ const Vision = () => {
 						</ScrollAnimation>
 						<ScrollAnimation animateOnce offset={200} animateIn="animate__fadeInRight">
 						<div className="flex flex-col items-center justify-between row-start-2 text-neutral-400 bg-white text-center  min-h-[25rem] rounded-3xl relative border-[1px] border-stone-600">
-							<p className="text-6xl leading-tight py-10">Not your project?</p>
+							<p className="text-4xl leading-tight py-10">Not your project?</p>
 							<Link to="/contact">
 								<button className="hover:scale-105 duration-300 flex flex-col justify-center mb-10 items-center w-full px-6 text-neutral-400 text-4xl mt-10">
 									Tell us about your vision <BsArrowRight className="ml-2" />
