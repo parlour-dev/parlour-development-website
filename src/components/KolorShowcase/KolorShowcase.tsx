@@ -13,6 +13,10 @@ import Popup from "../Popup";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 
+// Animations
+import ScrollAnimation from "react-animate-on-scroll";
+import "animate.css/animate.min.css";
+
 type PopupPhotoType = "main" | "left" | "right";
 
 const KolorShowcase = () => {
@@ -33,33 +37,43 @@ const KolorShowcase = () => {
 		<div className="w-full h-auto bg-white shadow-3xl shadow-neutral-200 my-10 rounded-3xl">
 			<div className="3xl:mx-auto max-w-screen-3xl">
 				<div className="h-32"></div>
-				<div id="software" className="text-5xl md:text-8xl font-bold h-auto flex justify-center items-center">
+				<div
+					id="software"
+					className="text-5xl md:text-8xl font-bold h-auto flex justify-center items-center"
+				>
 					Software we built
 				</div>
 
 				<div className="flex h-auto items-center justify-center flex-col lg:flex-row mt-24 ">
 					<div>
-						<img
-							draggable="false"
-							className="mt-12 w-10/12 mx-auto lg:mt-0"
-							src={Kolor}
-							alt="Phone image with code writted on its screen"
-						/>
-					</div>
-					<div>
-						<div
-							data-aos="zoom-in-left"
-							data-aos-duration="1000"
-							data-aos-anchor="#software"
-							data-aos-anchor-placement="center-center"
-							>
-								
+						<ScrollAnimation
+							animateOnce
+							offset={200}
+							delay={600}
+							animateIn="animate__fadeIn"
+						>
 							<img
 								draggable="false"
-								className="w-10/12 mx-auto mt-24 lg:mt-0"
-								src={Mockup}
+								className="mt-12 w-10/12 mx-auto lg:mt-0"
+								src={Kolor}
 								alt="Phone image with code writted on its screen"
 							/>
+						</ScrollAnimation>
+					</div>
+					<div>
+						<div>
+							<ScrollAnimation
+								animateOnce
+								offset={200}
+								animateIn="animate__fadeInRight"
+							>
+								<img
+									draggable="false"
+									className="w-10/12 mx-auto mt-24 lg:mt-0"
+									src={Mockup}
+									alt="Phone image with code writted on its screen"
+								/>
+							</ScrollAnimation>
 						</div>
 					</div>
 				</div>
@@ -95,11 +109,10 @@ const KolorShowcase = () => {
 
 						<div className="absolute flex flex-col justify-center w-[90%] h-[90%]">
 							<div className="h-[15%]"></div>
+
 							<div className=" flex justify-between flex-col lg:flex-row items-center mt-[12%] lg:mt-[0%] ">
 								<div
 									className=" w-[45%] aspect-square rounded-3xl "
-									data-aos="zoom-in"
-									data-aos-duration="1500"
 									onClick={() => {
 										setPopupPhoto("left");
 										togglePopup();
@@ -111,10 +124,9 @@ const KolorShowcase = () => {
 										className="object-cover w-[100%] h-[100%] hover:scale-105 transition duration-300 rounded-[3rem] shadow-3xl shadow-neutral-300"
 									/>
 								</div>
+
 								<div
 									className=" w-[45%] aspect-square mt-[5%] lg:mt-[0%] "
-									data-aos="zoom-in"
-									data-aos-duration="1500"
 									onClick={() => {
 										setPopupPhoto("right");
 										togglePopup();
@@ -130,8 +142,6 @@ const KolorShowcase = () => {
 							<div className="h-[8%] hidden lg:flex"></div>
 							<div
 								className=" lg:flex  justify between h-[35%] hidden"
-								data-aos="zoom-in"
-								data-aos-duration="1500"
 								onClick={() => {
 									setPopupPhoto("main");
 									togglePopup();

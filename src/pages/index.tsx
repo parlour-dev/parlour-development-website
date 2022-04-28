@@ -14,10 +14,6 @@ import Refs from "../components/Refs/Refs";
 import KolorShowcase from "../components/KolorShowcase/KolorShowcase";
 import KolorStudy from "../components/KolorStudy/KolorStudy";
 
-// AOS import
-import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-import { useEffect } from "react";
 
 import Rocket from "../components/Rocket/Rocket";
 import SplitSection from "../components/SplitSection/SplitSection";
@@ -25,16 +21,11 @@ import Footer from "../components/Footer/Footer";
 import Vision from "../components/Vision/Vision";
 
 const IndexPage = () => {
-	useEffect(() => {
-		AOS.init();
-		AOS.refresh();
-	}, []);
-
 	return (
 		<div>
 			<SEO
 				image={Logo}
-				title="Blockchain development, crypto, NFTs | Parlour Development"
+				title="Blockchain development, crypto, NFTs | Launch your blockchain project in no time"
 				description="Launch your blockchain project! Cryptocurrency, NFTs, ICOs, DApps, and more. We are a team of blockchain developers and designers. We are here to help you build your next project."
 			/>
 
