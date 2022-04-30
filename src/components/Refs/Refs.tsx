@@ -77,10 +77,11 @@ const Refs = () => {
 						My company's project couldn't have been done better!
 					</p>
 					<p className="lg:mr-20 mt-6 leading-tight text-xl lg:text-xl xl:text-2xl mx-10 lg:mx-auto text-left">
-						Parlour not only developed our product, but also helped us understand
-						different approaches to launching an NFT app. They know everything
-						about crypto, both the technicalities and the culture surrounding
-						it. <br /> I am looking forward to working with them again!
+						Parlour not only developed our product, but also helped us
+						understand different approaches to launching an NFT app. They know
+						everything about crypto, both the technicalities and the culture
+						surrounding it. <br /> I am looking forward to working with them
+						again!
 					</p>
 				</div>
 			</div>

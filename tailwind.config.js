@@ -7,7 +7,7 @@ module.exports = {
 			},
 			screens: {
 				"3xl": "2000px",
-				"xs": "400px"
+				xs: "400px",
 			},
 			colors: {
 				parlourGreen: "#1eff8d",

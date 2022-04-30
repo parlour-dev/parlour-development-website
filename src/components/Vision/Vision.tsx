@@ -17,8 +17,47 @@ import { Link } from "gatsby";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
 
+import ReactGA from "react-ga4";
+
 const Vision = () => {
 	const isDesktop = useMediaQuery("(min-width: 1020px)");
+
+	function DappClick() {
+		ReactGA.event({
+			category: "VisionClick",
+			action: "DappClick",
+		});
+	}
+	function NFTClick() {
+		ReactGA.event({
+			category: "VisionClick",
+			action: "NFTClick",
+		});
+	}
+	function TokenClick() {
+		ReactGA.event({
+			category: "VisionClick",
+			action: "TokenClick",
+		});
+	}
+	function GasClick() {
+		ReactGA.event({
+			category: "VisionClick",
+			action: "GasClick",
+		});
+	}
+	function DeFiClick() {
+		ReactGA.event({
+			category: "VisionClick",
+			action: "DeFiClick",
+		});
+	}
+	function VisionClick() {
+		ReactGA.event({
+			category: "VisionClick",
+			action: "VisionClick",
+		});
+	}
 
 	return (
 		<div className="w-auto 3xl:mx-auto max-w-screen-3xl min-h-[100vh] mx-4 my-8 ">
@@ -44,7 +83,10 @@ const Vision = () => {
 										with it.
 									</div>
 								</div>
-								<button className="hover:scale-105 duration-300 transition flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400 rounded-2xl text-neutral-400 text-2xl mt-10">
+								<button
+									className="hover:scale-105 duration-300 transition flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400 rounded-2xl text-neutral-400 text-2xl mt-10"
+									onClick={DappClick}
+								>
 									Learn more <BsArrowRight className="ml-2" />
 								</button>
 							</div>
@@ -60,7 +102,10 @@ const Vision = () => {
 									Not your project?
 								</p>
 								<Link to="/contact">
-									<button className="hover:scale-105 duration-300 flex flex-col justify-center mb-10 items-center w-full px-6 text-neutral-400 text-4xl mt-10">
+									<button
+										onClick={VisionClick}
+										className="hover:scale-105 duration-300 flex flex-col justify-center mb-10 items-center w-full px-6 text-neutral-400 text-4xl mt-10"
+									>
 										Tell us about your vision <BsArrowRight className="ml-2" />
 									</button>
 								</Link>
@@ -88,7 +133,10 @@ const Vision = () => {
 										utility.
 									</div>
 								</div>
-								<button className="hover:scale-105 duration-300 flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400  rounded-2xl text-neutral-400 text-2xl">
+								<button
+									onClick={NFTClick}
+									className="hover:scale-105 duration-300 flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400  rounded-2xl text-neutral-400 text-2xl"
+								>
 									Learn more <BsArrowRight className="ml-2" />
 								</button>
 							</div>
@@ -113,7 +161,10 @@ const Vision = () => {
 										Achieve lower blockchain fees.
 									</div>
 								</div>
-								<button className="hover:scale-105 duration-300 flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400  rounded-2xl text-neutral-400 text-2xl">
+								<button
+									onClick={GasClick}
+									className="hover:scale-105 duration-300 flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400  rounded-2xl text-neutral-400 text-2xl"
+								>
 									Learn more <BsArrowRight className="ml-2" />
 								</button>
 							</div>
@@ -140,7 +191,10 @@ const Vision = () => {
 										next level.
 									</div>
 								</div>
-								<button className="hover:scale-105 duration-300 flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400  rounded-2xl text-neutral-400 text-2xl">
+								<button
+									onClick={TokenClick}
+									className="hover:scale-105 duration-300 flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400  rounded-2xl text-neutral-400 text-2xl"
+								>
 									Learn more <BsArrowRight className="ml-2" />
 								</button>
 							</div>
@@ -166,7 +220,10 @@ const Vision = () => {
 										ecosystem.
 									</div>
 								</div>
-								<button className="hover:scale-105 duration-300 flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400  rounded-2xl text-neutral-400 text-2xl">
+								<button
+									onClick={DeFiClick}
+									className="hover:scale-105 duration-300 flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400  rounded-2xl text-neutral-400 text-2xl"
+								>
 									Learn more <BsArrowRight className="ml-2" />
 								</button>
 							</div>
@@ -176,7 +233,11 @@ const Vision = () => {
 			) : (
 				<div className="overflow-x-hidden flex flex-col mt-16 mx-auto w-[85%] xs:w-[95%] gap-8 justify-center items-center">
 					<div className="flex flex-col gap-8 w-[95%] max-w-[25rem] md:max-w-[100%] md:w-96 ">
-						<ScrollAnimation animateOnce offset={200} animateIn="animate__fadeInLeft">
+						<ScrollAnimation
+							animateOnce
+							offset={200}
+							animateIn="animate__fadeInLeft"
+						>
 							<div className="flex flex-col items-center justify-between bg-white text-center h-[28rem] rounded-3xl border-2 border-x-blue-500 border-y-sky-500 shadow-lg shadow-blue-500/20">
 								<img
 									className="w-[60%] mt-10 mx-auto mb-4"
@@ -188,12 +249,19 @@ const Vision = () => {
 										Dapp
 									</div>
 								</div>
-								<button className="hover:scale-105 duration-300 transition flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400 rounded-2xl text-neutral-400 text-2xl mt-4">
+								<button
+									onClick={DappClick}
+									className="hover:scale-105 duration-300 transition flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400 rounded-2xl text-neutral-400 text-2xl mt-4"
+								>
 									Learn more <BsArrowRight className="ml-2" />
 								</button>
 							</div>
 						</ScrollAnimation>
-						<ScrollAnimation animateOnce offset={200} animateIn="animate__fadeInRight">
+						<ScrollAnimation
+							animateOnce
+							offset={200}
+							animateIn="animate__fadeInRight"
+						>
 							<div className="flex flex-col items-center justify-between bg-white text-center h-[30rem] rounded-3xl border-2 border-x-purple-500   border-y-violet-500 shadow-lg shadow-violet-500/20">
 								<img
 									className="w-[50%] mt-10 mx-auto mb-4"
@@ -205,7 +273,10 @@ const Vision = () => {
 										Gas optimalization
 									</div>
 								</div>
-								<button className="hover:scale-105 duration-300 transition flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400 rounded-2xl text-neutral-400 text-2xl mt-4">
+								<button
+									onClick={GasClick}
+									className="hover:scale-105 duration-300 transition flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400 rounded-2xl text-neutral-400 text-2xl mt-4"
+								>
 									Learn more <BsArrowRight className="ml-2" />
 								</button>
 							</div>
@@ -213,68 +284,98 @@ const Vision = () => {
 					</div>
 
 					<div className="flex flex-col gap-8 w-[95%] max-w-[25rem] md:max-w-[100%] md:w-96 ">
-					<ScrollAnimation animateOnce offset={200} animateIn="animate__fadeInLeft">
-						<div className="flex flex-col items-center justify-between bg-white text-center h-[28rem] rounded-3xl border-2 border-y-orange-400 border-x-orange-500 shadow-lg shadow-orange-500/20">
-							<img
-								className="w-[60%] mt-10 mx-auto mb-4"
-								src={NFT}
-								alt="NFT icon"
-							/>
-							<div className="w-full px-8 rounded-b-3xl">
-								<div className=" text-4xl font-bold text-center justify-center ">
-									NFT
+						<ScrollAnimation
+							animateOnce
+							offset={200}
+							animateIn="animate__fadeInLeft"
+						>
+							<div className="flex flex-col items-center justify-between bg-white text-center h-[28rem] rounded-3xl border-2 border-y-orange-400 border-x-orange-500 shadow-lg shadow-orange-500/20">
+								<img
+									className="w-[60%] mt-10 mx-auto mb-4"
+									src={NFT}
+									alt="NFT icon"
+								/>
+								<div className="w-full px-8 rounded-b-3xl">
+									<div className=" text-4xl font-bold text-center justify-center ">
+										NFT
+									</div>
 								</div>
+								<button
+									onClick={NFTClick}
+									className="hover:scale-105 duration-300 transition flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400 rounded-2xl text-neutral-400 text-2xl mt-4"
+								>
+									Learn more <BsArrowRight className="ml-2" />
+								</button>
 							</div>
-							<button className="hover:scale-105 duration-300 transition flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400 rounded-2xl text-neutral-400 text-2xl mt-4">
-								Learn more <BsArrowRight className="ml-2" />
-							</button>
-						</div>
 						</ScrollAnimation>
-						<ScrollAnimation animateOnce offset={200} animateIn="animate__fadeInRight">
-						<div className="flex flex-col items-center justify-between bg-white text-center h-[28rem] rounded-3xl border-2 border-x-pink-500 border-y-red-500 shadow-lg shadow-pink-500/20">
-							<img
-								className="w-[60%] mt-10 mx-auto mb-4"
-								src={DeFi}
-								alt="A picture associated with DeFi"
-							/>
-							<div className="w-full px-8 rounded-b-3xl">
-								<div className=" text-4xl font-bold text-center justify-center ">
-									DeFi
+						<ScrollAnimation
+							animateOnce
+							offset={200}
+							animateIn="animate__fadeInRight"
+						>
+							<div className="flex flex-col items-center justify-between bg-white text-center h-[28rem] rounded-3xl border-2 border-x-pink-500 border-y-red-500 shadow-lg shadow-pink-500/20">
+								<img
+									className="w-[60%] mt-10 mx-auto mb-4"
+									src={DeFi}
+									alt="A picture associated with DeFi"
+								/>
+								<div className="w-full px-8 rounded-b-3xl">
+									<div className=" text-4xl font-bold text-center justify-center ">
+										DeFi
+									</div>
 								</div>
+								<button
+									onClick={DeFiClick}
+									className="hover:scale-105 duration-300 transition flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400 rounded-2xl text-neutral-400 text-2xl mt-4"
+								>
+									Learn more <BsArrowRight className="ml-2" />
+								</button>
 							</div>
-							<button className="hover:scale-105 duration-300 transition flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400 rounded-2xl text-neutral-400 text-2xl mt-4">
-								Learn more <BsArrowRight className="ml-2" />
-							</button>
-						</div>
 						</ScrollAnimation>
 					</div>
 					<div className="flex flex-col gap-8 w-[95%] max-w-[25rem] md:max-w-[100%] md:w-96 ">
-					<ScrollAnimation animateOnce offset={200} animateIn="animate__fadeInLeft">
-						<div className="flex flex-col items-center justify-between bg-white text-center h-[28rem] rounded-3xl border-2 border-x-lime-400 border-y-green-400 shadow-lg shadow-lime-500/20">
-							<img
-								className="w-[60%] mt-10 mx-auto mb-4"
-								src={Token}
-								alt="A logo of Ethereum"
-							/>
-							<div className="w-full px-8 rounded-b-3xl">
-								<div className=" text-4xl font-bold text-center justify-center ">
-									Crypto Token
+						<ScrollAnimation
+							animateOnce
+							offset={200}
+							animateIn="animate__fadeInLeft"
+						>
+							<div className="flex flex-col items-center justify-between bg-white text-center h-[28rem] rounded-3xl border-2 border-x-lime-400 border-y-green-400 shadow-lg shadow-lime-500/20">
+								<img
+									className="w-[60%] mt-10 mx-auto mb-4"
+									src={Token}
+									alt="A logo of Ethereum"
+								/>
+								<div className="w-full px-8 rounded-b-3xl">
+									<div className=" text-4xl font-bold text-center justify-center ">
+										Crypto Token
+									</div>
 								</div>
-							</div>
-							<button className="hover:scale-105 duration-300 transition flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400 rounded-2xl text-neutral-400 text-2xl mt-4">
-								Learn more <BsArrowRight className="ml-2" />
-							</button>
-						</div>
-						</ScrollAnimation>
-						<ScrollAnimation animateOnce offset={200} animateIn="animate__fadeInRight">
-						<div className="flex flex-col items-center justify-between row-start-2 text-neutral-400 bg-white text-center  min-h-[25rem] rounded-3xl relative border-[1px] border-stone-600">
-							<p className="text-4xl leading-tight py-10">Not your project?</p>
-							<Link to="/contact">
-								<button className="hover:scale-105 duration-300 flex flex-col justify-center mb-10 items-center w-full px-6 text-neutral-400 text-4xl mt-10">
-									Tell us about your vision <BsArrowRight className="ml-2" />
+								<button
+									onClick={TokenClick}
+									className="hover:scale-105 duration-300 transition flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400 rounded-2xl text-neutral-400 text-2xl mt-4"
+								>
+									Learn more <BsArrowRight className="ml-2" />
 								</button>
-							</Link>
-						</div>
+							</div>
+						</ScrollAnimation>
+						<ScrollAnimation
+							animateOnce
+							offset={200}
+							animateIn="animate__fadeInRight"
+						>
+							<div className="flex flex-col items-center justify-between row-start-2 text-neutral-400 bg-white text-center  min-h-[25rem] rounded-3xl relative border-[1px] border-stone-600">
+								<p className="text-4xl leading-tight py-10">
+									Not your project?
+								</p>
+								<Link to="/contact">
+									<button
+										onClick={VisionClick}
+										className="hover:scale-105 duration-300 flex flex-col justify-center mb-10 items-center w-full px-6 text-neutral-400 text-4xl mt-10"
+									>
+										Tell us about your vision <BsArrowRight className="ml-2" />
+									</button>
+								</Link>
+							</div>
 						</ScrollAnimation>
 					</div>
 				</div>

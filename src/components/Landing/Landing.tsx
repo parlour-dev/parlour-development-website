@@ -2,8 +2,16 @@ import { Link } from "gatsby";
 import React from "react";
 import Mockup from "./iphoneMockupTemp.webp";
 import "./stroke.css";
+import ReactGA from "react-ga4";
 
 const Landing = () => {
+	function OrderNowClick() {
+		ReactGA.event({
+			category: "Landing Click",
+			action: "OrderNow",
+		});
+	}
+
 	return (
 		<div className="w-full h-auto bg-white rounded-b-3xl shadow-2xl shadow-neutral-200">
 			<div className="3xl:mx-auto max-w-screen-3xl flex flex-col overflow-hidden items-center lg:flex-row min-h-screen w-full bg-white rounded-b-3xl">
@@ -12,7 +20,10 @@ const Landing = () => {
 						Launch your blockchain project <span className="stroke">ASAP</span>
 					</p>
 					<Link to="/contact">
-						<button className="hover:scale-105 transition duration-300 lg:ml-20 w-10/12 shadow-lg shadow-neutral-200 lg:w-auto mt-20 bg-gradient-to-r from-parlourBlue to-parlourGreen text-white py-6 px-10 font-bold text-3xl rounded-tl-[2rem] rounded-br-[2rem]">
+						<button
+							className="hover:scale-105 transition duration-300 lg:ml-20 w-10/12 shadow-lg shadow-neutral-200 lg:w-auto mt-20 bg-gradient-to-r from-parlourBlue to-parlourGreen text-white py-6 px-10 font-bold text-3xl rounded-tl-[2rem] rounded-br-[2rem]"
+							onClick={OrderNowClick}
+						>
 							Order your project now
 						</button>
 					</Link>

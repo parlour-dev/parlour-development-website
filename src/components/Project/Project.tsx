@@ -14,7 +14,7 @@ interface ProjectProps {
 	rightImage: string;
 
 	title: string;
-	codeLink: string
+	codeLink: string;
 
 	description: string;
 	caseStudy: string;
@@ -93,11 +93,17 @@ const Project = (props: ProjectProps) => {
 							</a>
 						</div>
 						<div className="px-4 text-left flex flex-col items-baseline">
-							<p className="text-lg" dangerouslySetInnerHTML={{ __html: props.description }}></p>
+							<p
+								className="text-lg"
+								dangerouslySetInnerHTML={{ __html: props.description }}
+							></p>
 						</div>
 					</div>
 					<p className="font-bold text-2xl">Case study</p>
-					<p className="text-lg mx-[10%] text-justify" dangerouslySetInnerHTML={{ __html: props.caseStudy }}></p>
+					<p
+						className="text-lg mx-[10%] text-justify"
+						dangerouslySetInnerHTML={{ __html: props.caseStudy }}
+					></p>
 					<br />
 					<br />
 				</div>

@@ -51,6 +51,6 @@ exports.createPages = async function ({ actions, graphql }) {
 		component: require.resolve(`./src/templates/projects.tsx`),
 		context: {
 			portfolios: data.allStrapiPortfolios.edges,
-		}
-	})
+		},
+	});
 };

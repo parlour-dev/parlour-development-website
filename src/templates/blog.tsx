@@ -6,6 +6,8 @@ import Logo from "../components/SEO/parlour-seo.png";
 import { Link, PageProps } from "gatsby";
 import { Article } from "./article";
 
+import ReactGA from "react-ga4";
+
 import Blog from "../images/blog.webp";
 import PLACEHOLDER from "../images/PLACEHOLDER.jpg";
 
@@ -28,7 +30,18 @@ const BlogPage = ({ pageContext }: PageProps) => {
 
 	const handleClick = () => {
 		ref.current?.scrollIntoView({ behavior: "smooth" });
+		ReactGA.event({
+			category: "Blog Click",
+			action: "DiveIn",
+		});
 	};
+
+	function ReadNowClick() {
+		ReactGA.event({
+			category: "Blog Click",
+			action: "ReadNow",
+		});
+	}
 
 	return (
 		<div>
@@ -88,7 +101,12 @@ const BlogPage = ({ pageContext }: PageProps) => {
 										consectetur adipisicing elit. Unde exercitationem,
 										doloremque expedita inventore error provident.
 									</h2>
-									<img className="duration-300 transition hover:scale-105 w-11/12 my-12 md:my-0 md:w-4/12 mx-auto" src={readNow} alt="Button saying read now" />
+									<img
+										className="duration-300 transition hover:scale-105 w-11/12 my-12 md:my-0 md:w-4/12 mx-auto"
+										src={readNow}
+										alt="Button saying read now"
+										onClick={ReadNowClick}
+									/>
 								</div>
 								<div className="mt-4 text-xl flex flex-row items-center">
 									<IoMdWatch />

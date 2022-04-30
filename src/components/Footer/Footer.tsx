@@ -35,9 +35,9 @@ const Footer = () => {
 				</div>
 			</div>
 			{/* create a paragraph at the bottom of the page that's centered */}
-			
+
 			<p className="mt-32 text-center">
-			<hr className="w-[95%] mx-auto mb-4"/>
+				<hr className="w-[95%] mx-auto mb-4" />
 				Made with 💚 by Parlour <br /> ⓒ 2022
 			</p>
 		</div>

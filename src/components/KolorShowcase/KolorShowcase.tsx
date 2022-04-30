@@ -9,6 +9,8 @@ import CaseStudy from "./CaseStudy.png";
 import { Link } from "gatsby";
 import { useEffect, useState } from "react";
 import Popup from "../Popup";
+import ReactGA from "react-ga4";
+
 // AOS import
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
@@ -33,6 +35,19 @@ const KolorShowcase = () => {
 		AOS.refresh();
 	}, []);
 
+	function CaseStudyClick() {
+		ReactGA.event({
+			category: "Kolor Click",
+			action: "Case Study",
+		});
+	}
+
+	function PhotoClick() {
+		ReactGA.event({
+			category: "Kolor Click",
+			action: "Photo Study",
+		});
+	}
 	return (
 		<div className="w-full h-auto bg-white shadow-3xl shadow-neutral-200 my-10 rounded-3xl">
 			<div className="3xl:mx-auto max-w-screen-3xl">
@@ -122,6 +137,7 @@ const KolorShowcase = () => {
 										src={ImgLeft}
 										alt="Left picture showing the project"
 										className="object-cover w-[100%] h-[100%] hover:scale-105 transition duration-300 rounded-[3rem] shadow-3xl shadow-neutral-300"
+										onClick={PhotoClick}
 									/>
 								</div>
 
@@ -136,6 +152,7 @@ const KolorShowcase = () => {
 										src={ImgRight}
 										alt="Right picture showing the project"
 										className="object-cover w-[100%] h-[100%] hover:scale-105 transition duration-300 rounded-[3rem] shadow-3xl shadow-neutral-300"
+										onClick={PhotoClick}
 									/>
 								</div>
 							</div>
@@ -152,6 +169,7 @@ const KolorShowcase = () => {
 										src={ImgBottom}
 										alt="Bottom picture showing the project"
 										className="object-cover w-[100%] h-[100%] hover:scale-105 transition duration-300 rounded-[3rem] shadow-3xl shadow-neutral-300"
+										onClick={PhotoClick}
 									/>
 								</div>
 							</div>
@@ -167,6 +185,7 @@ const KolorShowcase = () => {
 						className="justify-center w-[20rem] md:w-[32rem] mx-auto mt-8 hover:scale-105 transition duration-300"
 						src={CaseStudy}
 						alt="Button redirecting to case study of the project"
+						onClick={CaseStudyClick}
 					/>
 				</Link>
 				<div className="h-20"></div>

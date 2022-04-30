@@ -13,7 +13,7 @@ import Landing from "../components/Landing/Landing";
 import Refs from "../components/Refs/Refs";
 import KolorShowcase from "../components/KolorShowcase/KolorShowcase";
 import KolorStudy from "../components/KolorStudy/KolorStudy";
-
+import ReactGA from "react-ga4";
 
 import Rocket from "../components/Rocket/Rocket";
 import SplitSection from "../components/SplitSection/SplitSection";
@@ -21,6 +21,9 @@ import Footer from "../components/Footer/Footer";
 import Vision from "../components/Vision/Vision";
 
 const IndexPage = () => {
+	ReactGA.initialize("G-YYKTS21T84");
+	ReactGA.send(location.pathname + location.search);
+
 	return (
 		<div>
 			<SEO
@@ -36,7 +39,6 @@ const IndexPage = () => {
 
 			<Refs />
 			<KolorShowcase />
-
 
 			{/* <ProjectsBox Image1={PukPukLeft} Image2={KolorLeft} /> */}
 			{/* <Rocket /> */}

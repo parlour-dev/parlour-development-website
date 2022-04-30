@@ -30,8 +30,8 @@ const SinglePostPage = ({ data }: PageProps) => {
 			<Navbar />
 			<div className="h-24"></div>
 			<div className="rounded-3xl w-11/12 md:w-8/12 my-10 bg-white shadow-lg mx-auto text-left p-14 md:p-20">
-			<h1 className="text-6xl font-bold mb-8">{article.Title}</h1>
-			<p className="text-xl">{article.Text}</p>
+				<h1 className="text-6xl font-bold mb-8">{article.Title}</h1>
+				<p className="text-xl">{article.Text}</p>
 			</div>
 		</div>
 	);

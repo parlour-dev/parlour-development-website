@@ -4,6 +4,7 @@ import { Link } from "gatsby";
 import "animate.css";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import { stack as Menu } from "react-burger-menu";
+import ReactGA from "react-ga4";
 
 // icon import
 import { HiOutlineMenu, HiX } from "react-icons/hi";
@@ -23,9 +24,35 @@ const Navbar = () => {
 			}
 		});
 	}, []);
-
+	ReactGA.send(location.pathname + location.search);
 	// useMediaQuery to determine whether someone is browing on mobile or desktop
 	const isDesktop = useMediaQuery("(min-width: 1400px)");
+	// Send a custom event
+
+	function ProjectClick() {
+		ReactGA.event({
+			category: "Navbar Click",
+			action: "Project",
+		});
+	}
+	function ContactClick() {
+		ReactGA.event({
+			category: "Navbar Click",
+			action: "Contact",
+		});
+	}
+	function BuyNowClick() {
+		ReactGA.event({
+			category: "Navbar Click",
+			action: "BuyNow",
+		});
+	}
+	function BlogClick() {
+		ReactGA.event({
+			category: "Navbar Click",
+			action: "Blog",
+		});
+	}
 
 	return (
 		<div
@@ -46,25 +73,35 @@ const Navbar = () => {
 								className="h-0 lg:h-14 mx-4 hover:scale-105 transition duration-300"
 								src={BuyButton}
 								alt="Buy Now"
+								onClick={BuyNowClick}
 							/>
 						</Link>
 						<Link to="/projects">
 							<div className="bg-transparent mx-1 sm:mx-4 sm:mr-6 font-sans font-semibold px-4 sm:px-8 py-2">
-								<p className="text-2xl hover:scale-110 transition duration-300">
+								<p
+									className="text-2xl hover:scale-110 transition duration-300"
+									onClick={ProjectClick}
+								>
 									Projects
 								</p>
 							</div>
 						</Link>
 						<Link to="/contact">
 							<div className="bg-transparent mx-1 sm:mx-4 sm:mr-6 font-sans font-semibold px-4 sm:px-8 py-2 ">
-								<p className="text-2xl hover:scale-110 transition duration-300">
+								<p
+									className="text-2xl hover:scale-110 transition duration-300"
+									onClick={ContactClick}
+								>
 									Contact
 								</p>
 							</div>
 						</Link>
 						<Link to="/articles">
 							<div className="bg-transparent mx-1 sm:mx-4 sm:mr-6 font-sans font-semibold px-4 sm:px-8 py-2">
-								<p className="text-2xl hover:scale-110 transition duration-300">
+								<p
+									className="text-2xl hover:scale-110 transition duration-300"
+									onClick={BlogClick}
+								>
 									Blog
 								</p>
 							</div>
@@ -85,25 +122,35 @@ const Navbar = () => {
 									className="w-48 pt-20 pb-4 mx-auto hover:scale-105 transition duration-300"
 									src={BuyButton}
 									alt="Buy Now"
+									onClick={BuyNowClick}
 								/>
 							</Link>
 							<Link to="/projects">
 								<div className="bg-transparent mx-1 sm:mx-4 sm:mr-6 font-sans font-semibold px-4 sm:px-8 py-2">
-									<p className="text-4xl py-4 hover:scale-110 transition duration-300">
+									<p
+										className="text-4xl py-4 hover:scale-110 transition duration-300"
+										onClick={ProjectClick}
+									>
 										Projects
 									</p>
 								</div>
 							</Link>
 							<Link to="/contact">
 								<div className="bg-transparent mx-1 sm:mx-4 sm:mr-6 font-sans font-semibold px-4 sm:px-8 py-2 ">
-									<p className="text-4xl py-4 hover:scale-110 transition duration-300">
+									<p
+										className="text-4xl py-4 hover:scale-110 transition duration-300"
+										onClick={ContactClick}
+									>
 										Contact
 									</p>
 								</div>
 							</Link>
 							<Link to="/articles">
 								<div className="bg-transparent mx-1 sm:mx-4 sm:mr-6 font-sans font-semibold px-4 sm:px-8 py-2">
-									<p className="text-4xl py-4 hover:scale-110 transition duration-300">
+									<p
+										className="text-4xl py-4 hover:scale-110 transition duration-300"
+										onClick={BlogClick}
+									>
 										Blog
 									</p>
 								</div>
