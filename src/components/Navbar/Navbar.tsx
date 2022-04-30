@@ -24,7 +24,7 @@ const Navbar = () => {
 			}
 		});
 	}, []);
-	ReactGA.send(location.pathname + location.search);
+
 	// useMediaQuery to determine whether someone is browing on mobile or desktop
 	const isDesktop = useMediaQuery("(min-width: 1400px)");
 	// Send a custom event
