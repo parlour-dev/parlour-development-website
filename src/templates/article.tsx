@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import SEO from "../components/SEO/seo";
 import Logo from "../components/SEO/parlour-seo.png";
 import { graphql, PageProps, useStaticQuery } from "gatsby";
+import { marked } from "marked";
 
 export interface Article {
 	id: number;
@@ -21,6 +22,13 @@ interface Data {
 const SinglePostPage = ({ data }: PageProps) => {
 	const article = (data as Data).strapiArticles;
 
+	const articleParsedText = marked
+		.parse(article.Text, { headerIds: false })
+		.replaceAll("<p>", "<p class='text-lg mb-4'>")
+		.replaceAll("<h2>", "<p class='font-bold text-2xl1'>")
+		.replaceAll("</h2>", "</p>")
+		.replaceAll("<a", "<a class='text-blue-500'");
+
 	return (
 		<div>
 			<Helmet>
@@ -33,7 +41,10 @@ const SinglePostPage = ({ data }: PageProps) => {
 			<div className="h-24"></div>
 			<div className="rounded-3xl w-11/12 md:w-8/12 my-10 bg-white shadow-lg mx-auto text-left p-14 md:p-20">
 				<h1 className="text-6xl font-bold mb-8">{article.Title}</h1>
-				<p className="text-xl">{article.Text}</p>
+				<p
+					className="text-xl"
+					dangerouslySetInnerHTML={{ __html: articleParsedText }}
+				/>
 			</div>
 		</div>
 	);
