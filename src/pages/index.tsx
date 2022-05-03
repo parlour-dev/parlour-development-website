@@ -12,7 +12,6 @@ import Newsletter from "../components/Newsletter/Newsletter";
 import Landing from "../components/Landing/Landing";
 import Refs from "../components/Refs/Refs";
 import KolorShowcase from "../components/KolorShowcase/KolorShowcase";
-import KolorStudy from "../components/KolorStudy/KolorStudy";
 import ReactGA from "react-ga4";
 
 import Rocket from "../components/Rocket/Rocket";

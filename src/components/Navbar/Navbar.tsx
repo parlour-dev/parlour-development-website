@@ -10,6 +10,7 @@ import ReactGA from "react-ga4";
 import { HiOutlineMenu, HiX } from "react-icons/hi";
 
 import BuyButton from "./buy.webp";
+import i18n, { t } from "../../i18n";
 
 const Navbar = () => {
 	const [scrollLevel, setScrollLevel] = useState<string>("index");
@@ -92,7 +93,7 @@ const Navbar = () => {
 									className="text-2xl hover:scale-110 transition duration-300"
 									onClick={ContactClick}
 								>
-									Contact
+									{t("contact")}
 								</p>
 							</div>
 						</Link>
