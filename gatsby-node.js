@@ -4,7 +4,7 @@ exports.createPages = async function ({ actions, graphql }) {
 			allStrapiArticles {
 				edges {
 					node {
-						id
+						strapiId
 						Title
 						Time
 						Description
@@ -35,10 +35,10 @@ exports.createPages = async function ({ actions, graphql }) {
 	`);
 	data.allStrapiArticles.edges.forEach((edge, idx) => {
 		actions.createPage({
-			path: "/articles/" + edge.node.id,
+			path: "/articles/" + edge.node.strapiId,
 			component: require.resolve(`./src/templates/article.tsx`),
 			context: {
-				id: edge.node.id,
+				id: edge.node.strapiId,
 			},
 		});
 	});

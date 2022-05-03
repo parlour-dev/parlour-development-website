@@ -11,7 +11,7 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 
 // Icon import
 import { BsArrowRight } from "react-icons/bs";
-import { Link } from "gatsby";
+import { Link, navigate } from "gatsby";
 
 // Animations
 import ScrollAnimation from "react-animate-on-scroll";
@@ -133,12 +133,13 @@ const Vision = () => {
 										utility.
 									</div>
 								</div>
-								<button
+								<Link
+									to="/articles/2"
 									onClick={NFTClick}
 									className="hover:scale-105 duration-300 flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400  rounded-2xl text-neutral-400 text-2xl"
 								>
 									Learn more <BsArrowRight className="ml-2" />
-								</button>
+								</Link>
 							</div>
 						</ScrollAnimation>
 						<ScrollAnimation

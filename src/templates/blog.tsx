@@ -87,7 +87,7 @@ const BlogPage = ({ pageContext }: PageProps) => {
 						{/* border-4 border-x-parlourGreen  border- border-y-parlourBlue */}
 						<Link
 							className="w-full h-full flex flex-col overflow-hidden"
-							to={`/articles/${node.id}`}
+							to={`/articles/${node.strapiId}`}
 						>
 							<img
 								className="opacity-80 rounded-3xl overflow-hidden object-cover"
