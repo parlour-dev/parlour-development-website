@@ -23,7 +23,6 @@ import Vision from "../components/Vision/Vision";
 const IndexPage = () => {
 	ReactGA.initialize("G-YYKTS21T84");
 
-
 	return (
 		<div>
 			<SEO

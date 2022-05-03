@@ -10,6 +10,8 @@ export interface Article {
 	Title: string;
 	Text: string;
 	Description: string;
+	Time: number;
+	Cover: { url: string };
 }
 
 interface Data {

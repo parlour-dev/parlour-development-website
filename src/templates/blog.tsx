@@ -26,7 +26,7 @@ const BlogPage = ({ pageContext }: PageProps) => {
 	const { articles } = pageContext as PageContext;
 
 	// Smooth scrolling
-	const ref = useRef<null | HTMLElement>(null);
+	const ref = useRef<HTMLDivElement>(null);
 
 	const handleClick = () => {
 		ref.current?.scrollIntoView({ behavior: "smooth" });
@@ -79,27 +79,26 @@ const BlogPage = ({ pageContext }: PageProps) => {
 				</div>
 			</div>
 			<div className="my-10" ref={ref} id="blog">
-				{articles.map(({ node }) => (
-					<div className="w-11/12 lg:w-6/12 h-[50rem]  mx-auto my-10 rounded-3xl shadow-xl bg-white">
+				{articles.map(({ node }, index) => (
+					<div
+						key={index}
+						className="w-11/12 lg:w-6/12 h-[50rem]  mx-auto my-10 rounded-3xl shadow-xl bg-white"
+					>
 						{/* border-4 border-x-parlourGreen  border- border-y-parlourBlue */}
 						<Link
 							className="w-full h-full flex flex-col overflow-hidden"
 							to={`/articles/${node.id}`}
 						>
-							{/* <div className=""></div> */}
 							<img
-								className="opacity-30 rounded-3xl overflow-hidden object-cover"
-								src={PLACEHOLDER}
-								alt=""
+								className="opacity-80 rounded-3xl overflow-hidden object-cover"
+								src={"https://strapi.i.parlour.dev:1337" + node.Cover.url}
+								alt="article cover"
 							/>
 							<div className="p-10 text-left shadow-lg/10 w-11/12 lg:w-6/12 absolute mt-[30rem] rounded-3xl min-h-[20rem] bg-white">
 								<h1 className="font-bold text-5xl">{node.Title}</h1>
 								<div className="flex flex-col lg:flex-row items-center">
 									<h2 className="mt-4 font-medium lg:w-6/12">
-										PLACEHOLDER DESCRIPTION Lorem ipsum dolor, sit amet
-										consectetur adipisicing elit. Lorem ipsum dolor sit amet
-										consectetur adipisicing elit. Unde exercitationem,
-										doloremque expedita inventore error provident.
+										{node.Description}
 									</h2>
 									<img
 										className="duration-300 transition hover:scale-105 w-11/12 my-12 md:my-0 md:w-4/12 mx-auto"
@@ -110,7 +109,7 @@ const BlogPage = ({ pageContext }: PageProps) => {
 								</div>
 								<div className="mt-4 text-xl flex flex-row items-center">
 									<IoMdWatch />
-									<p className="ml-2">10 minutes</p>
+									<p className="ml-2">{node.Time} minutes</p>
 								</div>
 							</div>
 						</Link>

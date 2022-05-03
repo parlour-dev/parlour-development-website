@@ -6,6 +6,11 @@ exports.createPages = async function ({ actions, graphql }) {
 					node {
 						id
 						Title
+						Time
+						Description
+						Cover {
+							url
+						}
 						Text
 					}
 				}
