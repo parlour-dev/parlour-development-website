@@ -18,6 +18,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
 
 import ReactGA from "react-ga4";
+import { useTranslation } from "../../i18n";
 
 const Vision = () => {
 	const isDesktop = useMediaQuery("(min-width: 1020px)");
@@ -59,9 +60,11 @@ const Vision = () => {
 		});
 	}
 
+	const { t } = useTranslation();
+
 	return (
 		<div className="w-auto 3xl:mx-auto max-w-screen-3xl min-h-[100vh] mx-4 my-8 ">
-			<p className=" text-6xl px-4 z-50 font-bold mt-32">Launch anything.</p>
+			<p className=" text-6xl px-4 z-50 font-bold mt-32">{t("visionTitle")}</p>
 			{/* 
 		<div className="inline-grid grid-cols-3 grid-rows-2 gap-8 w-9/10 mt-5 ">	</div>	 */}
 			{isDesktop ? (
@@ -79,15 +82,14 @@ const Vision = () => {
 										Dapp
 									</div>
 									<div className=" text-xl text-left justify-center ">
-										Create a Web3 experience and make you users fall in love
-										with it.
+									{t("vision1")}
 									</div>
 								</div>
 								<button
 									className="hover:scale-105 duration-300 transition flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400 rounded-2xl text-neutral-400 text-2xl mt-10"
 									onClick={DappClick}
 								>
-									Learn more <BsArrowRight className="ml-2" />
+									{t("learnMore")} <BsArrowRight className="ml-2" />
 								</button>
 							</div>
 						</ScrollAnimation>
@@ -99,14 +101,14 @@ const Vision = () => {
 						>
 							<div className="flex flex-col items-center justify-between row-start-2 text-neutral-400 bg-white text-center  h-[32rem] rounded-3xl relative border-[1px] border-stone-600">
 								<p className="text-4xl md:text-6xl leading-tight py-10">
-									Not your project?
+								{t("vision6")}
 								</p>
 								<Link to="/contact">
 									<button
 										onClick={VisionClick}
 										className="hover:scale-105 duration-300 flex flex-col justify-center mb-10 items-center w-full px-6 text-neutral-400 text-4xl mt-10"
 									>
-										Tell us about your vision <BsArrowRight className="ml-2" />
+										{t("vision7")} <BsArrowRight className="ml-2" />
 									</button>
 								</Link>
 							</div>
@@ -129,8 +131,7 @@ const Vision = () => {
 										NFT
 									</div>
 									<div className="text-xl text-left justify-center ">
-										Launch a stunning NFT collection and give it endless
-										utility.
+									{t("vision2")}
 									</div>
 								</div>
 								<Link
@@ -138,7 +139,7 @@ const Vision = () => {
 									onClick={NFTClick}
 									className="hover:scale-105 duration-300 flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400  rounded-2xl text-neutral-400 text-2xl"
 								>
-									Learn more <BsArrowRight className="ml-2" />
+									{t("learnMore")} <BsArrowRight className="ml-2" />
 								</Link>
 							</div>
 						</ScrollAnimation>
@@ -159,14 +160,14 @@ const Vision = () => {
 										Gas optimalization
 									</div>
 									<div className="text-xl text-left justify-center ">
-										Achieve lower blockchain fees.
+									{t("vision4")}
 									</div>
 								</div>
 								<button
 									onClick={GasClick}
 									className="hover:scale-105 duration-300 flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400  rounded-2xl text-neutral-400 text-2xl"
 								>
-									Learn more <BsArrowRight className="ml-2" />
+									{t("learnMore")} <BsArrowRight className="ml-2" />
 								</button>
 							</div>
 						</ScrollAnimation>
@@ -188,15 +189,14 @@ const Vision = () => {
 										Crypto Token
 									</div>
 									<div className="text-xl text-left justify-center ">
-										Create your own cryprocurrency and take your company to the
-										next level.
+									{t("vision3")}
 									</div>
 								</div>
 								<button
 									onClick={TokenClick}
 									className="hover:scale-105 duration-300 flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400  rounded-2xl text-neutral-400 text-2xl"
 								>
-									Learn more <BsArrowRight className="ml-2" />
+									{t("learnMore")} <BsArrowRight className="ml-2" />
 								</button>
 							</div>
 						</ScrollAnimation>
@@ -217,15 +217,14 @@ const Vision = () => {
 										DeFi
 									</div>
 									<div className="text-xl text-left justify-center ">
-										Embark on the journey of creating the decentralized finance
-										ecosystem.
+									{t("vision5")}
 									</div>
 								</div>
 								<button
 									onClick={DeFiClick}
 									className="hover:scale-105 duration-300 flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400  rounded-2xl text-neutral-400 text-2xl"
 								>
-									Learn more <BsArrowRight className="ml-2" />
+									{t("learnMore")}<BsArrowRight className="ml-2" />
 								</button>
 							</div>
 						</ScrollAnimation>
@@ -254,7 +253,7 @@ const Vision = () => {
 									onClick={DappClick}
 									className="hover:scale-105 duration-300 transition flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400 rounded-2xl text-neutral-400 text-2xl mt-4"
 								>
-									Learn more <BsArrowRight className="ml-2" />
+									{t("learnMore")} <BsArrowRight className="ml-2" />
 								</button>
 							</div>
 						</ScrollAnimation>
@@ -278,7 +277,7 @@ const Vision = () => {
 									onClick={GasClick}
 									className="hover:scale-105 duration-300 transition flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400 rounded-2xl text-neutral-400 text-2xl mt-4"
 								>
-									Learn more <BsArrowRight className="ml-2" />
+									{t("learnMore")} <BsArrowRight className="ml-2" />
 								</button>
 							</div>
 						</ScrollAnimation>
@@ -305,7 +304,7 @@ const Vision = () => {
 									onClick={NFTClick}
 									className="hover:scale-105 duration-300 transition flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400 rounded-2xl text-neutral-400 text-2xl mt-4"
 								>
-									Learn more <BsArrowRight className="ml-2" />
+									{t("learnMore")} <BsArrowRight className="ml-2" />
 								</button>
 							</div>
 						</ScrollAnimation>
@@ -329,7 +328,7 @@ const Vision = () => {
 									onClick={DeFiClick}
 									className="hover:scale-105 duration-300 transition flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400 rounded-2xl text-neutral-400 text-2xl mt-4"
 								>
-									Learn more <BsArrowRight className="ml-2" />
+									{t("learnMore")} <BsArrowRight className="ml-2" />
 								</button>
 							</div>
 						</ScrollAnimation>
@@ -355,7 +354,7 @@ const Vision = () => {
 									onClick={TokenClick}
 									className="hover:scale-105 duration-300 transition flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400 rounded-2xl text-neutral-400 text-2xl mt-4"
 								>
-									Learn more <BsArrowRight className="ml-2" />
+									{t("learnMore")} <BsArrowRight className="ml-2" />
 								</button>
 							</div>
 						</ScrollAnimation>
@@ -366,14 +365,14 @@ const Vision = () => {
 						>
 							<div className="flex flex-col items-center justify-between row-start-2 text-neutral-400 bg-white text-center  min-h-[25rem] rounded-3xl relative border-[1px] border-stone-600">
 								<p className="text-4xl leading-tight py-10">
-									Not your project?
+									{t("vision6")}
 								</p>
 								<Link to="/contact">
 									<button
 										onClick={VisionClick}
 										className="hover:scale-105 duration-300 flex flex-col justify-center mb-10 items-center w-full px-6 text-neutral-400 text-4xl mt-10"
 									>
-										Tell us about your vision <BsArrowRight className="ml-2" />
+										{t("vision7")} <BsArrowRight className="ml-2" />
 									</button>
 								</Link>
 							</div>

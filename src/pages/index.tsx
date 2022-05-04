@@ -18,9 +18,13 @@ import Rocket from "../components/Rocket/Rocket";
 import SplitSection from "../components/SplitSection/SplitSection";
 import Footer from "../components/Footer/Footer";
 import Vision from "../components/Vision/Vision";
+import { t } from "i18next";
+// import { useTranslation } from "../i18n";
 
 const IndexPage = () => {
 	ReactGA.initialize("G-YYKTS21T84");
+
+	// const {t} = useTranslation();
 
 	return (
 		<div>
@@ -46,7 +50,6 @@ const IndexPage = () => {
 			{/* <SplitSection />
 			<Newsletter />
 			<OfferBox /> */}
-
 			<Footer />
 		</div>
 	);
