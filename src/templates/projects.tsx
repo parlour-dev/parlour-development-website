@@ -27,7 +27,7 @@ const Projects = ({ pageContext }: PageProps) => {
 		<div className="mt-28">
 			<Helmet>
 				<meta charSet="utf-8" />
-				<title>Parlour Development - Our projects!</title>
+				<title>Parlour Development - Our projects</title>
 			</Helmet>
 			<Navbar />
 
