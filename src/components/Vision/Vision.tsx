@@ -83,12 +83,13 @@ const Vision = () => {
 										with it.
 									</div>
 								</div>
-								<button
+								<Link
+									to="/articles/3"
 									className="hover:scale-105 duration-300 transition flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400 rounded-2xl text-neutral-400 text-2xl mt-10"
 									onClick={DappClick}
 								>
 									Learn more <BsArrowRight className="ml-2" />
-								</button>
+								</Link>
 							</div>
 						</ScrollAnimation>
 						<ScrollAnimation
@@ -162,12 +163,13 @@ const Vision = () => {
 										Achieve lower blockchain fees.
 									</div>
 								</div>
-								<button
+								<Link
+									to="/articles"
 									onClick={GasClick}
 									className="hover:scale-105 duration-300 flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400  rounded-2xl text-neutral-400 text-2xl"
 								>
 									Learn more <BsArrowRight className="ml-2" />
-								</button>
+								</Link>
 							</div>
 						</ScrollAnimation>
 					</div>
@@ -192,12 +194,13 @@ const Vision = () => {
 										next level.
 									</div>
 								</div>
-								<button
+								<Link
+									to="/articles"
 									onClick={TokenClick}
 									className="hover:scale-105 duration-300 flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400  rounded-2xl text-neutral-400 text-2xl"
 								>
 									Learn more <BsArrowRight className="ml-2" />
-								</button>
+								</Link>
 							</div>
 						</ScrollAnimation>
 						<ScrollAnimation
@@ -221,12 +224,13 @@ const Vision = () => {
 										ecosystem.
 									</div>
 								</div>
-								<button
+								<Link
+									to="/articles/3"
 									onClick={DeFiClick}
 									className="hover:scale-105 duration-300 flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400  rounded-2xl text-neutral-400 text-2xl"
 								>
 									Learn more <BsArrowRight className="ml-2" />
-								</button>
+								</Link>
 							</div>
 						</ScrollAnimation>
 					</div>
@@ -250,12 +254,13 @@ const Vision = () => {
 										Dapp
 									</div>
 								</div>
-								<button
+								<Link
+									to="/articles/3"
 									onClick={DappClick}
 									className="hover:scale-105 duration-300 transition flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400 rounded-2xl text-neutral-400 text-2xl mt-4"
 								>
 									Learn more <BsArrowRight className="ml-2" />
-								</button>
+								</Link>
 							</div>
 						</ScrollAnimation>
 						<ScrollAnimation
@@ -274,12 +279,13 @@ const Vision = () => {
 										Gas optimalization
 									</div>
 								</div>
-								<button
+								<Link
+									to="/articles"
 									onClick={GasClick}
 									className="hover:scale-105 duration-300 transition flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400 rounded-2xl text-neutral-400 text-2xl mt-4"
 								>
 									Learn more <BsArrowRight className="ml-2" />
-								</button>
+								</Link>
 							</div>
 						</ScrollAnimation>
 					</div>
@@ -301,12 +307,13 @@ const Vision = () => {
 										NFT
 									</div>
 								</div>
-								<button
+								<Link
+									to="/articles/2"
 									onClick={NFTClick}
 									className="hover:scale-105 duration-300 transition flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400 rounded-2xl text-neutral-400 text-2xl mt-4"
 								>
 									Learn more <BsArrowRight className="ml-2" />
-								</button>
+								</Link>
 							</div>
 						</ScrollAnimation>
 						<ScrollAnimation
@@ -325,12 +332,13 @@ const Vision = () => {
 										DeFi
 									</div>
 								</div>
-								<button
+								<Link
+									to="/articles/3"
 									onClick={DeFiClick}
 									className="hover:scale-105 duration-300 transition flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400 rounded-2xl text-neutral-400 text-2xl mt-4"
 								>
 									Learn more <BsArrowRight className="ml-2" />
-								</button>
+								</Link>
 							</div>
 						</ScrollAnimation>
 					</div>
@@ -351,12 +359,13 @@ const Vision = () => {
 										Crypto Token
 									</div>
 								</div>
-								<button
+								<Link
+									to="/articles"
 									onClick={TokenClick}
 									className="hover:scale-105 duration-300 transition flex flex-row justify-center mb-10 items-center w-[80%] h-16 border-[1px] border-neutral-400 rounded-2xl text-neutral-400 text-2xl mt-4"
 								>
 									Learn more <BsArrowRight className="ml-2" />
-								</button>
+								</Link>
 							</div>
 						</ScrollAnimation>
 						<ScrollAnimation
