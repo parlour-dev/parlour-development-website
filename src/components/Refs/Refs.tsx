@@ -3,8 +3,12 @@ import Ref from "./refNotFlip.png";
 import RefFlip from "./refFlip.png";
 import MI from "./mi.webp";
 import GC from "./gc.webp";
+import { useTranslation } from "../../i18n";
 
 const Refs = () => {
+
+	const { t } = useTranslation();
+	
 	return (
 		<div className="w-full h-auto bg-transparent rounded-b-3xl shadow-neutral-600">
 			{/* <div className="3xl:mx-auto max-w-screen-3xl flex flex-col overflow-hidden lg:flex-row  w-full mt-36 justify-between items-center ">
@@ -74,14 +78,10 @@ const Refs = () => {
 				</div>
 				<div className="lg:w-6/12  flex flex-col">
 					<p className="lg:mr-20 mt-0 lg:mt-0 leading-tight text-4xl lg:text-5xl xl:text-5xl font-semibold mx-10 lg:mx-auto text-left">
-						My company's project couldn't have been done better!
+						{t("opinion1")}
 					</p>
 					<p className="lg:mr-20 mt-6 leading-tight text-xl lg:text-xl xl:text-2xl mx-10 lg:mx-auto text-left">
-						Parlour not only developed our product, but also helped us
-						understand different approaches to launching an NFT app. They know
-						everything about crypto, both the technicalities and the culture
-						surrounding it. <br /> I am looking forward to working with them
-						again!
+					{t("opinion2")}
 					</p>
 				</div>
 			</div>

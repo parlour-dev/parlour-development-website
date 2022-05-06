@@ -18,6 +18,7 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 // Animations
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
+import { useTranslation } from "../../i18n";
 
 type PopupPhotoType = "main" | "left" | "right";
 
@@ -48,6 +49,7 @@ const KolorShowcase = () => {
 			action: "Photo Study",
 		});
 	}
+	const { t } = useTranslation();
 	return (
 		<div className="w-full h-auto bg-white shadow-3xl shadow-neutral-200 my-10 rounded-3xl">
 			<div className="3xl:mx-auto max-w-screen-3xl">
@@ -56,7 +58,7 @@ const KolorShowcase = () => {
 					id="software"
 					className="text-5xl md:text-8xl font-bold h-auto flex justify-center items-center"
 				>
-					Software we built
+					{t("showcase1")}
 				</div>
 
 				<div className="flex h-auto items-center justify-center flex-col lg:flex-row mt-24 ">
@@ -104,15 +106,10 @@ const KolorShowcase = () => {
 				<div className="3xl:mx-auto max-w-screen-3xl flex flex-col overflow-hidden lg:flex-row  w-full mt-36 justify-between items-top ">
 					<div className="lg:w-[40%] lg:mt-64 flex flex-col">
 						<div className="lg:ml-20 mt-0 lg:mt-0 leading-tight text-4xl lg:text-4xl xl:text-5xl font-bold text-center lg:text-left">
-							A social media dapp
+							{t("kolorHeading")}
 						</div>
 						<p className="lg:ml-20  md:mr-10 mt-6 lg:text-lg xl:text-xl mx-10 text-left">
-							Kolor is an innovative project merging Web2 social media platforms
-							with Web3 blockchain software solutions. Kolor lets users post on
-							regular feeds, while enabling them to mint posts, on chain of
-							their preference. We've created Kolor Token, meant to be used as a
-							tool for tipping favourite posts, with "Appreciate" button
-							replacing the ever-present 'Like' button.
+							{t("kolorText")}
 						</p>
 					</div>
 					<div className="mt-12 lg:mt-0 flex justify-center align-center overflow-hidden  relative lg:mr-20 ">
@@ -178,7 +175,7 @@ const KolorShowcase = () => {
 				</div>
 
 				<div className="text-5xl md:text-7xl font-bold mt-12">
-					Sounds interesting?
+					{t("showcase2")}
 				</div>
 				<Link to="/projects">
 					<img

@@ -10,7 +10,7 @@ import ReactGA from "react-ga4";
 import { HiOutlineMenu, HiX } from "react-icons/hi";
 
 import BuyButton from "./buy.webp";
-import i18n, { t } from "../../i18n";
+import i18n, { t, useTranslation } from "../../i18n";
 
 const Navbar = () => {
 	const [scrollLevel, setScrollLevel] = useState<string>("index");
@@ -55,6 +55,8 @@ const Navbar = () => {
 		});
 	}
 
+	const {t} = useTranslation();
+
 	return (
 		<div
 			className={`fixed z-50 rounded-b-2xl top-0 w-full h-24 bg-white flex items-center md:justify-between justify-left pl-4 md:pl-0 flex-row ${scrollLevel} hover:opacity-100 hover:shadow-xl hover:shadow-black/5 transition duration-300`}
@@ -83,7 +85,7 @@ const Navbar = () => {
 									className="text-2xl hover:scale-110 transition duration-300"
 									onClick={ProjectClick}
 								>
-									Projects
+									{t("navProjects")}
 								</p>
 							</div>
 						</Link>
@@ -93,7 +95,7 @@ const Navbar = () => {
 									className="text-2xl hover:scale-110 transition duration-300"
 									onClick={ContactClick}
 								>
-									{t("contact")}
+									{t("navContact")}
 								</p>
 							</div>
 						</Link>
@@ -132,7 +134,7 @@ const Navbar = () => {
 										className="text-4xl py-4 hover:scale-110 transition duration-300"
 										onClick={ProjectClick}
 									>
-										Projects
+										{t("navProjects")}
 									</p>
 								</div>
 							</Link>
@@ -142,7 +144,7 @@ const Navbar = () => {
 										className="text-4xl py-4 hover:scale-110 transition duration-300"
 										onClick={ContactClick}
 									>
-										Contact
+										{t("navContact")}
 									</p>
 								</div>
 							</Link>
