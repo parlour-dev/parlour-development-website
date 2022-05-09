@@ -59,7 +59,7 @@ const resources = {
 	},
 	pl: {
 		translation: {
-			landingTitle: "Stwórz swój projekt blockchainwy ",
+			landingTitle: "Stwórz swój projekt blockchainowy ",
 			landingOutline: "TERAZ",
 			actionButton: "Zamów swój projekt",
 
