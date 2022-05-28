@@ -14,10 +14,10 @@ const Footer = () => {
 					</div>
 					<div className="mt-2 flex flex-row">
 						<HiOfficeBuilding size={24} color="#0eda4f" />
-						<p className="ml-2 text-md">Parlour Development sp. z o. o.</p>
+						<p className="ml-2 text-md">Parlour Development LLC</p>
 					</div>
 					<p className="ml-8 text-md text-left">
-						ul. Warszawska 40/2A, <br /> 40-008 Katowice
+						Warszawska 40/2A, <br /> 40-008 Katowice
 					</p>
 				</div>
 				<div>
