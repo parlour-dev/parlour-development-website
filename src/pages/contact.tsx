@@ -52,8 +52,9 @@ const contact = () => {
 
 		if (name && email && message !== "") {
 			setShowLabel(true);
-			setLabelText("Email sent!");
-			window.location.reload();
+			setLabelText("Email sent!")
+			
+			window.location.reload
 		}
 	};
 

@@ -43,7 +43,7 @@ const resources = {
 			projects5: "Browse code",
 
 			contactHeader: "Contact us",
-			contactCTA: "To work with us email us at contact@parlour.dev ",
+			contactCTA: "To work with us email us at ",
 			contactCTA2: "or use the form below",
 			contactName: "Name",
 			contactEmail: "Email",
